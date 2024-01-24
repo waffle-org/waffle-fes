@@ -2,14 +2,48 @@ body{
     background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
 }
 header{
-  /* position:fixed; */
+  position:fixed;
   top:0;
   left:0;
-  height:90px;
+  height:80px;
   width:100%;
   background-color:#fff;
   
 }
+
+
+.waffleimage{
+    margin-top: 10px;
+    margin-left: 10px;
+    float:left; 
+}
+
+
+.headermenu ul{
+    text-align: right;
+    margin-right: 50px;
+}
+
+
+.headermenu li{
+    display: inline-block;
+    list-style: none ;
+    margin-top: 12px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.headermenu a{
+    text-decoration: none;
+    color:#5a544b ;
+}
+.headermenu a:hover {
+    color: #ee9ca7;
+  }
+
+
+
+
 .menu a{
     text-decoration: none;
     color:#5a544b ;
@@ -17,20 +51,22 @@ header{
 .menu a:hover {
     color: #ee9ca7;
   }
-  
+ 
 .menu ul{
-    text-align: center;
+    margin-top: 200px;  
 }
+
+
 .menu li{
     display: inline-block;
     list-style: none ;
     margin-left: 180px;
-    font-size: 20px;
+    font-size: 30px;
 }
-#list1{
-    margin-left: 0px;
-    
-}
+
+
+
+
 
 
 .menu1{
