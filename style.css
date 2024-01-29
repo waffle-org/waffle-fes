@@ -1,9 +1,6 @@
-button {
-  width: 100%;
-}
-
 .sample {
-  height: 1200px;
+  height: 4000px;
+  width: 1280px;
   background: linear-gradient(
     213deg,
     rgba(249, 188, 164, 0.64) 5%,
@@ -17,6 +14,32 @@ button {
   width: 1000px;
   height: 1000px;
   border-radius: 50%;
-  border: solid 1px gray;
-  margin-left: -60px;
+  border: solid 0.3px rgba(163, 163, 163, 0.4);
+  margin-left: -300px;
+}
+
+.circle_2 {
+  width: 590px;
+  height: 590px;
+  border-radius: 50%;
+  border: solid 0.4px rgb(163, 163, 163, 0.4);
+  margin-left: 800px;
+  margin-top: 120px;
+}
+
+.circle_3 {
+  width: 590px;
+  height: 590px;
+  border-radius: 50%;
+  border: solid 0.4px rgba(163, 163, 163, 0.4);
+  margin-left: 600px;
+  margin-top: -270px;
+}
+.circle_4 {
+  width: 890px;
+  height: 890px;
+  border-radius: 50%;
+  border: solid 0.3px rgba(163, 163, 163, 0.4);
+  margin-left: -150px;
+  margin-top: 200px;
 }
