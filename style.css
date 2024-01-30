@@ -1,6 +1,5 @@
 .sample {
-  height: 4000px;
-  width: 1280px;
+  width: auto;
   background: linear-gradient(
     213deg,
     rgba(249, 188, 164, 0.64) 5%,
