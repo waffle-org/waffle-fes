@@ -3,7 +3,7 @@ button {
 }
 
 .sample {
-  height: 1200px;
+  /* height: 1200px; */
   background: linear-gradient(
     213deg,
     rgba(249, 188, 164, 0.64) 5%,
@@ -14,9 +14,33 @@ button {
 }
 
 .circle_1 {
-  width: 1000px;
-  height: 1000px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
-  border: solid 1px gray;
+  border: solid 1px rgba(163, 163, 163, 0.4);
   margin-left: -60px;
 }
+.circle_2 {
+  width: 590px;
+  height: 590px;
+  border-radius: 50%;
+  border: solid 0.4px rgba(163, 163, 163, 0.4);
+  margin-left: 800px;
+  margin-top: 120px;
+}
+
+.circle_3 {
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  border: solid 0.4px rgba(163, 163, 163, 0.4);
+  margin-left: 600px;
+  margin-top: -270px;
+}
+/* .circle_4 {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: solid 0.3px rgba(163, 163, 163, 0.4);
+  margin-left: 100px;
+} */
