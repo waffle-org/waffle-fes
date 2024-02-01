@@ -1,9 +1,15 @@
-button {
-  width: 100%;
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .sample {
-  /* height: 1200px; */
+  height: 100vh;
   background: linear-gradient(
     213deg,
     rgba(249, 188, 164, 0.64) 5%,
@@ -11,22 +17,28 @@ button {
     rgba(251, 204, 159, 0.64) 65%,
     rgba(255, 204, 191, 0.64) 94%
   );
+  /* コンテンツとのレイヤー用？ */
+  z-index: -1;
 }
 
 .circle_1 {
-  width: 300px;
-  height: 300px;
+  width: 370px;
+  height: 370px;
   border-radius: 50%;
   border: solid 1px rgba(163, 163, 163, 0.4);
-  margin-left: -60px;
+  margin-left: -45px;
+  margin-top: -15px;
+  position: absolute;
 }
+
 .circle_2 {
-  width: 590px;
-  height: 590px;
+  width: 620px;
+  height: 620px;
   border-radius: 50%;
   border: solid 0.4px rgba(163, 163, 163, 0.4);
-  margin-left: 800px;
-  margin-top: 120px;
+  margin-left: 980px;
+  margin-top: 300px;
+  position: absolute;
 }
 
 .circle_3 {
@@ -34,13 +46,7 @@ button {
   height: 420px;
   border-radius: 50%;
   border: solid 0.4px rgba(163, 163, 163, 0.4);
-  margin-left: 600px;
-  margin-top: -270px;
+  margin-left: 840px;
+  margin-top: 600px;
+  position: absolute;
 }
-/* .circle_4 {
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
-  border: solid 0.3px rgba(163, 163, 163, 0.4);
-  margin-left: 100px;
-} */
