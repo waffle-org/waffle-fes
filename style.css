@@ -17,6 +17,103 @@ body {
   );
   background-attachment: fixed;
 }
+
+.waffleimage {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 20%;
+}
+
+.headermenu ul {
+  text-align: right;
+  margin-right: 50px;
+}
+
+.headermenu li {
+  display: inline-block;
+  list-style: none;
+  margin-top: 12px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.headermenu a {
+  text-decoration: none;
+  color: #5a544b;
+}
+.headermenu a:hover {
+  color: #ee9ca7;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #5a544b;
+}
+.menu a:hover {
+  color: #ee9ca7;
+}
+
+.menu ul {
+  margin-top: 200px;
+}
+
+.menu li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 180px;
+  font-size: 30px;
+}
+
+.menu1 {
+  margin-top: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu2 {
+  margin-top: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu3 {
+  margin-top: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu4 {
+  margin-top: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -37,6 +134,23 @@ footer {
   background-color: #fff;
   /* 重なり防止 */
   z-index: 3;
+}
+.footer_ ul {
+  float: right;
+}
+
+.footer_ li {
+  display: inline-block;
+  list-style: none;
+  margin-top: 20px;
+  margin-left: 140px;
+  font-size: 15px;
+}
+
+.sns {
+  margin-right: 150px;
+  margin-top: 20px;
+  width: 20%;
 }
 
 .circle_1 {
@@ -149,7 +263,7 @@ img {
   background: #333; /*ドットボタンの現在地表示の色*/
 }
 
-p {
+.contents p {
   text-align: center;
   padding: 20px;
 }
