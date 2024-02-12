@@ -1,3 +1,19 @@
-button {
-  width: 100%;
+.timetable {
+  display: grid;
+  grid-template-rows: repeat(480 1fr);
+  grid-gap: 1em 2em;
+}
+
+.time {
+  grid-column: 1;
+}
+
+.event_main {
+  grid-column: 2;
+  background-color: blanchedalmond;
+}
+
+.event_lifork {
+  grid-column: 4;
+  background-color: rgb(93, 145, 240);
 }
