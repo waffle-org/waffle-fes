@@ -13,74 +13,330 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
   </head>
-  <body>
+  
     <div class="timetable">
-      <p class="time">10:00</p>
-      <p class="time">11:00</p>
-      <p class="time">12:00</p>
-      <p class="time">13:00</p>
-      <p class="time">14:00</p>
-      <p class="time">15:00</p>
-      <p class="time">16:00</p>
-      <p class="time">17:00</p>
+      <p class="time" style="grid-row: 1/1">10:00</p>
+      <p class="time" style="grid-row: 6/6">11:00</p>
+      <p class="time" style="grid-row: 12/12">12:00</p>
+      <p class="time" style="grid-row: 18/18">13:00</p>
+      <p class="time" style="grid-row: 24/24">14:00</p>
+      <p class="time" style="grid-row: 30/30">15:00</p>
+      <p class="time" style="grid-row: 36/36">16:00</p>
+      <p class="time" style="grid-row: 42/42">17:00</p>
 
       <div class="event_main" style="grid-row: 1/3">
-        <h2>タイトル</h2>
+        <button type="button"  data-bs-toggle="modal" data-bs-target="#main_1" class="btn">
+          <h2>main 1</h2>
         <p>10:00-10:30</p>
+        </button>
+       
       </div>
       <div class="event_main" style="grid-row: 3/6">
-        <h2>タイトル</h2>
-        <p>10:00-10:30</p>
+        <button type="button"  data-bs-toggle="modal" data-bs-target="#main_2" class="btn">
+          <h2>main 2</h2>
+        <p>10:30-11:00</p>
       </div>
       <div class="event_main" style="grid-row: 7/10">
-        <h2>タイトル</h2>
-        <p>10:00-10:30</p>
+        <button type="button"  data-bs-toggle="modal" data-bs-target="#main_3" class="btn">
+          <h2>main 3</h2>
+        <p>11:10-11:40</p>
       </div>
       <div class="event_main" style="grid-row: 12/15">
-        <h2>タイトル</h2>
-        <p>10:00-10:30</p>
+        <button type="button"  data-bs-toggle="modal" data-bs-target="#main_4" class="btn">
+          <h2>main 4</h2>
+        <p>12:00-12:30</p>
       </div>
       <div class="event_main" style="grid-row: 18/22">
-        <h2>タイトル</h2>
-        <p>10:00-10:30</p>
+        <button type="button"  data-bs-toggle="modal" data-bs-target="#main_5" class="btn">
+          <h2>main 5</h2>
+        <p>13:00-13:40</p>
       </div>
       <div class="event_main" style="grid-row: 23/26">
-        <h2>タイトル</h2>
-        <p>10:00-10:30</p>
+        <button type="button"  data-bs-toggle="modal" data-bs-target="#main_6" class="btn">
+          <h2>main 6</h2>
+        <p>13:50-14:20</p>
       </div>
       <div class="event_main" style="grid-row: 27/30">
-        <h2>タイトル</h2>
-        <p>10:00-10:30</p>
+        <button type="button"  data-bs-toggle="modal" data-bs-target="#main_7" class="btn">
+          <h2>main 7</h2>
+        <p>14:30-15:00</p>
       </div>
       <div class="event_main" style="grid-row: 31/34">
-        <h2>タイトル</h2>
-        <p>10:00-10:30</p>
+        <button type="button"  data-bs-toggle="modal" data-bs-target="#main_8" class="btn">
+          <h2>main 8</h2>
+        <p>15:10-15:40</p>
       </div>
       <div class="event_main" style="grid-row: 36/41">
-        <h2>タイトル</h2>
-        <p>10:00-10:30</p>
+        <button type="button"  data-bs-toggle="modal" data-bs-target="#main_9" class="btn">
+          <h2>main 9</h2>
+        <p>16:00-16:50</p>
       </div>
       <div class="event_main" style="grid-row: 41/42">
-        <h2>タイトル</h2>
-        <p>10:00-10:30</p>
+        <button type="button"  data-bs-toggle="modal" data-bs-target="#main_10" class="btn">
+          <h2>main 10</h2>
+        <p>16:50-17:00</p>
       </div>
 
       <div class="event_lifork" style="grid-row: 7/16">
-        <h2>タイトル</h2>
-        <p>10:00-10:30</p>
+        <button type="button"  data-bs-toggle="modal" data-bs-target="#lifork_1" class="btn">
+          <h2>lifork 1</h2>
+        <p>11:10-12:40</p>
       </div>
       <div class="event_lifork" style="grid-row: 18/21">
-        <h2>タイトル</h2>
-        <p>10:00-10:30</p>
+        <button type="button"  data-bs-toggle="modal" data-bs-target="#lifork_2" class="btn">
+          <h2>lifork 2</h2>
+        <p>13:00-13:30</p>
       </div>
       <div class="event_lifork" style="grid-row: 22/25">
-        <h2>タイトル</h2>
-        <p>10:00-10:30</p>
+        <button type="button"  data-bs-toggle="modal" data-bs-target="#lifork_3" class="btn">
+          <h2>lifork 3</h2>
+        <p>13:40-14:10</p>
       </div>
       <div class="event_lifork" style="grid-row: 26/35">
-        <h2>タイトル</h2>
-        <p>10:00-10:30</p>
+        <button type="button"  data-bs-toggle="modal" data-bs-target="#lifork_4" class="btn">
+          <h2>lifork 4</h2>
+        <p>14:20-15:50</p>
       </div>
     </div>
+
+
+
+ 
+<div class="modal fade" id="main_1">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Keynote Speech</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>登壇：田中沙弥果（NPO法人Waffle Co-founder）</p>
+        <p>応援メッセージ：スプツニ子！(アーティスト)、内藤佐和子（徳島市長）、Grace Choi（アメリカ大使館）</p>
+      </div>
+      </div>
+      </div>
+</div>
+</div>
+
+<div class="modal fade" id="main_2">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">コードクリサリス × Waffle Women in Tech</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>登壇：Yan Fan（コードクリサリスCOO）、斎藤明日美（NPO法人Waffle Co-founder）</p>
+          <p>女性へのサポートを通して社会を変える、コードクリサリスの取り組みをお聞きします。※日英通訳あり</p>
+        </div>
+        </div>
+        </div>
+  </div>
+  </div>
+
+<div class="modal fade" id="main_3">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">コードクリサリス × Waffle Women in Tech</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>登壇：Yan Fan（コードクリサリスCOO）、斎藤明日美（NPO法人Waffle Co-founder）</p>
+            <p>女性へのサポートを通して社会を変える、コードクリサリスの取り組みをお聞きします。※日英通訳あり</p>
+          </div>
+          </div>
+          </div>
+    </div>
+    </div>
+    <div class="modal fade" id="main_4">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">コードクリサリス × Waffle Women in Tech</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>登壇：Yan Fan（コードクリサリスCOO）、斎藤明日美（NPO法人Waffle Co-founder）</p>
+              <p>女性へのサポートを通して社会を変える、コードクリサリスの取り組みをお聞きします。※日英通訳あり</p>
+            </div>
+            </div>
+            </div>
+      </div>
+      </div>
+      <div class="modal fade" id="main_5">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">コードクリサリス × Waffle Women in Tech</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>登壇：Yan Fan（コードクリサリスCOO）、斎藤明日美（NPO法人Waffle Co-founder）</p>
+                <p>女性へのサポートを通して社会を変える、コードクリサリスの取り組みをお聞きします。※日英通訳あり</p>
+              </div>
+              </div>
+              </div>
+        </div>
+        </div>
+        <div class="modal fade" id="main_6">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">コードクリサリス × Waffle Women in Tech</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>登壇：Yan Fan（コードクリサリスCOO）、斎藤明日美（NPO法人Waffle Co-founder）</p>
+                  <p>女性へのサポートを通して社会を変える、コードクリサリスの取り組みをお聞きします。※日英通訳あり</p>
+                </div>
+                </div>
+                </div>
+          </div>
+          </div>
+          <div class="modal fade" id="main_7">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">コードクリサリス × Waffle Women in Tech</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>登壇：Yan Fan（コードクリサリスCOO）、斎藤明日美（NPO法人Waffle Co-founder）</p>
+                    <p>女性へのサポートを通して社会を変える、コードクリサリスの取り組みをお聞きします。※日英通訳あり</p>
+                  </div>
+                  </div>
+                  </div>
+            </div>
+            </div>
+            <div class="modal fade" id="main_8">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">コードクリサリス × Waffle Women in Tech</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>登壇：Yan Fan（コードクリサリスCOO）、斎藤明日美（NPO法人Waffle Co-founder）</p>
+                      <p>女性へのサポートを通して社会を変える、コードクリサリスの取り組みをお聞きします。※日英通訳あり</p>
+                    </div>
+                    </div>
+                    </div>
+              </div>
+              </div>
+              <div class="modal fade" id="main_9">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">コードクリサリス × Waffle Women in Tech</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>登壇：Yan Fan（コードクリサリスCOO）、斎藤明日美（NPO法人Waffle Co-founder）</p>
+                        <p>女性へのサポートを通して社会を変える、コードクリサリスの取り組みをお聞きします。※日英通訳あり</p>
+                      </div>
+                      </div>
+                      </div>
+                </div>
+                </div>
+                <div class="modal fade" id="main_10">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">コードクリサリス × Waffle Women in Tech</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>登壇：Yan Fan（コードクリサリスCOO）、斎藤明日美（NPO法人Waffle Co-founder）</p>
+                          <p>女性へのサポートを通して社会を変える、コードクリサリスの取り組みをお聞きします。※日英通訳あり</p>
+                        </div>
+                        </div>
+                        </div>
+                  </div>
+                  </div>
+
+<div class="modal fade" id="lifork_1">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Keynote Speech</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>登壇：田中沙弥果（NPO法人Waffle Co-founder）</p>
+        <p>応援メッセージ：スプツニ子！(アーティスト)、内藤佐和子（徳島市長）、Grace Choi（アメリカ大使館）</p>
+      </div>
+      </div>
+      </div>
+</div>
+</div>
+
+
+
+<div class="modal fade" id="lifork_2">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">コードクリサリス × Waffle Women in Tech</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>登壇：Yan Fan（コードクリサリスCOO）、斎藤明日美（NPO法人Waffle Co-founder）</p>
+        <p>女性へのサポートを通して社会を変える、コードクリサリスの取り組みをお聞きします。※日英通訳あり</p>
+      </div>
+      </div>
+      </div>
+</div>
+</div>
+
+
+
+<div class="modal fade" id="lifork_3">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">ちがいを力に～企業におけるDE&I推進</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>登壇：アマゾン ウェブ サービス ジャパン合同会社　ほか</p>
+        <p>ＩＴ企業におけるDE&Iの現在地を徹底トークし、今後の企業のアクションにつながる議論をしていきます。</p>
+      </div>
+      </div>
+      </div>
+</div>
+</div>
+
+
+<div class="modal fade" id="lifork_4">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">ビジネス×社会的インパクトがつくる未来</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>登壇：大崎麻子（特定非営利活動法人　Gender Action Platform理事）、メットライフ生命保険株式会社</p>
+        <p>社会的インパクトってなんだろう？私たちに何ができる？すべての働く人に届けたいメッセージです。</p>
+      </div>
+      </div>
+      </div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>
