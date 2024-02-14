@@ -66,6 +66,7 @@ body {
   font-size: 30px;
 }
 
+/* 
 .menu1 {
   position: relative;
   top: 60px;
@@ -82,6 +83,19 @@ body {
 
 .menu1 h2 {
   margin-top: 30px;
+}
+
+.other_programs {
+  margin-top: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu2 {
@@ -108,6 +122,20 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+.news {
+  margin-top: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .menu4 {
   position: relative;
   bottom: 40px;
@@ -121,6 +149,34 @@ body {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.sponsor{
+  margin-top: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+} */
+
+.content {
+  margin-top: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
 }
 
 header {
@@ -208,6 +264,7 @@ footer {
 .contents {
   /* headerとの重なりを防ぐ */
   margin-top: 80px;
+  text-align: center;
 }
 
 .slider {
@@ -307,4 +364,41 @@ a {
 a:hover,
 a:active {
   text-decoration: none;
+}
+
+.ask_button {
+  display: inline-block;
+  width: 100%;
+  max-width: 350px; /* ボタン幅 */
+  background: #fff; /* 背景色 */
+  padding: 1em 2em;
+  font-weight: bold; /* 文字の太さ */
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.ask_button:hover {
+  color: #fff; /* 文字色 */
+  background: #4d9bc1; /* 背景色 */
+}
+
+.timetable {
+  display: grid;
+  grid-gap: 1em 2em;
+}
+
+.time {
+  grid-column: 1;
+  text-align: center;
+}
+
+.event_main {
+  grid-column: 2;
+  background-color: rgb(230, 230, 230);
+}
+
+.event_lifork {
+  grid-column: 3;
+  background-color: rgb(230, 230, 230);
 }
