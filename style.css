@@ -360,3 +360,23 @@ a:active {
   color: #fff; /* 文字色 */
   background: #4d9bc1; /* 背景色 */
 }
+
+.timetable {
+  display: grid;
+  grid-gap: 1em 2em;
+}
+
+.time {
+  grid-column: 1;
+  text-align: center;
+}
+
+.event_main {
+  grid-column: 2;
+  background-color: rgb(230, 230, 230);
+}
+
+.event_lifork {
+  grid-column: 3;
+  background-color: rgb(230, 230, 230);
+}
