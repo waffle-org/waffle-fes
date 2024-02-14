@@ -135,7 +135,8 @@ header {
 }
 
 footer {
-  height: 250px;
+  position: absolute;
+  height: 150px;
   width: 100%;
   background-color: #fff;
   background-attachment: scroll;
@@ -158,13 +159,12 @@ footer {
 
 .sns {
   float: right;
-  margin-right: 50px;
+  padding-right: 100px;
   margin-top: 20px;
-  width: 20%;
 }
 
 .sns a {
-  padding-top: 20px;
+  cursor: pointer;
 }
 
 .sns img {
@@ -172,7 +172,10 @@ footer {
 }
 
 .sns li {
+  padding-top: 10px;
   padding-bottom: 20px;
+  display: inline-block;
+  padding-left: 50px;
 }
 
 .circle_1 {
@@ -307,4 +310,14 @@ a {
 a:hover,
 a:active {
   text-decoration: none;
+}
+
+.fixed_btn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  background: #6fa1ff;
 }
