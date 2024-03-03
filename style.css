@@ -60,101 +60,6 @@ body {
   font-size: 30px;
 }
 
-/* 
-.menu1 {
-  position: relative;
-  top: 60px;
-  padding-top: 50px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.other_programs {
-  margin-top: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.menu2 {
-  margin-top: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.menu3 {
-  margin-top: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.news {
-  margin-top: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.menu4 {
-  position: relative;
-  bottom: 40px;
-  margin-top: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.sponsor{
-  margin-top: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 200px;
-} */
-
 .content {
   margin-top: 200px;
   padding-top: 20px;
@@ -531,7 +436,6 @@ body {
   font-size: 30px;
 }
 
-
 .content {
   margin-top: 200px;
   padding-top: 20px;
@@ -720,7 +624,7 @@ img {
 ul {
   margin: 0px;
   padding: 0;
-  list-style: none;
+  /* list-style: none; */
 }
 
 .data {
