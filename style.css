@@ -19,14 +19,16 @@ body {
 }
 
 .waffleimage {
+  float: left;
   margin-top: 10px;
   margin-left: 10px;
   width: 20%;
 }
 
 .headermenu ul {
-  text-align: right;
+  float: right;
   margin-right: 50px;
+  margin-top: 20px;
 }
 
 .headermenu li {
@@ -66,8 +68,9 @@ body {
 
 /* 
 .menu1 {
-  margin-top: 200px;
-  padding-top: 20px;
+  position: relative;
+  top: 60px;
+  padding-top: 50px;
   padding-bottom: 20px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.4);
@@ -130,6 +133,8 @@ body {
 }
 
 .menu4 {
+  position: relative;
+  bottom: 40px;
   margin-top: 200px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -140,7 +145,6 @@ body {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 200px;
 }
 
 .sponsor{
@@ -183,31 +187,47 @@ header {
 }
 
 footer {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 80px;
+  position: absolute;
+  height: 150px;
   width: 100%;
   background-color: #fff;
+  background-attachment: scroll;
   /* 重なり防止 */
   z-index: 3;
 }
-.footer_ ul {
-  float: right;
+
+.footer_ {
+  float: left;
+  margin-top: 20px;
 }
 
 .footer_ li {
   display: inline-block;
   list-style: none;
   margin-top: 20px;
-  margin-left: 140px;
+  margin-left: 100px;
   font-size: 15px;
 }
 
 .sns {
-  margin-right: 150px;
+  float: right;
+  padding-right: 100px;
   margin-top: 20px;
-  width: 20%;
+}
+
+.sns a {
+  cursor: pointer;
+}
+
+.sns img {
+  width: 50px;
+}
+
+.sns li {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: inline-block;
+  padding-left: 50px;
 }
 
 .circle_1 {
@@ -345,6 +365,16 @@ a:active {
   text-decoration: none;
 }
 
+.fixed_btn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  background: #6fa1ff;
+}
+
 .ask_button {
   display: inline-block;
   width: 100%;
@@ -382,88 +412,80 @@ a:active {
   background-color: rgb(230, 230, 230);
 }
 
-
 /*==================================================
 アコーディオンのためのcss
 ===================================*/
 
 /*アコーディオン全体*/
-.accordion-area{
+.accordion-area {
   list-style: none;
   width: 96%;
   max-width: 900px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
-.accordion-area li{
+.accordion-area li {
   margin: 10px 0;
 }
 
 .accordion-area section {
-border: 1px solid #ccc;
+  border: 1px solid #ccc;
 }
 
 /*アコーディオンタイトル*/
 .title {
-  position: relative;/*+マークの位置基準とするためrelative指定*/
+  position: relative; /*+マークの位置基準とするためrelative指定*/
   cursor: pointer;
-  font-size:1rem;
+  font-size: 1rem;
   font-weight: normal;
   padding: 3% 3% 3% 50px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 /*アイコンの＋と×*/
 .title::before,
-.title::after{
+.title::after {
   position: absolute;
-  content:'';
+  content: "";
   width: 15px;
   height: 2px;
   background-color: #333;
-  
 }
-.title::before{
-  top:48%;
+.title::before {
+  top: 48%;
   left: 15px;
   transform: rotate(0deg);
-  
 }
-.title::after{    
-  top:48%;
+.title::after {
+  top: 48%;
   left: 15px;
   transform: rotate(90deg);
-
 }
 
 /*　closeというクラスがついたら形状変化　*/
 
-.title.close::before{
-transform: rotate(45deg);
+.title.close::before {
+  transform: rotate(45deg);
 }
 
-.title.close::after{
-transform: rotate(-45deg);
+.title.close::after {
+  transform: rotate(-45deg);
 }
 
 /*アコーディオンで現れるエリア*/
 .box {
-  display: none;/*はじめは非表示*/
+  display: none; /*はじめは非表示*/
   background: #f3f3f3;
-margin:0 3% 3% 3%;
+  margin: 0 3% 3% 3%;
   padding: 3%;
 }
 
-
 /*========= レイアウトのためのCSS ===============*/
 
-h2{
+h2 {
   text-align: center;
   margin: 30px 0;
-  font-size:1rem;
-}@charset "utf-8";
-html {
-  height: 100%;
+  font-size: 1rem;
 }
 
 body {
@@ -645,31 +667,47 @@ header {
 }
 
 footer {
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 80px;
+  position: absolute;
+  height: 150px;
   width: 100%;
   background-color: #fff;
+  background-attachment: scroll;
   /* 重なり防止 */
   z-index: 3;
 }
-.footer_ ul {
-  float: right;
+
+.footer_ {
+  float: left;
+  margin-top: 20px;
 }
 
 .footer_ li {
   display: inline-block;
   list-style: none;
   margin-top: 20px;
-  margin-left: 140px;
+  margin-left: 100px;
   font-size: 15px;
 }
 
 .sns {
-  margin-right: 150px;
+  float: right;
+  padding-right: 100px;
   margin-top: 20px;
-  width: 20%;
+}
+
+.sns a {
+  cursor: pointer;
+}
+
+.sns img {
+  width: 50px;
+}
+
+.sns li {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: inline-block;
+  padding-left: 50px;
 }
 
 .circle_1 {
