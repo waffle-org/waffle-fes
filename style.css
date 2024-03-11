@@ -290,6 +290,14 @@ a:active {
   grid-gap: 1em 2em;
 }
 
+.timetable p {
+  font-size: 20px;
+}
+
+.timetable h2 {
+  font-size: 25px;
+}
+
 .time {
   grid-column: 1;
   text-align: center;
@@ -297,12 +305,11 @@ a:active {
 
 .event_main {
   grid-column: 2;
-  background-color: rgb(230, 230, 230);
+  /* background-color: #fffbfb; */
 }
-
 .event_lifork {
   grid-column: 3;
-  background-color: rgb(230, 230, 230);
+  /* background-color: #fffbfb; */
 }
 
 /*==================================================
@@ -614,11 +621,6 @@ img {
 
 .slick-dots .slick-active button {
   background: #333; /*ドットボタンの現在地表示の色*/
-}
-
-.contents p {
-  text-align: center;
-  padding: 20px;
 }
 
 ul {
