@@ -62,7 +62,14 @@ body {
 
 /* 見出し */
 
-#NEWS,#ABOUT,#message,#timetable,#FeaturedContents,#voice,#FAQ,#SPONSOR{
+#NEWS,
+#ABOUT,
+#message,
+#timetable,
+#FeaturedContents,
+#voice,
+#FAQ,
+#SPONSOR {
   font-size: 50px;
 }
 
@@ -135,7 +142,7 @@ footer {
   padding-left: 50px;
 }
 
-.KV{
+.KV {
   padding-top: 60px;
   padding-bottom: 0px;
 }
@@ -182,7 +189,6 @@ footer {
   margin: 0 auto;
 }
 
-
 img {
   width: 100%; /* 画像をスライドに合わせて調整 */
   height: auto;
@@ -213,7 +219,6 @@ img {
   height: 15px;
   width: 15px;
 }
-
 
 .slick-prev {
   /*戻る矢印の位置と形状*/
@@ -401,7 +406,6 @@ h2 {
   font-size: 1rem;
 }
 
-
 body {
   overflow: hidden;
 }
@@ -471,11 +475,8 @@ body {
   margin-bottom: 200px;
 }
 
-
-#message{
-
+#message {
   margin-top: 150px;
-
 }
 
 header {
@@ -575,7 +576,7 @@ footer {
   margin: 0 auto;
 }
 
-img {
+.slider img {
   width: 100%; /* 画像をスライドに合わせて調整 */
   height: auto;
 }
@@ -735,4 +736,21 @@ a:active {
 
 .voices p {
   text-align: left;
+}
+
+.voices ul {
+  display: flex;
+  list-style: none;
+  height: 155px;
+}
+
+.voice_msg {
+  background-color: #a8d4eb;
+  border-radius: 70px;
+  height: 110px;
+  width: 1000px;
+}
+
+.voice_img img {
+  width: 140px;
 }
