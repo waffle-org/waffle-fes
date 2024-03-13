@@ -734,23 +734,182 @@ a:active {
   font-size: 20px;
 }
 
-.voices p {
-  text-align: left;
-}
+
+
+
+
+/* 参加者の声 */
+
+
+
 
 .voices ul {
   display: flex;
   list-style: none;
-  height: 155px;
+  height:auto;
 }
 
-.voice_msg {
-  background-color: #a8d4eb;
-  border-radius: 70px;
-  height: 110px;
-  width: 1000px;
+
+.voice_msg1,.voice_msg3,.voice_msg5,.voice_msg2,.voice_msg4,.voice_msg6{
+
+  margin-top: 20px;
+  width: 90%;
+  height: 60%;
+  position: relative;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid #333;
+  background-color: #fff;
+  color: #333;
+  font-size: 15px;
+
 }
 
-.voice_img img {
-  width: 140px;
+
+.voice_msg1:before {
+
+  position: absolute;
+  top: 100%;
+  right: 50px;
+  transform: skew(45deg);
+  height: 25px;
+  width: 15px;
+  border-left: 3px solid #333;
+  background-color: #fff;
+  content: "";
+
 }
+
+.voice_msg2:before {
+
+  position: absolute;
+  top: 100%;
+  left: 50px;
+  transform: skew(-25deg);
+  height: 25px;
+  width: 15px;
+  border-right: 3px solid #333;
+  background-color: #fff;
+  content: "";
+
+}
+
+.voice_msg3:before {
+
+  position: absolute;
+  top: 100%;
+  right: 50px;
+  transform: skew(45deg);
+  height: 25px;
+  width: 15px;
+  border-left: 3px solid #333;
+  background-color: #fff;
+  content: "";
+
+}
+
+
+.voice_msg4:before {
+
+  position: absolute;
+  top: 100%;
+  left: 50px;
+  transform: skew(-25deg);
+  height: 25px;
+  width: 15px;
+  border-right: 3px solid #333;
+  background-color: #fff;
+  content: "";
+
+}
+
+
+.voice_msg5:before {
+
+  position: absolute;
+  top: 100%;
+  right: 50px;
+  transform: skew(45deg);
+  height: 25px;
+  width: 15px;
+  border-left: 3px solid #333;
+  background-color: #fff;
+  content: "";
+
+}
+
+
+.voice_msg6:before {
+
+  position: absolute;
+  top: 100%;
+  left: 50px;
+  transform: skew(-25deg);
+  height: 25px;
+  width: 15px;
+  border-right: 3px solid #333;
+  background-color: #fff;
+  content: "";
+
+}
+
+.voice_img1,.voice_img3,.voice_img5 img {
+
+  width: 150px;
+  margin-left: 10px;
+  margin-top: 40px;
+
+}
+
+.voice_img2,.voice_img4,.voice_img6 img {
+
+  width: 150px;
+  margin-right: 10px;
+  margin-top: 40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.voicebox {
+  width: 40%;
+  position: relative;
+  /* padding: 1rem; */
+  border-radius: 10px;
+  border: 2px solid #333;
+  background-color: #fff;
+  color: #333;
+  font-size: 18px;
+}
+
+
+.voicebox:before {
+  position: absolute;
+  top: 100%;
+  left: 50px;
+  transform: skew(-25deg);
+  height: 25px;
+  width: 15px;
+  border-right: 3px solid #333;
+  background-color: #fff;
+  content: "";
+}
+
+
+.voicebox p {
+  line-height: 1.5;
+}
+
