@@ -287,24 +287,52 @@ a:active {
   background: #6fa1ff;
 }
 
-.ask_button {
-  display: inline-block;
-  width: 100%;
-  max-width: 350px; /* ボタン幅 */
-  background: #fff; /* 背景色 */
-  padding: 1em 2em;
-  font-weight: bold; /* 文字の太さ */
-  text-decoration: none;
-  text-align: center;
-  transition: 0.3s;
+/* お問い合わせボタン */
+a.ask_button {
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+	text-decoration: none;
+	width: 700px;
+  height: 80px;
+	margin: auto;
+  font-size: 24px;
+	padding: 1rem 4rem;
+	background: #fff;
+	color: black;
+	border-radius: 100vh;
+	position: relative;
+	transition: 0.5s;
 
-  margin-bottom: 200px;
+  margin-bottom: 150px;
+}
+a.ask_button::before {
+	content: '';
+	position: absolute;
+	top: calc(50% - 2px);
+	right: 1em;
+	transform: translateY(calc(-50% - 2px)) rotate(45deg);
+	width: 10px;
+	height: 1px;
+	background: #27acd9;
+}
+a.ask_button::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 1em;
+	transform: translateY(-50%);
+	width: 50px;
+	height: 1px;
+	background-color: #27acd9;
+}
+a.ask_button:hover {
+	background: #d4eef7;
+	color: #27acd9;
 }
 
-.ask_button:hover {
-  color: #fff; /* 文字色 */
-  background: #4d9bc1; /* 背景色 */
-}
+
+
 
 .timetable {
   display: grid;
@@ -669,23 +697,6 @@ a {
 a:hover,
 a:active {
   text-decoration: none;
-}
-
-.ask_button {
-  display: inline-block;
-  width: 100%;
-  max-width: 350px; /* ボタン幅 */
-  background: #fff; /* 背景色 */
-  padding: 1em 2em;
-  font-weight: bold; /* 文字の太さ */
-  text-decoration: none;
-  text-align: center;
-  transition: 0.3s;
-}
-
-.ask_button:hover {
-  color: #fff; /* 文字色 */
-  background: #4d9bc1; /* 背景色 */
 }
 
 .timetable {
