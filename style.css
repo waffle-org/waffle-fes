@@ -73,19 +73,20 @@ body {
   font-size: 50px;
 }
 
-.content {
-  margin-top: 200px;
-  padding-top: 20px;
+.content{
+  /* margin-top: 150px; */
+  padding-top: 30px;
   padding-bottom: 20px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 10px;
-  width: 90%;
-  /* max-width: 800px; */
+  width: 980px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 200px;
 }
+
+
 
 header {
   position: fixed;
@@ -143,7 +144,7 @@ footer {
 }
 
 .KV {
-  padding-top: 60px;
+  padding-top: 70px;
   padding-bottom: 0px;
 }
 
@@ -296,6 +297,8 @@ a:active {
   text-decoration: none;
   text-align: center;
   transition: 0.3s;
+
+  margin-bottom: 200px;
 }
 
 .ask_button:hover {
@@ -354,7 +357,7 @@ a:active {
 .title {
   position: relative; /*+マークの位置基準とするためrelative指定*/
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: normal;
   padding: 3% 3% 3% 50px;
   transition: all 0.5s ease;
@@ -461,19 +464,7 @@ body {
   font-size: 30px;
 }
 
-.content {
-  margin-top: 150px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 200px;
-}
+
 
 #message {
   margin-top: 150px;
@@ -738,6 +729,13 @@ a:active {
 
 
 
+
+
+
+
+
+
+
 /* 参加者の声 */
 
 
@@ -747,6 +745,9 @@ a:active {
   display: flex;
   list-style: none;
   height:auto;
+  width:88%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -761,7 +762,7 @@ a:active {
   border: 2px solid #333;
   background-color: #fff;
   color: #333;
-  font-size: 15px;
+  font-size: 17px;
 
 }
 
