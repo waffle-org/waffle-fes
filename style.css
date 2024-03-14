@@ -60,19 +60,33 @@ body {
   font-size: 30px;
 }
 
-.content {
-  margin-top: 200px;
-  padding-top: 20px;
+/* 見出し */
+
+#NEWS,
+#ABOUT,
+#message,
+#timetable,
+#FeaturedContents,
+#voice,
+#FAQ,
+#SPONSOR {
+  font-size: 50px;
+}
+
+.content{
+  /* margin-top: 150px; */
+  padding-top: 30px;
   padding-bottom: 20px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 10px;
-  width: 90%;
-  /* max-width: 800px; */
+  width: 980px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 200px;
 }
+
+
 
 header {
   position: fixed;
@@ -129,6 +143,11 @@ footer {
   padding-left: 50px;
 }
 
+.KV {
+  padding-top: 70px;
+  padding-bottom: 0px;
+}
+
 .circle_1 {
   width: 370px;
   height: 370px;
@@ -161,7 +180,7 @@ footer {
 
 .contents {
   /* headerとの重なりを防ぐ */
-  margin-top: 80px;
+  /* margin-top: 80px; */
   text-align: center;
 }
 
@@ -278,6 +297,8 @@ a:active {
   text-decoration: none;
   text-align: center;
   transition: 0.3s;
+
+  margin-bottom: 200px;
 }
 
 .ask_button:hover {
@@ -336,7 +357,7 @@ a:active {
 .title {
   position: relative; /*+マークの位置基準とするためrelative指定*/
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: normal;
   padding: 3% 3% 3% 50px;
   transition: all 0.5s ease;
@@ -375,7 +396,7 @@ a:active {
 /*アコーディオンで現れるエリア*/
 .box {
   display: none; /*はじめは非表示*/
-  background: #f3f3f3;
+  background: #fff;
   margin: 0 3% 3% 3%;
   padding: 3%;
 }
@@ -443,18 +464,10 @@ body {
   font-size: 30px;
 }
 
-.content {
-  margin-top: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 200px;
+
+
+#message {
+  margin-top: 150px;
 }
 
 header {
@@ -468,6 +481,10 @@ header {
   z-index: 3;
 }
 
+
+
+
+/* フッター */
 footer {
   position: absolute;
   height: 150px;
@@ -542,6 +559,18 @@ footer {
   position: fixed;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 .contents {
   /* headerとの重なりを防ぐ */
   margin-top: 80px;
@@ -554,7 +583,7 @@ footer {
   margin: 0 auto;
 }
 
-img {
+.slider img {
   width: 100%; /* 画像をスライドに合わせて調整 */
   height: auto;
 }
@@ -711,3 +740,169 @@ a:active {
   list-style-position: inside;
   font-size: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* 参加者の声 */
+
+
+
+
+.voices ul {
+  display: flex;
+  list-style: none;
+  height:auto;
+  width:88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.voice_msg1,.voice_msg3,.voice_msg5,.voice_msg2,.voice_msg4,.voice_msg6{
+
+  margin-top: 20px;
+  width: 90%;
+  height: 60%;
+  position: relative;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid #333;
+  background-color: #fff;
+  color: #333;
+  font-size: 17px;
+
+}
+
+
+.voice_msg1:before {
+
+  position: absolute;
+  top: 100%;
+  right: 50px;
+  transform: skew(45deg);
+  height: 25px;
+  width: 15px;
+  border-left: 3px solid #333;
+  background-color: #fff;
+  content: "";
+
+}
+
+.voice_msg2:before {
+
+  position: absolute;
+  top: 100%;
+  left: 50px;
+  transform: skew(-25deg);
+  height: 25px;
+  width: 15px;
+  border-right: 3px solid #333;
+  background-color: #fff;
+  content: "";
+
+}
+
+.voice_msg3:before {
+
+  position: absolute;
+  top: 100%;
+  right: 50px;
+  transform: skew(45deg);
+  height: 25px;
+  width: 15px;
+  border-left: 3px solid #333;
+  background-color: #fff;
+  content: "";
+
+}
+
+
+.voice_msg4:before {
+
+  position: absolute;
+  top: 100%;
+  left: 50px;
+  transform: skew(-25deg);
+  height: 25px;
+  width: 15px;
+  border-right: 3px solid #333;
+  background-color: #fff;
+  content: "";
+
+}
+
+
+.voice_msg5:before {
+
+  position: absolute;
+  top: 100%;
+  right: 50px;
+  transform: skew(45deg);
+  height: 25px;
+  width: 15px;
+  border-left: 3px solid #333;
+  background-color: #fff;
+  content: "";
+
+}
+
+
+.voice_msg6:before {
+
+  position: absolute;
+  top: 100%;
+  left: 50px;
+  transform: skew(-25deg);
+  height: 25px;
+  width: 15px;
+  border-right: 3px solid #333;
+  background-color: #fff;
+  content: "";
+
+}
+
+.voice_img1,.voice_img3,.voice_img5 img {
+
+  width: 165px;
+  margin-left: 10px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+
+}
+
+.voice_img2,.voice_img4,.voice_img6 img {
+
+  width: 150px;
+  margin-right: 10px;
+  margin-top: 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
