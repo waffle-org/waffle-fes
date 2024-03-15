@@ -717,24 +717,72 @@ a:active {
   text-decoration: none;
 }
 
-.timetable {
+.timetable_contents {
   display: grid;
   grid-gap: 1em 2em;
+  margin-top: 50px;
+}
+
+.timetable_contents p {
+  padding-top: 0px;
+}
+
+.timetable_day1 {
+  border-bottom: solid 1px #333;
+  height: 100px;
+}
+.timetable_day2 {
+  border-bottom: solid 1px #333;
+  height: 100px;
+  margin-top: 40px;
+}
+
+.timetable_day1 h4 {
+  text-align: left;
+}
+.timetable_day2 h4 {
+  text-align: left;
+}
+
+.timetable_day1 p {
+  text-align: right;
+}
+.timetable_day2 p {
+  text-align: right;
 }
 
 .time {
   grid-column: 1;
   text-align: center;
+  font-size: 18px;
 }
 
 .event_main {
   grid-column: 2;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(255 255 255);
 }
 
 .event_lifork {
   grid-column: 3;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(255 255 255);
+}
+
+.event_main p {
+  padding: 0px;
+}
+
+.event_lifork p {
+  padding: 0px;
+}
+
+.event_main h2 {
+  padding: 0px;
+  font-size: 20px;
+}
+
+.event_lifork h2 {
+  padding: 0px;
+  font-size: 20px;
 }
 
 .about_title {
