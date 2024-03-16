@@ -337,15 +337,30 @@ a:active {
   text-decoration: none;
 }
 
+
+/* お申し込みボタン */
+
 .fixed_btn {
   position: fixed;
   bottom: 50px;
   right: 50px;
   border-radius: 50%;
-  width: 110px;
-  height: 110px;
-  background: #6fa1ff;
+  width: 160px;
+  height: 160px;
+  background: #eb5f6e;
 }
+
+.fixed_btn p1{
+ font-size: 19px;
+ font-weight: bold;
+ color: #fff;
+}
+
+.fixed_btn p2{
+  color: #fff;
+}
+
+
 
 /* お問い合わせボタン */
 a.ask_button {
