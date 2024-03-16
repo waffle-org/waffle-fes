@@ -347,7 +347,8 @@ a:active {
   border-radius: 50%;
   width: 160px;
   height: 160px;
-  background: #eb5f6e;
+  /* background: #eb5f6e; */
+  background-image: linear-gradient(#f696a0 0%, #EB5F6E 100%);
 }
 
 .fixed_btn p1{
@@ -360,6 +361,9 @@ a:active {
   color: #fff;
 }
 
+.fixed_btn:hover{
+  background:#f696a0;
+}
 
 
 /* お問い合わせボタン */
