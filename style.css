@@ -80,14 +80,13 @@ body {
 }
 
 .content {
-  margin-top: 200px;
-  padding-top: 20px;
+  /* margin-top: 150px; */
+  padding-top: 30px;
   padding-bottom: 20px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 10px;
-  width: 90%;
-  /* max-width: 800px; */
+  width: 980px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 200px;
@@ -292,48 +291,115 @@ a:active {
   background: #6fa1ff;
 }
 
-.ask_button {
-  display: inline-block;
-  width: 100%;
-  max-width: 350px; /* ボタン幅 */
-  background: #fff; /* 背景色 */
-  padding: 1em 2em;
-  font-weight: bold; /* 文字の太さ */
+/* お問い合わせボタン */
+a.ask_button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-decoration: none;
-  text-align: center;
-  transition: 0.3s;
+  width: 700px;
+  height: 80px;
+  margin: auto;
+  font-size: 24px;
+  padding: 1rem 4rem;
+  background: #fff;
+  color: black;
+  border-radius: 100vh;
+  position: relative;
+  transition: 0.5s;
+
+  margin-bottom: 150px;
+}
+a.ask_button::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 1em;
+  transform: translateY(calc(-50% - 2px)) rotate(45deg);
+  width: 10px;
+  height: 1px;
+  background: #27acd9;
+}
+a.ask_button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 1px;
+  background-color: #27acd9;
+}
+a.ask_button:hover {
+  background: #d4eef7;
+  color: #27acd9;
 }
 
-.ask_button:hover {
-  color: #fff; /* 文字色 */
-  background: #4d9bc1; /* 背景色 */
-}
-
-.timetable {
+.timetable_contents {
   display: grid;
   grid-gap: 1em 2em;
+  margin-top: 50px;
 }
 
-.timetable p {
-  font-size: 20px;
+.timetable_contents p {
+  padding-top: 0px;
 }
 
-.timetable h2 {
-  font-size: 25px;
+.timetable_day1 {
+  border-bottom: solid 1px #333;
+  height: 100px;
+}
+.timetable_day2 {
+  border-bottom: solid 1px #333;
+  height: 100px;
+  margin-top: 40px;
+}
+
+.timetable_day1 h4 {
+  text-align: left;
+}
+.timetable_day2 h4 {
+  text-align: left;
+}
+
+.timetable_day1 p {
+  text-align: right;
+}
+.timetable_day2 p {
+  text-align: right;
 }
 
 .time {
   grid-column: 1;
   text-align: center;
+  font-size: 18px;
 }
 
 .event_main {
   grid-column: 2;
-  /* background-color: #fffbfb; */
+  background-color: rgb(255 255 255);
 }
 .event_lifork {
   grid-column: 3;
-  /* background-color: #fffbfb; */
+  background-color: rgb(255 255 255);
+}
+
+.event_main p {
+  padding: 0px;
+}
+
+.event_lifork p {
+  padding: 0px;
+}
+
+.event_main h2 {
+  padding: 0px;
+  font-size: 20px;
+}
+
+.event_lifork h2 {
+  padding: 0px;
+  font-size: 20px;
 }
 
 /*==================================================
@@ -360,7 +426,7 @@ a:active {
 .title {
   position: relative; /*+マークの位置基準とするためrelative指定*/
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: normal;
   padding: 3% 3% 3% 50px;
   transition: all 0.5s ease;
@@ -502,6 +568,7 @@ header {
   z-index: 3;
 }
 
+/* フッター */
 footer {
   position: absolute;
   height: 150px;
@@ -588,7 +655,7 @@ footer {
   margin: 0 auto;
 }
 
-img {
+.slider img {
   width: 100%; /* 画像をスライドに合わせて調整 */
   height: auto;
 }
@@ -676,41 +743,72 @@ a:active {
   text-decoration: none;
 }
 
-.ask_button {
-  display: inline-block;
-  width: 100%;
-  max-width: 350px; /* ボタン幅 */
-  background: #fff; /* 背景色 */
-  padding: 1em 2em;
-  font-weight: bold; /* 文字の太さ */
-  text-decoration: none;
-  text-align: center;
-  transition: 0.3s;
-}
-
-.ask_button:hover {
-  color: #fff; /* 文字色 */
-  background: #4d9bc1; /* 背景色 */
-}
-
-.timetable {
+.timetable_contents {
   display: grid;
   grid-gap: 1em 2em;
+  margin-top: 50px;
+}
+
+.timetable_contents p {
+  padding-top: 0px;
+}
+
+.timetable_day1 {
+  border-bottom: solid 1px #333;
+  height: 100px;
+}
+.timetable_day2 {
+  border-bottom: solid 1px #333;
+  height: 100px;
+  margin-top: 40px;
+}
+
+.timetable_day1 h4 {
+  text-align: left;
+}
+.timetable_day2 h4 {
+  text-align: left;
+}
+
+.timetable_day1 p {
+  text-align: right;
+}
+.timetable_day2 p {
+  text-align: right;
 }
 
 .time {
   grid-column: 1;
   text-align: center;
+  font-size: 18px;
 }
 
 .event_main {
   grid-column: 2;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(255 255 255);
 }
 
 .event_lifork {
   grid-column: 3;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(255 255 255);
+}
+
+.event_main p {
+  padding: 0px;
+}
+
+.event_lifork p {
+  padding: 0px;
+}
+
+.event_main h2 {
+  padding: 0px;
+  font-size: 20px;
+}
+
+.event_lifork h2 {
+  padding: 0px;
+  font-size: 20px;
 }
 
 .about_title {
@@ -746,6 +844,125 @@ a:active {
   font-size: 20px;
 }
 
-.voices p {
-  text-align: left;
+/* 参加者の声 */
+
+.voices ul {
+  display: flex;
+  list-style: none;
+  height: auto;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.voice_msg1,
+.voice_msg3,
+.voice_msg5,
+.voice_msg2,
+.voice_msg4,
+.voice_msg6 {
+  margin-top: 20px;
+  width: 90%;
+  height: 60%;
+  position: relative;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid #333;
+  background-color: #fff;
+  color: #333;
+  font-size: 17px;
+}
+
+.voice_msg1:before {
+  position: absolute;
+  top: 100%;
+  right: 50px;
+  transform: skew(45deg);
+  height: 25px;
+  width: 15px;
+  border-left: 3px solid #333;
+  background-color: #fff;
+  content: "";
+}
+
+.voice_msg2:before {
+  position: absolute;
+  top: 100%;
+  left: 50px;
+  transform: skew(-25deg);
+  height: 25px;
+  width: 15px;
+  border-right: 3px solid #333;
+  background-color: #fff;
+  content: "";
+}
+
+.voice_msg3:before {
+  position: absolute;
+  top: 100%;
+  right: 50px;
+  transform: skew(45deg);
+  height: 25px;
+  width: 15px;
+  border-left: 3px solid #333;
+  background-color: #fff;
+  content: "";
+}
+
+.voice_msg4:before {
+  position: absolute;
+  top: 100%;
+  left: 50px;
+  transform: skew(-25deg);
+  height: 25px;
+  width: 15px;
+  border-right: 3px solid #333;
+  background-color: #fff;
+  content: "";
+}
+
+.voice_msg5:before {
+  position: absolute;
+  top: 100%;
+  right: 50px;
+  transform: skew(45deg);
+  height: 25px;
+  width: 15px;
+  border-left: 3px solid #333;
+  background-color: #fff;
+  content: "";
+}
+
+.voice_msg6:before {
+  position: absolute;
+  top: 100%;
+  left: 50px;
+  transform: skew(-25deg);
+  height: 25px;
+  width: 15px;
+  border-right: 3px solid #333;
+  background-color: #fff;
+  content: "";
+}
+
+.voice_img1,
+.voice_img3,
+.voice_img5 img {
+  width: 165px;
+  margin-left: 10px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.voice_img2,
+.voice_img4,
+.voice_img6 img {
+  width: 150px;
+  margin-right: 10px;
+  margin-top: 50px;
+}
+
+.featured_sub ul {
+  display: flex;
+  list-style: none;
 }
