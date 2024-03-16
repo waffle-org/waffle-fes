@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 html {
   height: 100%;
 }
@@ -6,6 +7,7 @@ html {
 body {
   overflow: hidden;
 }
+
 .background {
   height: 100%;
   background: linear-gradient(213deg, rgba(249, 188, 164, 0.64) 5%, rgba(155, 210, 204, 0.64) 35%, rgba(251, 204, 159, 0.64) 65%, rgba(255, 204, 191, 0.64) 94%);
@@ -38,6 +40,7 @@ body {
   text-decoration: none;
   color: #5a544b;
 }
+
 .headermenu a:hover {
   color: #ee9ca7;
 }
@@ -56,8 +59,10 @@ body {
 #SPONSOR {
   font-size: 50px;
   display: flex;
-  align-items: center; /* 垂直中心 */
-  justify-content: center; /* 水平中心 */
+  align-items: center;
+  /* 垂直中心 */
+  justify-content: center;
+  /* 水平中心 */
 
   margin-top: 0%;
 
@@ -75,8 +80,10 @@ body {
 #SPONSOR::before {
   border-top: 1px solid;
   content: "";
-  width: 3em; /* 線の長さ */
-  margin-right: 1em; /* 文字の右隣 */
+  width: 3em;
+  /* 線の長さ */
+  margin-right: 1em;
+  /* 文字の右隣 */
 }
 
 
@@ -90,8 +97,10 @@ body {
 #SPONSOR::after {
   border-top: 1px solid;
   content: "";
-  width: 3em; /* 線の長さ */
-  margin-left: 1em; /* 文字の右隣 */
+  width: 3em;
+  /* 線の長さ */
+  margin-left: 1em;
+  /* 文字の右隣 */
 
 }
 
@@ -100,8 +109,8 @@ body {
 /* コンテンツ（白い枠） */
 
 
-.content{
-  
+.content {
+
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
@@ -113,6 +122,17 @@ body {
   margin-bottom: 200px;
 }
 
+.sponsor_content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+}
 
 /* ヘッダー */
 
@@ -216,19 +236,25 @@ footer {
 }
 
 img {
-  width: 100%; /* 画像をスライドに合わせて調整 */
+  width: 100%;
+  /* 画像をスライドに合わせて調整 */
   height: auto;
 }
 
 .slider .slick-slide {
-  transform: scale(0.8); /*左右の画像のサイズを80%に*/
-  transition: all 0.5s; /*拡大や透過のアニメーションを0.5秒で行う*/
-  opacity: 0.5; /*透過50%*/
+  transform: scale(0.8);
+  /*左右の画像のサイズを80%に*/
+  transition: all 0.5s;
+  /*拡大や透過のアニメーションを0.5秒で行う*/
+  opacity: 0.5;
+  /*透過50%*/
 }
 
 .slider .slick-slide.slick-center {
-  transform: scale(1); /*中央の画像のサイズだけ等倍に*/
-  opacity: 1; /*透過なし*/
+  transform: scale(1);
+  /*中央の画像のサイズだけ等倍に*/
+  opacity: 1;
+  /*透過なし*/
 }
 
 /*矢印の設定*/
@@ -236,12 +262,17 @@ img {
 /*戻る、次へ矢印の位置*/
 .slick-prev,
 .slick-next {
-  position: absolute; /*絶対配置にする*/
+  position: absolute;
+  /*絶対配置にする*/
   top: 42%;
-  cursor: pointer; /*マウスカーソルを指マークに*/
-  outline: none; /*クリックをしたら出てくる枠線を消す*/
-  border-top: 2px solid #666; /*矢印の色*/
-  border-right: 2px solid #666; /*矢印の色*/
+  cursor: pointer;
+  /*マウスカーソルを指マークに*/
+  outline: none;
+  /*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #666;
+  /*矢印の色*/
+  border-right: 2px solid #666;
+  /*矢印の色*/
   height: 15px;
   width: 15px;
 }
@@ -273,15 +304,19 @@ img {
 .slick-dots button {
   color: transparent;
   outline: none;
-  width: 8px; /*ドットボタンのサイズ*/
-  height: 8px; /*ドットボタンのサイズ*/
+  width: 8px;
+  /*ドットボタンのサイズ*/
+  height: 8px;
+  /*ドットボタンのサイズ*/
   display: block;
   border-radius: 50%;
-  background: #a2a1a1; /*ドットボタンの色*/
+  background: #a2a1a1;
+  /*ドットボタンの色*/
 }
 
 .slick-dots .slick-active button {
-  background: #333; /*ドットボタンの現在地表示の色*/
+  background: #333;
+  /*ドットボタンの現在地表示の色*/
 }
 
 .contents p {
@@ -314,46 +349,49 @@ a:active {
 
 /* お問い合わせボタン */
 a.ask_button {
-	display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-	text-decoration: none;
-	width: 700px;
+  text-decoration: none;
+  width: 700px;
   height: 80px;
-	margin: auto;
+  margin: auto;
   font-size: 24px;
-	padding: 1rem 4rem;
-	background: #fff;
-	color: black;
-	border-radius: 100vh;
-	position: relative;
-	transition: 0.5s;
+  padding: 1rem 4rem;
+  background: #fff;
+  color: black;
+  border-radius: 100vh;
+  position: relative;
+  transition: 0.5s;
 
   margin-bottom: 150px;
 }
+
 a.ask_button::before {
-	content: '';
-	position: absolute;
-	top: calc(50% - 2px);
-	right: 1em;
-	transform: translateY(calc(-50% - 2px)) rotate(45deg);
-	width: 10px;
-	height: 1px;
-	background: #27acd9;
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 1em;
+  transform: translateY(calc(-50% - 2px)) rotate(45deg);
+  width: 10px;
+  height: 1px;
+  background: #27acd9;
 }
+
 a.ask_button::after {
-	content: '';
-	position: absolute;
-	top: 50%;
-	right: 1em;
-	transform: translateY(-50%);
-	width: 50px;
-	height: 1px;
-	background-color: #27acd9;
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 1px;
+  background-color: #27acd9;
 }
+
 a.ask_button:hover {
-	background: #d4eef7;
-	color: #27acd9;
+  background: #d4eef7;
+  color: #27acd9;
 }
 
 
@@ -381,6 +419,7 @@ a.ask_button:hover {
   grid-column: 2;
   /* background-color: #fffbfb; */
 }
+
 .event_lifork {
   grid-column: 3;
   /* background-color: #fffbfb; */
@@ -408,7 +447,8 @@ a.ask_button:hover {
 
 /*アコーディオンタイトル*/
 .title {
-  position: relative; /*+マークの位置基準とするためrelative指定*/
+  position: relative;
+  /*+マークの位置基準とするためrelative指定*/
   cursor: pointer;
   font-size: 20px;
   font-weight: normal;
@@ -425,11 +465,13 @@ a.ask_button:hover {
   height: 2px;
   background-color: #333;
 }
+
 .title::before {
   top: 48%;
   left: 15px;
   transform: rotate(0deg);
 }
+
 .title::after {
   top: 48%;
   left: 15px;
@@ -448,7 +490,8 @@ a.ask_button:hover {
 
 /*アコーディオンで現れるエリア*/
 .box {
-  display: none; /*はじめは非表示*/
+  display: none;
+  /*はじめは非表示*/
   background: #fff;
   margin: 0 3% 3% 3%;
   padding: 3%;
@@ -535,6 +578,7 @@ a:active {
 .about_content {
   margin: 40px;
 }
+
 .about_content h2 {
   text-align: left;
   font-size: 23px;
@@ -544,6 +588,7 @@ a:active {
   text-align: left;
   font-size: 20px;
 }
+
 .about_content li {
   text-align: left;
   list-style-position: inside;
@@ -569,14 +614,19 @@ a:active {
 .voices ul {
   display: flex;
   list-style: none;
-  height:auto;
-  width:88%;
+  height: auto;
+  width: 88%;
   margin-left: auto;
   margin-right: auto;
 }
 
 
-.voice_msg1,.voice_msg3,.voice_msg5,.voice_msg2,.voice_msg4,.voice_msg6{
+.voice_msg1,
+.voice_msg3,
+.voice_msg5,
+.voice_msg2,
+.voice_msg4,
+.voice_msg6 {
 
   margin-top: 20px;
   width: 90%;
@@ -679,7 +729,9 @@ a:active {
 
 }
 
-.voice_img1,.voice_img3,.voice_img5 img {
+.voice_img1,
+.voice_img3,
+.voice_img5 img {
 
   width: 165px;
   margin-left: 10px;
@@ -688,7 +740,9 @@ a:active {
 
 }
 
-.voice_img2,.voice_img4,.voice_img6 img {
+.voice_img2,
+.voice_img4,
+.voice_img6 img {
 
   width: 150px;
   margin-right: 10px;
@@ -700,20 +754,147 @@ a:active {
 
 
 
+/* スポンサー */
+
+.special img {
+  margin-top: 25px;
+  width: 25%;
+  height: auto;
+}
+
+.gold{
+  margin-top: 40px;
+}
+
+.gold-container {
+  display: flex;
+  /* Flexbox を使用して要素を縦方向に配置 */
+  flex-direction: column;
+  /* 要素を縦方向に配置 */
+  align-items: center;
+}
+
+.upper,
+.lower {
+  display: flex;
+  /* Flexbox を使用して要素を横方向に配置 */
+}
+
+.upper img {
+  margin-right: 20px;
+  /* 画像間の隙間を設定 */
+}
+
+.logo_SONY {
+  height: 130px;
+  width: auto;
+}
+
+.logo_日本総研 {
+  margin-top: 35px;
+  height: 70px;
+  width: auto;
+}
+
+.logo_CyberAgent {
+  height: 80px;
+  width: auto;
+}
+
+
+
+
+.DiamondSponsors {
+  margin-top: 40px;
+  text-align: center; /* テキストを中央揃え */
+}
+
+.sponsor-content {
+  display: inline-block; /* テキストと画像を両方とも中央揃えにするために必要 */
+}
+
+.logo_デロイト {
+  height: 100px;
+  width: auto;
+  align-items: center;
+  margin-top: 10px;
+}
 
 
 
 
 
 
+.silver {
+  margin-top: 40px;
+  text-align: center; /* 中央揃え */
+}
+
+.silver-container {
+  display: flex; /* 画像を縦に並べるために Flexbox を使用 */
+  flex-direction: column; /* 子要素を縦に並べる */
+  align-items: center; /* 子要素を中央揃え */
+}
+
+.silver-container img{
+  margin-right: 50px;
+  margin-top: 15px;
+}
+.logo_サイボウズ { 
+  width:auto;
+  height: 100px;
+  margin-left: 40px;
+}
+
+.logo_STORES {
+  width:auto;
+  height: 100px;
+}
 
 
 
 
 
+.supporter{
+  margin-top: 40px;
+}
+
+.supporter-container {
+  display: flex; /* 画像を縦に並べるために Flexbox を使用 */
+  flex-direction: column; /* 子要素を縦に並べる */
+  align-items: center; /* 子要素を中央揃え */
+}
+
+.supporter-container img {
+  margin: 0 10px; /* 画像の間の余白を設定 */
+}
+
+.logo_アドウェイズ{
+  height:130px;
+  width: auto;
+  
+}
+
+.logo_Lenovo{
+  height: 80px;
+  width: auto;
+  margin-top: 100px;
+}
 
 
+.sponsor_content p{
+  color: #5a544b;
+}
 
+.sponsor_content h2{
+  font-weight: bold;
+  font-size: 30px;
+  color: #5a544b;
+}
 
-
-
+.sponsor_content hr{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 1.2px solid
+}
