@@ -74,107 +74,24 @@ body {
   font-size: 30px;
 }
 
-/* 
-.menu1 {
-  position: relative;
-  top: 60px;
-  padding-top: 50px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* 見出し */
 
-.other_programs {
-  margin-top: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+#NEWS,
+#ABOUT,
+#message,
+#timetable,
+#FeaturedContents,
+#voice,
+#FAQ,
+#SPONSOR {
+  font-size: 50px;
 }
-
-.menu2 {
-  margin-top: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.menu3 {
-  margin-top: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.news {
-  margin-top: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.menu4 {
-  position: relative;
-  bottom: 40px;
-  margin-top: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.sponsor{
-  margin-top: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 200px;
-} */
 
 .content {
   margin-top: 200px;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   width: 90%;
   /* max-width: 800px; */
@@ -238,6 +155,11 @@ footer {
   padding-left: 50px;
 }
 
+.KV {
+  padding-top: 60px;
+  padding-bottom: 0px;
+}
+
 .circle_1 {
   width: 370px;
   height: 370px;
@@ -270,7 +192,7 @@ footer {
 
 .contents {
   /* headerとの重なりを防ぐ */
-  margin-top: 80px;
+  /* margin-top: 80px; */
   text-align: center;
 }
 
@@ -354,12 +276,6 @@ img {
   padding: 20px;
 }
 
-ul {
-  margin: 0px;
-  padding: 0;
-  list-style: none;
-}
-
 .data {
   padding-top: 20px;
 }
@@ -405,6 +321,14 @@ a:active {
   grid-gap: 1em 2em;
 }
 
+.timetable p {
+  font-size: 20px;
+}
+
+.timetable h2 {
+  font-size: 25px;
+}
+
 .time {
   grid-column: 1;
   text-align: center;
@@ -412,12 +336,11 @@ a:active {
 
 .event_main {
   grid-column: 2;
-  background-color: rgb(230, 230, 230);
+  /* background-color: #fffbfb; */
 }
-
 .event_lifork {
   grid-column: 3;
-  background-color: rgb(230, 230, 230);
+  /* background-color: #fffbfb; */
 }
 
 /*==================================================
@@ -483,7 +406,7 @@ a:active {
 /*アコーディオンで現れるエリア*/
 .box {
   display: none; /*はじめは非表示*/
-  background: #f3f3f3;
+  background: #fff;
   margin: 0 3% 3% 3%;
   padding: 3%;
 }
@@ -556,111 +479,22 @@ body {
   margin-left: 180px;
   font-size: 30px;
 }
-/* 
-.menu1 {
-  margin-top: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.other_programs {
-  margin-top: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.menu2 {
-  margin-top: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.menu3 {
-  margin-top: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.news {
-  margin-top: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.menu4 {
-  margin-top: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 200px;
-}
-
-.sponsor{
-  margin-top: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 200px;
-} */
 
 .content {
-  margin-top: 200px;
+  margin-top: 150px;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   width: 80%;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 200px;
+}
+
+#message {
+  margin-top: 150px;
 }
 
 header {
@@ -829,15 +663,10 @@ img {
   background: #333; /*ドットボタンの現在地表示の色*/
 }
 
-.contents p {
-  text-align: center;
-  padding: 20px;
-}
-
 ul {
   margin: 0px;
   padding: 0;
-  list-style: none;
+  /* list-style: none; */
 }
 
 .data {
@@ -888,4 +717,41 @@ a:active {
 .event_lifork {
   grid-column: 3;
   background-color: rgb(230, 230, 230);
+}
+
+.about_title {
+  border-bottom: solid 1px #333;
+  height: 60px;
+}
+
+.about_title h4 {
+  float: left;
+  font-size: 40px;
+}
+
+.about_title p {
+  float: right;
+  font-size: 20px;
+}
+
+.about_content {
+  margin: 40px;
+}
+.about_content h2 {
+  text-align: left;
+  font-size: 23px;
+}
+
+.about_content p {
+  text-align: left;
+  font-size: 20px;
+}
+.about_content li {
+  text-align: left;
+  list-style-position: inside;
+  font-size: 20px;
+}
+
+.voices p {
+  text-align: left;
 }
