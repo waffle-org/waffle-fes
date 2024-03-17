@@ -13,6 +13,7 @@ body {
   background: linear-gradient(213deg, rgba(249, 188, 164, 0.64) 5%, rgba(155, 210, 204, 0.64) 35%, rgba(251, 204, 159, 0.64) 65%, rgba(255, 204, 191, 0.64) 94%);
   background-attachment: fixed;
   padding-top: 150px;
+  padding-bottom: 1px;
 }
 
 .waffleimage {
@@ -42,7 +43,7 @@ body {
 }
 
 .headermenu a:hover {
-  color: #ee9ca7;
+  color: #EB5F6E;
 }
 
 
@@ -149,7 +150,7 @@ header {
 
 footer {
   position: absolute;
-  height: 150px;
+  height: 100px;
   width: 100%;
   background-color: #fff;
   background-attachment: scroll;
@@ -166,13 +167,13 @@ footer {
   display: inline-block;
   list-style: none;
   margin-top: 20px;
-  margin-left: 100px;
+  margin-left: 80px;
   font-size: 15px;
 }
 
 .sns {
   float: right;
-  padding-right: 100px;
+  padding-right: 220px;
   margin-top: 20px;
 }
 
@@ -188,12 +189,27 @@ footer {
   padding-top: 10px;
   padding-bottom: 20px;
   display: inline-block;
-  padding-left: 50px;
+  padding-left: 10px;
 }
+
+
+
+
+
+
+
+
+
+
 
 .KV {
   padding-top: 70px;
 }
+
+
+
+
+
 
 .circle_1 {
   width: 370px;
@@ -279,13 +295,13 @@ img {
 
 .slick-prev {
   /*戻る矢印の位置と形状*/
-  left: -1.5%;
+  left: -7.5%;
   transform: rotate(-135deg);
 }
 
 .slick-next {
   /*次へ矢印の位置と形状*/
-  right: -1.5%;
+  right: -7.5%;
   transform: rotate(45deg);
 }
 
@@ -347,7 +363,10 @@ a:active {
   border-radius: 50%;
   width: 160px;
   height: 160px;
-  background: #eb5f6e;
+  /* background: #eb5f6e; */
+  background-image: linear-gradient(#f696a0 0%, #EB5F6E 100%);
+  z-index: 4;
+  
 }
 
 .fixed_btn p1{
@@ -360,6 +379,9 @@ a:active {
   color: #fff;
 }
 
+.fixed_btn:hover{
+  background:#f696a0;
+}
 
 
 /* お問い合わせボタン */
@@ -839,11 +861,16 @@ a:active {
 
 /* 参加者の声 */
 
+.voices h2{
+  font-size: 20px;
+}
+
+
 .voices ul {
   display: flex;
   list-style: none;
   height: auto;
-  width: 88%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -855,8 +882,6 @@ a:active {
 .voice_msg2,
 .voice_msg4,
 .voice_msg6 {
-
-  margin-top: 20px;
   width: 90%;
   height: 60%;
   position: relative;
@@ -946,8 +971,9 @@ a:active {
 
   width: 165px;
   margin-left: 10px;
-  margin-top: 70px;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+
 }
 
 .voice_img2,
@@ -957,8 +983,7 @@ a:active {
   width: 150px;
   margin-right: 10px;
   margin-top: 50px;
-  margin-bottom: 20px;
-}
+  margin-bottom: 10px;
 
 .featured_sub ul {
   display: flex;
@@ -1045,24 +1070,24 @@ a:active {
 }
 
 .silver-container {
-  display: flex; /* 画像を縦に並べるために Flexbox を使用 */
-  flex-direction: column; /* 子要素を縦に並べる */
+  display: flex; 
   align-items: center; /* 子要素を中央揃え */
+  justify-content: center;
 }
 
 .silver-container img{
-  margin-right: 50px;
+  margin-right: 40px;
   margin-top: 15px;
 }
 .logo_サイボウズ { 
   width:auto;
-  height: 100px;
-  margin-left: 40px;
+  height: 80px;
+  margin-left: 20px;
 }
 
 .logo_STORES {
   width:auto;
-  height: 100px;
+  height: 80px;
 }
 
 
@@ -1074,23 +1099,24 @@ a:active {
 }
 
 .supporter-container {
-  display: flex; /* 画像を縦に並べるために Flexbox を使用 */
-  flex-direction: column; /* 子要素を縦に並べる */
+  display: flex; 
   align-items: center; /* 子要素を中央揃え */
+  justify-content: center;
 }
 
 .supporter-container img {
-  margin: 0 10px; /* 画像の間の余白を設定 */
+  margin-right: 20px;
+  margin-top: 15px;
 }
 
 .logo_アドウェイズ{
-  height:130px;
+  height:100px;
   width: auto;
   
 }
 
 .logo_Lenovo{
-  height: 80px;
+  height: 50px;
   width: auto;
   margin-top: 100px;
 }
