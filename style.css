@@ -366,21 +366,21 @@ a:active {
   /* background: #eb5f6e; */
   background-image: linear-gradient(#f696a0 0%, #EB5F6E 100%);
   z-index: 4;
-  
+
 }
 
-.fixed_btn p1{
- font-size: 19px;
- font-weight: bold;
- color: #fff;
-}
-
-.fixed_btn p2{
+.fixed_btn p1 {
+  font-size: 19px;
+  font-weight: bold;
   color: #fff;
 }
 
-.fixed_btn:hover{
-  background:#f696a0;
+.fixed_btn p2 {
+  color: #fff;
+}
+
+.fixed_btn:hover {
+  background: #f696a0;
 }
 
 
@@ -445,6 +445,7 @@ a.ask_button:hover {
   border-bottom: solid 1px #333;
   height: 100px;
 }
+
 .timetable_day2 {
   border-bottom: solid 1px #333;
   height: 100px;
@@ -454,6 +455,7 @@ a.ask_button:hover {
 .timetable_day1 h4 {
   text-align: left;
 }
+
 .timetable_day2 h4 {
   text-align: left;
 }
@@ -461,6 +463,7 @@ a.ask_button:hover {
 .timetable_day1 p {
   text-align: right;
 }
+
 .timetable_day2 p {
   text-align: right;
 }
@@ -663,19 +666,25 @@ footer {
 }
 
 .slider img {
-  width: 100%; /* 画像をスライドに合わせて調整 */
+  width: 100%;
+  /* 画像をスライドに合わせて調整 */
   height: auto;
 }
 
 .slider .slick-slide {
-  transform: scale(0.8); /*左右の画像のサイズを80%に*/
-  transition: all 0.5s; /*拡大や透過のアニメーションを0.5秒で行う*/
-  opacity: 0.5; /*透過50%*/
+  transform: scale(0.8);
+  /*左右の画像のサイズを80%に*/
+  transition: all 0.5s;
+  /*拡大や透過のアニメーションを0.5秒で行う*/
+  opacity: 0.5;
+  /*透過50%*/
 }
 
 .slider .slick-slide.slick-center {
-  transform: scale(1); /*中央の画像のサイズだけ等倍に*/
-  opacity: 1; /*透過なし*/
+  transform: scale(1);
+  /*中央の画像のサイズだけ等倍に*/
+  opacity: 1;
+  /*透過なし*/
 }
 
 /*矢印の設定*/
@@ -683,12 +692,17 @@ footer {
 /*戻る、次へ矢印の位置*/
 .slick-prev,
 .slick-next {
-  position: absolute; /*絶対配置にする*/
+  position: absolute;
+  /*絶対配置にする*/
   top: 42%;
-  cursor: pointer; /*マウスカーソルを指マークに*/
-  outline: none; /*クリックをしたら出てくる枠線を消す*/
-  border-top: 2px solid #666; /*矢印の色*/
-  border-right: 2px solid #666; /*矢印の色*/
+  cursor: pointer;
+  /*マウスカーソルを指マークに*/
+  outline: none;
+  /*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #666;
+  /*矢印の色*/
+  border-right: 2px solid #666;
+  /*矢印の色*/
   height: 15px;
   width: 15px;
 }
@@ -720,15 +734,19 @@ footer {
 .slick-dots button {
   color: transparent;
   outline: none;
-  width: 8px; /*ドットボタンのサイズ*/
-  height: 8px; /*ドットボタンのサイズ*/
+  width: 8px;
+  /*ドットボタンのサイズ*/
+  height: 8px;
+  /*ドットボタンのサイズ*/
   display: block;
   border-radius: 50%;
-  background: #a2a1a1; /*ドットボタンの色*/
+  background: #a2a1a1;
+  /*ドットボタンの色*/
 }
 
 .slick-dots .slick-active button {
-  background: #333; /*ドットボタンの現在地表示の色*/
+  background: #333;
+  /*ドットボタンの現在地表示の色*/
 }
 
 ul {
@@ -764,6 +782,7 @@ a:active {
   border-bottom: solid 1px #333;
   height: 100px;
 }
+
 .timetable_day2 {
   border-bottom: solid 1px #333;
   height: 100px;
@@ -773,6 +792,7 @@ a:active {
 .timetable_day1 h4 {
   text-align: left;
 }
+
 .timetable_day2 h4 {
   text-align: left;
 }
@@ -780,6 +800,7 @@ a:active {
 .timetable_day1 p {
   text-align: right;
 }
+
 .timetable_day2 p {
   text-align: right;
 }
@@ -861,7 +882,7 @@ a:active {
 
 /* 参加者の声 */
 
-.voices h2{
+.voices h2 {
   font-size: 20px;
 }
 
@@ -985,156 +1006,162 @@ a:active {
   margin-top: 50px;
   margin-bottom: 10px;
 
-.featured_sub ul {
-  display: flex;
-  list-style: none;
-}
+  .featured_sub ul {
+    display: flex;
+    list-style: none;
+  }
 
 
 
 
-/* スポンサー */
+  /* スポンサー */
 
-.special img {
-  margin-top: 25px;
-  width: 25%;
-  height: auto;
-}
+  .special img {
+    margin-top: 25px;
+    width: 25%;
+    height: auto;
+  }
 
-.gold{
-  margin-top: 40px;
-}
+  .gold {
+    margin-top: 40px;
+  }
 
-.gold-container {
-  display: flex;
-  /* Flexbox を使用して要素を縦方向に配置 */
-  flex-direction: column;
-  /* 要素を縦方向に配置 */
-  align-items: center;
-}
+  .gold-container {
+    display: flex;
+    /* Flexbox を使用して要素を縦方向に配置 */
+    flex-direction: column;
+    /* 要素を縦方向に配置 */
+    align-items: center;
+  }
 
-.upper,
-.lower {
-  display: flex;
-  /* Flexbox を使用して要素を横方向に配置 */
-}
+  .upper,
+  .lower {
+    display: flex;
+    /* Flexbox を使用して要素を横方向に配置 */
+  }
 
-.upper img {
-  margin-right: 20px;
-  /* 画像間の隙間を設定 */
-}
+  .upper img {
+    margin-right: 20px;
+    /* 画像間の隙間を設定 */
+  }
 
-.logo_SONY {
-  height: 130px;
-  width: auto;
-}
+  .logo_SONY {
+    height: 130px;
+    width: auto;
+  }
 
-.logo_日本総研 {
-  margin-top: 35px;
-  height: 70px;
-  width: auto;
-}
+  .logo_日本総研 {
+    margin-top: 35px;
+    height: 70px;
+    width: auto;
+  }
 
-.logo_CyberAgent {
-  height: 80px;
-  width: auto;
-}
-
-
-
-
-.DiamondSponsors {
-  margin-top: 40px;
-  text-align: center; /* テキストを中央揃え */
-}
-
-.sponsor-content {
-  display: inline-block; /* テキストと画像を両方とも中央揃えにするために必要 */
-}
-
-.logo_デロイト {
-  height: 100px;
-  width: auto;
-  align-items: center;
-  margin-top: 10px;
-}
+  .logo_CyberAgent {
+    height: 80px;
+    width: auto;
+  }
 
 
 
 
+  .DiamondSponsors {
+    margin-top: 40px;
+    text-align: center;
+    /* テキストを中央揃え */
+  }
 
+  .sponsor-content {
+    display: inline-block;
+    /* テキストと画像を両方とも中央揃えにするために必要 */
+  }
 
-.silver {
-  margin-top: 40px;
-  text-align: center; /* 中央揃え */
-}
-
-.silver-container {
-  display: flex; 
-  align-items: center; /* 子要素を中央揃え */
-  justify-content: center;
-}
-
-.silver-container img{
-  margin-right: 40px;
-  margin-top: 15px;
-}
-.logo_サイボウズ { 
-  width:auto;
-  height: 80px;
-  margin-left: 20px;
-}
-
-.logo_STORES {
-  width:auto;
-  height: 80px;
-}
+  .logo_デロイト {
+    height: 100px;
+    width: auto;
+    align-items: center;
+    margin-top: 10px;
+  }
 
 
 
 
 
-.supporter{
-  margin-top: 40px;
-}
 
-.supporter-container {
-  display: flex; 
-  align-items: center; /* 子要素を中央揃え */
-  justify-content: center;
-}
+  .silver {
+    margin-top: 40px;
+    text-align: center;
+    /* 中央揃え */
+  }
 
-.supporter-container img {
-  margin-right: 20px;
-  margin-top: 15px;
-}
+  .silver-container {
+    display: flex;
+    align-items: center;
+    /* 子要素を中央揃え */
+    justify-content: center;
+  }
 
-.logo_アドウェイズ{
-  height:100px;
-  width: auto;
-  
-}
+  .silver-container img {
+    margin-right: 40px;
+    margin-top: 15px;
+  }
 
-.logo_Lenovo{
-  height: 50px;
-  width: auto;
-  margin-top: 100px;
-}
+  .logo_サイボウズ {
+    width: auto;
+    height: 80px;
+    margin-left: 20px;
+  }
+
+  .logo_STORES {
+    width: auto;
+    height: 80px;
+  }
 
 
-.sponsor_content p{
-  color: #5a544b;
-}
 
-.sponsor_content h2{
-  font-weight: bold;
-  font-size: 30px;
-  color: #5a544b;
-}
 
-.sponsor_content hr{
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 40px;
-  border: 1.2px solid
-}
+
+  .supporter {
+    margin-top: 40px;
+  }
+
+  .supporter-container {
+    display: flex;
+    align-items: center;
+    /* 子要素を中央揃え */
+    justify-content: center;
+  }
+
+  .supporter-container img {
+    margin-right: 20px;
+    margin-top: 15px;
+  }
+
+  .logo_アドウェイズ {
+    height: 100px;
+    width: auto;
+
+  }
+
+  .logo_Lenovo {
+    height: 50px;
+    width: auto;
+    margin-top: 100px;
+  }
+
+
+  .sponsor_content p {
+    color: #5a544b;
+  }
+
+  .sponsor_content h2 {
+    font-weight: bold;
+    font-size: 30px;
+    color: #5a544b;
+  }
+
+  .sponsor_content hr {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 1.2px solid
+  }}
