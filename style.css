@@ -1002,11 +1002,13 @@ a:active {
 
 .DiamondSponsors {
   margin-top: 40px;
-  text-align: center; /* テキストを中央揃え */
+  text-align: center;
+  /* テキストを中央揃え */
 }
 
 .sponsor-content {
-  display: inline-block; /* テキストと画像を両方とも中央揃えにするために必要 */
+  display: inline-block;
+  /* テキストと画像を両方とも中央揃えにするために必要 */
 }
 
 .logo_デロイト {
@@ -1018,28 +1020,31 @@ a:active {
 
 .silver {
   margin-top: 40px;
-  text-align: center; /* 中央揃え */
+  text-align: center;
+  /* 中央揃え */
 }
 
 .silver-container {
-  display: flex; /* 画像を縦に並べるために Flexbox を使用 */
-  flex-direction: column; /* 子要素を縦に並べる */
-  align-items: center; /* 子要素を中央揃え */
+  display: flex;
+  align-items: center;
+  /* 子要素を中央揃え */
+  justify-content: center;
 }
 
 .silver-container img {
-  margin-right: 50px;
+  margin-right: 40px;
   margin-top: 15px;
 }
+
 .logo_サイボウズ {
   width: auto;
-  height: 100px;
-  margin-left: 40px;
+  height: 80px;
+  margin-left: 20px;
 }
 
 .logo_STORES {
   width: auto;
-  height: 100px;
+  height: 80px;
 }
 
 .supporter {
@@ -1047,22 +1052,24 @@ a:active {
 }
 
 .supporter-container {
-  display: flex; /* 画像を縦に並べるために Flexbox を使用 */
-  flex-direction: column; /* 子要素を縦に並べる */
-  align-items: center; /* 子要素を中央揃え */
+  display: flex;
+  align-items: center;
+  /* 子要素を中央揃え */
+  justify-content: center;
 }
 
 .supporter-container img {
-  margin: 0 10px; /* 画像の間の余白を設定 */
+  margin-right: 20px;
+  margin-top: 15px;
 }
 
 .logo_アドウェイズ {
-  height: 130px;
+  height: 100px;
   width: auto;
 }
 
 .logo_Lenovo {
-  height: 80px;
+  height: 50px;
   width: auto;
   margin-top: 100px;
 }
