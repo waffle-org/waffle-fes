@@ -167,7 +167,7 @@ footer {
   display: inline-block;
   list-style: none;
   margin-top: 20px;
-  margin-left: 80px;
+  margin-left: 30px;
   font-size: 15px;
 }
 
@@ -709,13 +709,13 @@ footer {
 
 .slick-prev {
   /*戻る矢印の位置と形状*/
-  left: -1.5%;
+  left: -7.5%;
   transform: rotate(-135deg);
 }
 
 .slick-next {
   /*次へ矢印の位置と形状*/
-  right: -1.5%;
+  right: -7.5%;
   transform: rotate(45deg);
 }
 
@@ -1005,7 +1005,7 @@ a:active {
   margin-right: 10px;
   margin-top: 50px;
   margin-bottom: 10px;
-
+}
   .featured_sub ul {
     display: flex;
     list-style: none;
@@ -1165,3 +1165,4 @@ a:active {
   margin-top: 40px;
   border: 1.2px solid
 }
+
