@@ -43,10 +43,8 @@ body {
 }
 
 .headermenu a:hover {
-  color: #EB5F6E;
+  color: #eb5f6e;
 }
-
-
 
 /* 見出し */
 
@@ -66,10 +64,7 @@ body {
   /* 水平中心 */
 
   margin-top: 0%;
-
 }
-
-
 
 #NEWS::before,
 #ABOUT::before,
@@ -87,7 +82,6 @@ body {
   /* 文字の右隣 */
 }
 
-
 #NEWS::after,
 #ABOUT::after,
 #message::after,
@@ -102,16 +96,11 @@ body {
   /* 線の長さ */
   margin-left: 1em;
   /* 文字の右隣 */
-
 }
-
-
 
 /* コンテンツ（白い枠） */
 
-
 .content {
-
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
@@ -155,7 +144,6 @@ footer {
   background-color: #fff;
   background-attachment: scroll;
   /* 重なり防止 */
- 
 }
 
 .footer_ {
@@ -192,24 +180,9 @@ footer {
   padding-left: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
 .KV {
   padding-top: 70px;
 }
-
-
-
-
-
 
 .circle_1 {
   width: 370px;
@@ -353,7 +326,6 @@ a:active {
   text-decoration: none;
 }
 
-
 /* お申し込みボタン */
 
 .fixed_btn {
@@ -364,9 +336,8 @@ a:active {
   width: 160px;
   height: 160px;
   /* background: #eb5f6e; */
-  background-image: linear-gradient(#f696a0 0%, #EB5F6E 100%);
+  background-image: linear-gradient(#f696a0 0%, #eb5f6e 100%);
   z-index: 4;
-
 }
 
 .fixed_btn p1 {
@@ -382,7 +353,6 @@ a:active {
 .fixed_btn:hover {
   background: #f696a0;
 }
-
 
 /* お問い合わせボタン */
 a.ask_button {
@@ -405,7 +375,7 @@ a.ask_button {
 }
 
 a.ask_button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(50% - 2px);
   right: 1em;
@@ -416,7 +386,7 @@ a.ask_button::before {
 }
 
 a.ask_button::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   right: 1em;
@@ -580,11 +550,7 @@ h2 {
   font-size: 1rem;
 }
 
-
-
 /* メッセージ */
-
-
 
 #message {
   margin-top: 150px;
@@ -600,8 +566,6 @@ header {
   /* 重なり防止 */
   z-index: 3;
 }
-
-
 
 .contents {
   /* headerとの重なりを防ぐ */
@@ -789,11 +753,6 @@ a:active {
   font-size: 20px;
 }
 
-
-
-
-
-
 /* about */
 .about_title {
   border-bottom: solid 1px #333;
@@ -836,7 +795,6 @@ a:active {
   font-size: 20px;
 }
 
-
 .voices ul {
   display: flex;
   list-style: none;
@@ -845,7 +803,6 @@ a:active {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 .voice_msg1,
 .voice_msg3,
@@ -939,180 +896,164 @@ a:active {
 .voice_img1,
 .voice_img3,
 .voice_img5 img {
-
   width: 165px;
   margin-left: 10px;
   margin-top: 50px;
   margin-bottom: 10px;
-
 }
 
 .voice_img2,
 .voice_img4,
 .voice_img6 img {
-
   width: 150px;
   margin-right: 10px;
   margin-top: 50px;
   margin-bottom: 10px;
 }
-  .featured_sub ul {
-    display: flex;
-    list-style: none;
-  }
+.featured_sub ul {
+  display: flex;
+  list-style: none;
+}
 
+.featured_main ul {
+  display: flex;
+  list-style: none;
+}
 
+/* スポンサー */
 
+.special img {
+  margin-top: 25px;
+  width: 25%;
+  height: auto;
+}
 
-  /* スポンサー */
+.gold {
+  margin-top: 40px;
+}
 
-  .special img {
-    margin-top: 25px;
-    width: 25%;
-    height: auto;
-  }
+.gold-container {
+  display: flex;
+  /* Flexbox を使用して要素を縦方向に配置 */
+  flex-direction: column;
+  /* 要素を縦方向に配置 */
+  align-items: center;
+}
 
-  .gold {
-    margin-top: 40px;
-  }
+.upper,
+.lower {
+  display: flex;
+  /* Flexbox を使用して要素を横方向に配置 */
+}
 
-  .gold-container {
-    display: flex;
-    /* Flexbox を使用して要素を縦方向に配置 */
-    flex-direction: column;
-    /* 要素を縦方向に配置 */
-    align-items: center;
-  }
+.upper img {
+  margin-right: 20px;
+  /* 画像間の隙間を設定 */
+}
 
-  .upper,
-  .lower {
-    display: flex;
-    /* Flexbox を使用して要素を横方向に配置 */
-  }
+.logo_SONY {
+  height: 130px;
+  width: auto;
+}
 
-  .upper img {
-    margin-right: 20px;
-    /* 画像間の隙間を設定 */
-  }
+.logo_日本総研 {
+  margin-top: 35px;
+  height: 70px;
+  width: auto;
+}
 
-  .logo_SONY {
-    height: 130px;
-    width: auto;
-  }
+.logo_CyberAgent {
+  height: 80px;
+  width: auto;
+}
 
-  .logo_日本総研 {
-    margin-top: 35px;
-    height: 70px;
-    width: auto;
-  }
+.DiamondSponsors {
+  margin-top: 40px;
+  text-align: center;
+  /* テキストを中央揃え */
+}
 
-  .logo_CyberAgent {
-    height: 80px;
-    width: auto;
-  }
+.sponsor-content {
+  display: inline-block;
+  /* テキストと画像を両方とも中央揃えにするために必要 */
+}
 
+.logo_デロイト {
+  height: 100px;
+  width: auto;
+  align-items: center;
+  margin-top: 10px;
+}
 
+.silver {
+  margin-top: 40px;
+  text-align: center;
+  /* 中央揃え */
+}
 
+.silver-container {
+  display: flex;
+  align-items: center;
+  /* 子要素を中央揃え */
+  justify-content: center;
+}
 
-  .DiamondSponsors {
-    margin-top: 40px;
-    text-align: center;
-    /* テキストを中央揃え */
-  }
+.silver-container img {
+  margin-right: 40px;
+  margin-top: 15px;
+}
 
-  .sponsor-content {
-    display: inline-block;
-    /* テキストと画像を両方とも中央揃えにするために必要 */
-  }
+.logo_サイボウズ {
+  width: auto;
+  height: 80px;
+  margin-left: 20px;
+}
 
-  .logo_デロイト {
-    height: 100px;
-    width: auto;
-    align-items: center;
-    margin-top: 10px;
-  }
+.logo_STORES {
+  width: auto;
+  height: 80px;
+}
 
+.supporter {
+  margin-top: 40px;
+}
 
+.supporter-container {
+  display: flex;
+  align-items: center;
+  /* 子要素を中央揃え */
+  justify-content: center;
+}
 
+.supporter-container img {
+  margin-right: 20px;
+  margin-top: 15px;
+}
 
+.logo_アドウェイズ {
+  height: 100px;
+  width: auto;
+}
 
+.logo_Lenovo {
+  height: 50px;
+  width: auto;
+  margin-top: 100px;
+}
 
-  .silver {
-    margin-top: 40px;
-    text-align: center;
-    /* 中央揃え */
-  }
+.sponsor_content p {
+  color: #5a544b;
+}
 
-  .silver-container {
-    display: flex;
-    align-items: center;
-    /* 子要素を中央揃え */
-    justify-content: center;
-  }
+.sponsor_content h2 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #5a544b;
+}
 
-  .silver-container img {
-    margin-right: 40px;
-    margin-top: 15px;
-  }
-
-  .logo_サイボウズ {
-    width: auto;
-    height: 80px;
-    margin-left: 20px;
-  }
-
-  .logo_STORES {
-    width: auto;
-    height: 80px;
-  }
-
-
-
-
-
-  .supporter {
-    margin-top: 40px;
-  }
-
-  .supporter-container {
-    display: flex;
-    align-items: center;
-    /* 子要素を中央揃え */
-    justify-content: center;
-  }
-
-  .supporter-container img {
-    margin-right: 20px;
-    margin-top: 15px;
-  }
-
-  .logo_アドウェイズ {
-    height: 100px;
-    width: auto;
-
-  }
-
-  .logo_Lenovo {
-    height: 50px;
-    width: auto;
-    margin-top: 100px;
-  }
-
-
-  .sponsor_content p {
-    color: #5a544b;
-  }
-
-  .sponsor_content h2 {
-    font-weight: bold;
-    font-size: 30px;
-    color: #5a544b;
-  }
-
-.sponsor_content hr{
+.sponsor_content hr {
   width: 80%;
   margin: 0 auto;
   margin-top: 40px;
-  border: 1.2px solid
+  border: 1.2px solid;
 }
-
