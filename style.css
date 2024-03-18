@@ -1057,3 +1057,8 @@ a:active {
   margin-top: 40px;
   border: 1.2px solid;
 }
+
+.modal {
+  --bs-modal-width: 900px;
+  --bs-modal-padding: 6rem;
+}
