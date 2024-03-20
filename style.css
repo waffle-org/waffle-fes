@@ -383,6 +383,10 @@ ul {
   text-align: right;
 }
 
+.timetable_line {
+  border-top: solid black 1px;
+}
+
 .time {
   grid-column: 1;
   text-align: center;
