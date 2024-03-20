@@ -6,6 +6,8 @@ html {
 
 body {
   overflow: hidden;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
 /* background 背景 */
@@ -307,12 +309,11 @@ a:active {
 
 .about_title h4 {
   float: left;
-  font-size: 40px;
+  font-size: 45px;
 }
 
 .about_title p {
   float: right;
-  font-size: 20px;
 }
 
 .about_content {
@@ -321,7 +322,7 @@ a:active {
 
 .about_content h2 {
   text-align: left;
-  font-size: 23px;
+  font-size: 30px;
 }
 
 .about_content p {
@@ -350,41 +351,50 @@ ul {
   display: grid;
   grid-gap: 1em 2em;
   margin-top: 50px;
+  grid-template-columns: 1fr 7fr 7fr;
 }
 
 .timetable_contents p {
   padding-top: 0px;
 }
 
+.timetable_section {
+  margin: 40px;
+}
+
 .timetable_day1 {
   border-bottom: solid 1px #333;
-  height: 100px;
+  height: 65px;
 }
 
 .timetable_day2 {
   border-bottom: solid 1px #333;
-  height: 100px;
-  margin-top: 40px;
+  height: 65px;
+  margin-top: 0px;
 }
 
 .timetable_day1 h4 {
-  text-align: left;
+  float: left;
+  font-size: 45px;
 }
 
 .timetable_day2 h4 {
-  text-align: left;
+  float: left;
+  font-size: 45px;
 }
 
 .timetable_day1 p {
-  text-align: right;
+  float: right;
+  font-size: 20px;
 }
 
 .timetable_day2 p {
-  text-align: right;
+  float: right;
+  font-size: 20px;
 }
 
 .timetable_line {
-  border-top: solid black 1px;
+  border-top: solid rgb(133, 133, 133) 1px;
 }
 
 .time {
@@ -429,6 +439,18 @@ ul {
 .event_lifork button {
   width: 100%;
   height: 100%;
+}
+
+.event_main button:hover {
+  background-color: orange;
+  color: white;
+  transition-duration: 0.7s;
+}
+
+.event_lifork button:hover {
+  background-color: orange;
+  color: white;
+  transition-duration: 0.7s;
 }
 
 /* timetable中身 モダール */
