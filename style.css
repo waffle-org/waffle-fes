@@ -270,7 +270,6 @@
     /*中央の画像のサイズだけ等倍に*/
     opacity: 1;
     /*透過なし*/
-    
   }
 
   /*矢印の設定*/
@@ -312,8 +311,6 @@
     text-align: center;
     padding: 0%;
   }
-
-
 
   .slick-dots li {
     display: inline-block;
