@@ -817,9 +817,13 @@ a:active {
   /* Flexbox を使用して要素を横方向に配置 */
 }
 
-.upper img {
+.upper,img {
   margin-right: 20px;
   /* 画像間の隙間を設定 */
+}
+
+.lower{
+  margin-right:20px ;
 }
 
 .logo_SONY {
@@ -838,6 +842,11 @@ a:active {
   width: auto;
 }
 
+.logo_unity{
+  height: 80px;
+  width: auto;
+  margin-left: 30px;
+}
 
 
 
