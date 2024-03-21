@@ -476,16 +476,45 @@ ul {
   font-size: 30px;
 }
 
+
+
+
+
+
+
 /* featured コンテンツ*/
-.featured_sub ul {
-  display: flex;
-  list-style: none;
-}
+
 
 .featured_main ul {
   display: flex;
   list-style: none;
 }
+
+
+
+.featured_sub{
+  margin-top: 100px;
+}
+.featured_sub-container {
+  display: flex; /* コンテナ内の要素を横並びに配置 */
+  justify-content: center;
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.featured_sub-container img {
+  margin-right: 30px; /* 画像間の間隔 */
+  max-width: 20%; /* 画像の幅を調整 */
+  height: auto; /* アスペクト比を保つ */
+}
+
+/* 最後の画像にはマージンを適用しない */
+.featured_sub-container img:last-child {
+  margin-right: 0;
+}
+
+
 
 /* voices 参加者の声 */
 .voices h2 {
