@@ -183,6 +183,34 @@
     margin-bottom: 200px;
   }
 
+  /* .message_contents {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-radius: 10px;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    font-size: 20px;
+  }
+
+  .bold_message {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .imp_message {
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 50px;
+    padding-top: 80px;
+    background: linear-gradient(to right, #21ff00 0%, #ffff00 100%);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 150% 20%;
+  } */
+
   .message_contents {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -316,18 +344,13 @@
   }
 
   /* about 概要*/
-  .about_title {
-    border-bottom: solid 1px #333;
-    height: 60px;
-  }
 
-  .about_title h4 {
-    float: left;
+  .about_content h4 {
     font-size: 45px;
   }
 
-  .about_title p {
-    float: right;
+  .day2_contents {
+    margin-top: 100px;
   }
 
   .about_content {
@@ -335,11 +358,26 @@
   }
 
   .about_content h2 {
-    text-align: left;
+    margin-top: 50px;
     font-size: 30px;
+    text-align: left;
   }
 
-  .about_content p {
+  .about_content hr {
+    border: 1.2px solid;
+  }
+  .title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .date {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .about_content {
     text-align: left;
     font-size: 20px;
   }
@@ -350,14 +388,19 @@
     font-size: 20px;
   }
 
+  .attention ul {
+    margin: 0px;
+    padding: 0;
+  }
+
+  .attention li {
+    text-indent: -1.3em;
+    padding-left: 1em;
+  }
+
   /* メッセージ */
   #message {
     margin-top: 150px;
-  }
-
-  ul {
-    margin: 0px;
-    padding: 0;
   }
 
   /* timetable タイムテーブル */
@@ -410,6 +453,7 @@
   .timetable_line {
     border-top: solid rgb(133, 133, 133) 1px;
   }
+
   .time {
     grid-column: 1;
     font-size: 18px;
@@ -497,11 +541,21 @@
     list-style: none;
   }
 
+  .キャリアトーク {
+    margin-top: 40px;
+  }
+
+  .ワークショップ {
+    margin-top: 60px;
+  }
+
   .featured_sub {
     margin-top: 100px;
   }
+
   .featured_sub-container {
-    display: flex; /* コンテナ内の要素を横並びに配置 */
+    display: flex;
+    /* コンテナ内の要素を横並びに配置 */
     justify-content: center;
 
     margin-top: 40px;
@@ -509,9 +563,12 @@
   }
 
   .featured_sub-container img {
-    margin-right: 30px; /* 画像間の間隔 */
-    max-width: 20%; /* 画像の幅を調整 */
-    height: auto; /* アスペクト比を保つ */
+    margin-right: 30px;
+    /* 画像間の間隔 */
+    max-width: 20%;
+    /* 画像の幅を調整 */
+    height: auto;
+    /* アスペクト比を保つ */
   }
 
   /* 最後の画像にはマージンを適用しない */
@@ -1407,6 +1464,7 @@
   .timetable_line {
     border-top: solid rgb(133, 133, 133) 1px;
   }
+
   .time {
     grid-column: 1;
     font-size: 8px;
@@ -1532,7 +1590,8 @@
   }
 
   .featured_sub-container {
-    display: flex; /* コンテナ内の要素を横並びに配置 */
+    display: flex;
+    /* コンテナ内の要素を横並びに配置 */
     justify-content: center;
 
     margin-top: 40px;
@@ -1540,9 +1599,12 @@
   }
 
   .featured_sub-container img {
-    margin-right: 30px; /* 画像間の間隔 */
-    max-width: 20%; /* 画像の幅を調整 */
-    height: auto; /* アスペクト比を保つ */
+    margin-right: 30px;
+    /* 画像間の間隔 */
+    max-width: 20%;
+    /* 画像の幅を調整 */
+    height: auto;
+    /* アスペクト比を保つ */
   }
 
   /* 最後の画像にはマージンを適用しない */
