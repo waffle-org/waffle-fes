@@ -817,7 +817,7 @@ a:active {
   /* Flexbox を使用して要素を横方向に配置 */
 }
 
-.upper,img {
+.upper img {
   margin-right: 20px;
   /* 画像間の隙間を設定 */
 }
