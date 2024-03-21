@@ -521,7 +521,7 @@
     display: flex;
     list-style: none;
     height: auto;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1276,12 +1276,12 @@
   /* about 概要*/
   .about_title {
     border-bottom: solid 1px #333;
-    height: 60px;
+    height: 25px;
   }
 
   .about_title h4 {
     float: left;
-    font-size: 25px;
+    font-size: 15px;
   }
 
   .about_title p {
@@ -1294,12 +1294,13 @@
 
   .about_content h2 {
     text-align: left;
-    font-size: 30px;
+    font-size: 8px;
+    font-weight: bold;
   }
 
   .about_content p {
     text-align: left;
-    font-size: 20px;
+    font-size: 10px;
   }
 
   .about_content li {
