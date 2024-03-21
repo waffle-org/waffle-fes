@@ -76,29 +76,6 @@
     width: 20%;
   }
 
-  .headermenu ul {
-    float: right;
-    margin-right: 50px;
-    margin-top: 20px;
-  }
-
-  .headermenu li {
-    display: inline-block;
-    list-style: none;
-    margin-top: 12px;
-    margin-left: 20px;
-    font-size: 20px;
-  }
-
-  .headermenu a {
-    text-decoration: none;
-    color: #5a544b;
-  }
-
-  .headermenu a:hover {
-    color: #eb5f6e;
-  }
-
   .nav-link {
     font-size: 25px !important;
   }
@@ -199,7 +176,7 @@
     margin-bottom: 200px;
   }
 
-  .contents {
+  .message_contents {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
@@ -848,24 +825,6 @@
     height: 80px;
     width: auto;
     margin-left: 30px;
-  }
-
-  body {
-    overflow: hidden;
-  }
-
-  .background {
-    height: 100%;
-    background: linear-gradient(
-      213deg,
-      rgba(249, 188, 164, 0.64) 5%,
-      rgba(155, 210, 204, 0.64) 35%,
-      rgba(251, 204, 159, 0.64) 65%,
-      rgba(255, 204, 191, 0.64) 94%
-    );
-    background-attachment: fixed;
-    padding-top: 150px;
-    padding-bottom: 1px;
   }
 
   .DiamondSponsors {
@@ -1029,7 +988,7 @@
       rgba(255, 204, 191, 0.64) 94%
     );
     background-attachment: fixed;
-    padding-top: 150px;
+    padding-top: 40px;
     padding-bottom: 1px;
   }
 
@@ -1082,29 +1041,6 @@
     width: 20%;
   }
 
-  .headermenu ul {
-    float: right;
-    margin-right: 50px;
-    margin-top: 20px;
-  }
-
-  .headermenu li {
-    display: inline-block;
-    list-style: none;
-    margin-top: 12px;
-    margin-left: 20px;
-    font-size: 20px;
-  }
-
-  .headermenu a {
-    text-decoration: none;
-    color: #5a544b;
-  }
-
-  .headermenu a:hover {
-    color: #eb5f6e;
-  }
-
   .navbar-toggler {
     margin-left: auto;
     background-color: white;
@@ -1119,7 +1055,7 @@
   #voice,
   #FAQ,
   #SPONSOR {
-    font-size: 50px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     /* 垂直中心 */
@@ -1195,14 +1131,14 @@
 
   /* コンテンツ（白い枠） */
   .content {
-    padding-top: 30px;
+    padding-top: 5px;
     padding-bottom: 30px;
     text-align: center;
     border-radius: 10px;
     width: 80%; /* 要素の幅を設定 */
     margin: 0 auto; /* 水平方向に中央に配置 */
     margin-bottom: 200px;
-    font-size: 20px;
+    font-size: 10px;
     background-color: rgba(255, 255, 255, 0.4);
   }
 
@@ -1236,7 +1172,7 @@
   /* news ニュース */
   .slider {
     /*横幅94%で左右に余白を持たせて中央寄せ*/
-    width: 58%;
+    width: 70%;
     margin: 0 auto;
   }
 
@@ -1325,7 +1261,7 @@
   }
 
   .data {
-    padding-top: 20px;
+    padding-top: 40px;
   }
 
   a {
@@ -1345,7 +1281,7 @@
 
   .about_title h4 {
     float: left;
-    font-size: 45px;
+    font-size: 25px;
   }
 
   .about_title p {
@@ -1854,24 +1790,6 @@
     height: 80px;
     width: auto;
     margin-left: 30px;
-  }
-
-  body {
-    overflow: hidden;
-  }
-
-  .background {
-    height: 100%;
-    background: linear-gradient(
-      213deg,
-      rgba(249, 188, 164, 0.64) 5%,
-      rgba(155, 210, 204, 0.64) 35%,
-      rgba(251, 204, 159, 0.64) 65%,
-      rgba(255, 204, 191, 0.64) 94%
-    );
-    background-attachment: fixed;
-    padding-top: 150px;
-    padding-bottom: 1px;
   }
 
   .DiamondSponsors {
