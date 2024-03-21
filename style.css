@@ -490,6 +490,17 @@
     list-style: none;
   }
 
+  .キャリアトーク{
+    margin-top: 40px;
+  }
+
+  .ワークショップ{
+    margin-top: 60px;
+  }
+
+
+  
+  
   .featured_sub {
     margin-top: 100px;
   }
@@ -521,7 +532,7 @@
     display: flex;
     list-style: none;
     height: auto;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
