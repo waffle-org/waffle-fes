@@ -776,6 +776,10 @@ a.ask_button:hover {
   /* 画像間の隙間を設定 */
 }
 
+.lower{
+  margin-right:20px ;
+}
+
 .logo_SONY {
   height: 130px;
   width: auto;
@@ -791,6 +795,14 @@ a.ask_button:hover {
   height: 80px;
   width: auto;
 }
+
+.logo_unity{
+  height: 80px;
+  width: auto;
+  margin-left: 30px;
+}
+
+
 
 .DiamondSponsors {
   margin-top: 40px;
