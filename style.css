@@ -349,14 +349,14 @@ ul {
 /* timetable タイムテーブル */
 .timetable_contents {
   display: grid;
-  grid-gap: 1em 2em;
+  grid-gap: 0em 2em;
   margin-top: 50px;
   grid-template-columns: 1fr 7fr 7fr;
 }
 
-.timetable_contents p {
+/* .timetable_contents p {
   padding-top: 0px;
-}
+} */
 
 .timetable_section {
   margin: 40px;
@@ -370,7 +370,7 @@ ul {
 .timetable_day2 {
   border-bottom: solid 1px #333;
   height: 65px;
-  margin-top: 0px;
+  margin-top: 115px;
 }
 
 .timetable_day1 h4 {
@@ -396,10 +396,8 @@ ul {
 .timetable_line {
   border-top: solid rgb(133, 133, 133) 1px;
 }
-
 .time {
   grid-column: 1;
-  text-align: center;
   font-size: 18px;
 }
 
@@ -413,15 +411,15 @@ ul {
   background-color: rgb(255 255 255);
 }
 
-.event_main p {
+/* .event_main p {
   padding: 0px;
 }
 
 .event_lifork p {
   padding: 0px;
-}
+} */
 
-.event_main h2 {
+/* .event_main h2 {
   padding: 0px;
   font-size: 20px;
 }
@@ -429,7 +427,7 @@ ul {
 .event_lifork h2 {
   padding: 0px;
   font-size: 20px;
-}
+} */
 
 .event_main button {
   width: 100%;
