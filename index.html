@@ -26,14 +26,14 @@
 
     <!-- ヘッダーメニュー -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: white !important;">
         <!-- 省略… -->
       
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="#ABOUT">ABOUT</a>
@@ -154,7 +154,7 @@
 
 
         <h2 id="message">MESSAGE</h2>
-        <section class="content">
+        <section class="contents">
           <p>「やりたいことを探せ」と大人は言うけれど、そう簡単には見つからない。</br>SNSにもたくさんの情報があるけれど、いったいどれを信じたらいいんだろう？</p>
           <p>いざやりたいことを口にしてみたら、「女の子なんだし違うのにしたら？」「こっちの方があなたに合っているのでは？」なんて言われる。</p>
           <p>
@@ -772,6 +772,14 @@
         let target = $(href == '#' || href == '' ? 'html' : href);
         let position = target.offset().top - $('header').outerHeight(true);
         $('body,html').stop().animate({ scrollTop: position }, speed, 'swing');
+      });
+    });
+  </script>
+
+<script>
+    $(document).ready(function () {
+      $(".navbar-toggler").click(function () {
+        $(".collapse").toggle();
       });
     });
   </script>
