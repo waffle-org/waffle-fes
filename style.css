@@ -176,6 +176,34 @@
     margin-bottom: 200px;
   }
 
+  /* .message_contents {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-radius: 10px;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    font-size: 20px;
+  }
+
+  .bold_message {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .imp_message {
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 50px;
+    padding-top: 80px;
+    background: linear-gradient(to right, #21ff00 0%, #ffff00 100%);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 150% 20%;
+  } */
+
   .message_contents {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -203,6 +231,7 @@
     background-position: left bottom;
     background-size: 150% 20%;
   }
+
 
   /* news ニュース */
   .slider {
