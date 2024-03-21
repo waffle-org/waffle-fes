@@ -15,11 +15,13 @@
 
   .background {
     height: 100%;
-    background: linear-gradient(213deg,
-        rgba(249, 188, 164, 0.64) 5%,
-        rgba(155, 210, 204, 0.64) 35%,
-        rgba(251, 204, 159, 0.64) 65%,
-        rgba(255, 204, 191, 0.64) 94%);
+    background: linear-gradient(
+      213deg,
+      rgba(249, 188, 164, 0.64) 5%,
+      rgba(155, 210, 204, 0.64) 35%,
+      rgba(251, 204, 159, 0.64) 65%,
+      rgba(255, 204, 191, 0.64) 94%
+    );
     background-attachment: fixed;
     padding-top: 150px;
     padding-bottom: 1px;
@@ -133,6 +135,13 @@
     padding-top: 70px;
   }
 
+  .pc {
+    display: block !important;
+  }
+  .sp {
+    display: none !important;
+  }
+
   /* fixed_button お申し込みボタン */
 
   .fixed_btn {
@@ -230,7 +239,6 @@
     background-size: 150% 20%;
   }
 
-
   /* news ニュース */
   .slider {
     /*横幅94%で左右に余白を持たせて中央寄せ*/
@@ -322,8 +330,8 @@
     /*ドットボタンの現在地表示の色*/
   }
 
-  .data {
-    padding-top: 20px;
+  .slider li {
+    padding-top: 40px;
   }
 
   a {
@@ -336,7 +344,6 @@
   }
 
   /* about 概要*/
-
 
   .about_content h4 {
     font-size: 45px;
@@ -354,10 +361,9 @@
     margin-top: 50px;
     font-size: 30px;
     text-align: left;
-
   }
 
-  .about_content hr{
+  .about_content hr {
     border: 1.2px solid;
   }
   .title-container {
@@ -365,13 +371,11 @@
     justify-content: space-between;
     align-items: center;
   }
-  
-  
-.date{
+
+  .date {
     font-size: 20px;
     margin-top: 30px;
   }
-
 
   .about_content {
     text-align: left;
@@ -394,14 +398,10 @@
     padding-left: 1em;
   }
 
-
-
-
   /* メッセージ */
   #message {
     margin-top: 150px;
   }
-
 
   /* timetable タイムテーブル */
   .timetable_contents {
@@ -548,9 +548,6 @@
   .ワークショップ {
     margin-top: 60px;
   }
-
-
-
 
   .featured_sub {
     margin-top: 100px;
@@ -1031,13 +1028,6 @@
   }
 }
 
-
-
-
-
-
-
-
 /* スマホ対応 */
 @media screen and (max-width: 767px) {
   html {
@@ -1054,11 +1044,13 @@
 
   .background {
     height: 100%;
-    background: linear-gradient(213deg,
-        rgba(249, 188, 164, 0.64) 5%,
-        rgba(155, 210, 204, 0.64) 35%,
-        rgba(251, 204, 159, 0.64) 65%,
-        rgba(255, 204, 191, 0.64) 94%);
+    background: linear-gradient(
+      213deg,
+      rgba(249, 188, 164, 0.64) 5%,
+      rgba(155, 210, 204, 0.64) 35%,
+      rgba(251, 204, 159, 0.64) 65%,
+      rgba(255, 204, 191, 0.64) 94%
+    );
     background-attachment: fixed;
     padding-top: 40px;
     padding-bottom: 1px;
@@ -1099,7 +1091,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 80px;
     width: 100%;
     background-color: #fff;
     /* 重なり防止 */
@@ -1108,14 +1099,16 @@
 
   .waffleimage {
     float: left;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 10px;
-    width: 20%;
+    width: 40%;
   }
 
   .navbar-toggler {
     margin-left: auto;
     background-color: white;
+    margin-top: 10px;
+    margin-right: 10px;
   }
 
   /* 見出し */
@@ -1133,7 +1126,7 @@
     /* 垂直中心 */
     justify-content: center;
     /* 水平中心 */
-
+    margin-bottom: 30px;
     margin-top: 0%;
   }
 
@@ -1173,28 +1166,37 @@
     padding-top: 70px;
   }
 
+  .pc {
+    display: none !important;
+  }
+  .sp {
+    display: block !important;
+  }
+
   /* fixed_button お申し込みボタン */
 
   .fixed_btn {
     position: fixed;
     bottom: 50px;
-    right: 50px;
+    right: 20px;
     border-radius: 50%;
-    width: 160px;
-    height: 160px;
+    width: 80px;
+    height: 80px;
     /* background: #eb5f6e; */
     background-image: linear-gradient(#f696a0 0%, #eb5f6e 100%);
     z-index: 4;
   }
 
   .fixed_btn p1 {
-    font-size: 19px;
+    padding-top: 5px;
+    font-size: 9px;
     font-weight: bold;
     color: #fff;
   }
 
   .fixed_btn p2 {
     color: #fff;
+    font-size: 8px;
   }
 
   .fixed_btn:hover {
@@ -1207,34 +1209,32 @@
     padding-bottom: 30px;
     text-align: center;
     border-radius: 10px;
-    width: 80%;
-    /* 要素の幅を設定 */
-    margin: 0 auto;
-    /* 水平方向に中央に配置 */
-    margin-bottom: 200px;
+    width: 80%; /* 要素の幅を設定 */
+    margin: 0 auto; /* 水平方向に中央に配置 */
+    margin-bottom: 80px;
     font-size: 10px;
     background-color: rgba(255, 255, 255, 0.4);
   }
 
-  .contents {
-    padding-top: 30px;
+  .message_contents {
     padding-bottom: 30px;
     text-align: center;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 200px;
-    font-size: 20px;
+    margin-bottom: 100px;
+    font-size: 10px;
+    width: 80%;
   }
 
   .bold_message {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 10px;
   }
 
   .imp_message {
     font-weight: bold;
-    font-size: 60px;
+    font-size: 27px;
     margin-top: 50px;
     padding-top: 80px;
     background: linear-gradient(to right, #21ff00 0%, #ffff00 100%);
@@ -1272,6 +1272,17 @@
     /*透過なし*/
   }
 
+  .slider {
+    margin-top: 50px;
+    width: 80%; /* 必要に応じて幅を調整 */
+  }
+
+  /* スライド要素を中央に配置 */
+  .slider li {
+    text-align: center;
+    padding-right: 20px;
+  }
+
   /*矢印の設定*/
 
   /*戻る、次へ矢印の位置*/
@@ -1279,7 +1290,7 @@
   .slick-next {
     position: absolute;
     /*絶対配置にする*/
-    top: 42%;
+    top: 22%;
     cursor: pointer;
     /*マウスカーソルを指マークに*/
     outline: none;
@@ -1309,6 +1320,7 @@
   .slick-dots {
     text-align: center;
     margin: 20px 0 0 0;
+    padding-left: 0px;
   }
 
   .slick-dots li {
@@ -1350,12 +1362,12 @@
   /* about 概要*/
   .about_title {
     border-bottom: solid 1px #333;
-    height: 60px;
+    height: 25px;
   }
 
   .about_title h4 {
     float: left;
-    font-size: 25px;
+    font-size: 15px;
   }
 
   .about_title p {
@@ -1368,23 +1380,33 @@
 
   .about_content h2 {
     text-align: left;
-    font-size: 30px;
+    font-size: 8px;
+    font-weight: bold;
   }
 
   .about_content p {
     text-align: left;
-    font-size: 20px;
+    font-size: 10px;
   }
 
   .about_content li {
     text-align: left;
     list-style-position: inside;
-    font-size: 20px;
+    font-size: 10px;
+  }
+
+  .attention li {
+    text-indent: -1.3em;
+    padding-left: 15px;
   }
 
   /* メッセージ */
   #message {
-    margin-top: 150px;
+    margin-top: 100px;
+  }
+
+  .attention {
+    padding-left: 0px !important;
   }
 
   ul {
@@ -1410,33 +1432,33 @@
 
   .timetable_day1 {
     border-bottom: solid 1px #333;
-    height: 65px;
+    height: 30px;
   }
 
   .timetable_day2 {
     border-bottom: solid 1px #333;
-    height: 65px;
-    margin-top: 115px;
+    height: 30px;
+    margin-top: 35px;
   }
 
   .timetable_day1 h4 {
     float: left;
-    font-size: 45px;
+    font-size: 20px;
   }
 
   .timetable_day2 h4 {
     float: left;
-    font-size: 45px;
+    font-size: 20px;
   }
 
   .timetable_day1 p {
     float: right;
-    font-size: 20px;
+    font-size: 10px;
   }
 
   .timetable_day2 p {
     float: right;
-    font-size: 20px;
+    font-size: 10px;
   }
 
   .timetable_line {
@@ -1445,7 +1467,7 @@
 
   .time {
     grid-column: 1;
-    font-size: 18px;
+    font-size: 8px;
   }
 
   .event_main {
@@ -1458,23 +1480,23 @@
     background-color: rgb(255 255 255);
   }
 
-  /* .event_main p {
-  padding: 0px;
-}
+  .event_main p {
+    font-size: 8px;
+  }
 
-.event_lifork p {
-  padding: 0px;
-} */
+  .event_lifork p {
+    font-size: 8px;
+  }
 
-  /* .event_main h2 {
-  padding: 0px;
-  font-size: 20px;
-}
+  .event_main h2 {
+    padding: 0px;
+    font-size: 8px;
+  }
 
-.event_lifork h2 {
-  padding: 0px;
-  font-size: 20px;
-} */
+  .event_lifork h2 {
+    padding: 0px;
+    font-size: 8px;
+  }
 
   .event_main button {
     width: 100%;
@@ -1511,7 +1533,7 @@
 
   .modal_description p {
     text-align: left;
-    font-size: 20px;
+    font-size: 13px;
     font-weight: 500;
   }
 
@@ -1520,18 +1542,51 @@
   }
 
   .speaker {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   /* featured コンテンツ*/
 
+  .featured_main {
+    padding-top: 25px;
+  }
+
   .featured_main ul {
     display: flex;
     list-style: none;
+    padding-left: 0px;
+  }
+
+  .career_talk {
+    padding: 0px 10px;
+  }
+
+  .career_talk h4 {
+    font-size: 15px;
+  }
+
+  .career_talk p {
+    font-size: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .work_shop {
+    padding: 0px 10px;
+  }
+
+  .featured_main img {
+    padding-top: 20px;
   }
 
   .featured_sub {
-    margin-top: 100px;
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .featured_sub h4 {
+    font-size: 15px;
   }
 
   .featured_sub-container {
@@ -1566,9 +1621,7 @@
     display: flex;
     list-style: none;
     height: auto;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
   }
 
   .voice_msg1,
@@ -1585,7 +1638,7 @@
     border: 2px solid #333;
     background-color: #fff;
     color: #333;
-    font-size: 17px;
+    font-size: 6px;
   }
 
   .voice_msg1:before {
@@ -1663,7 +1716,7 @@
   .voice_img1,
   .voice_img3,
   .voice_img5 img {
-    width: 165px;
+    width: 100px;
     margin-left: 10px;
     margin-top: 50px;
     margin-bottom: 10px;
@@ -1672,7 +1725,7 @@
   .voice_img2,
   .voice_img4,
   .voice_img6 img {
-    width: 150px;
+    width: 100px;
     margin-right: 10px;
     margin-top: 50px;
     margin-bottom: 10px;
@@ -1704,7 +1757,7 @@
     position: relative;
     /*+マークの位置基準とするためrelative指定*/
     cursor: pointer;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: normal;
     padding: 3% 3% 3% 50px;
     transition: all 0.5s ease;
@@ -1763,18 +1816,17 @@
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
-    width: 700px;
-    height: 80px;
+    width: 80%;
+    height: 60px;
     margin: auto;
-    font-size: 24px;
+    font-size: 15px;
     padding: 1rem 4rem;
     background: #fff;
     color: black;
     border-radius: 100vh;
     position: relative;
     transition: 0.5s;
-
-    margin-bottom: 150px;
+    margin-bottom: 70px;
   }
 
   a.ask_button::before {
@@ -1810,16 +1862,16 @@
     text-align: center;
     background-color: #fff;
     border-radius: 10px;
-    width: 980px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 200px;
+    margin-bottom: 80px;
   }
 
   /* sponser スポンサー */
   .special img {
     margin-top: 25px;
-    width: 25%;
+    width: 60%;
     height: auto;
   }
 
@@ -1842,34 +1894,38 @@
   }
 
   .upper img {
-    margin-right: 20px;
+    margin-right: 10px;
     /* 画像間の隙間を設定 */
   }
 
   .lower {
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 30px;
   }
 
   .logo_SONY {
-    height: 130px;
+    height: 50px;
     width: auto;
+    padding-left: 5px;
+    padding-top: 5px;
   }
 
   .logo_日本総研 {
-    margin-top: 35px;
-    height: 70px;
+    margin-top: 15px;
+    height: 30px;
     width: auto;
   }
 
   .logo_CyberAgent {
-    height: 80px;
+    height: 33px;
     width: auto;
   }
 
   .logo_unity {
-    height: 80px;
+    height: 35px;
     width: auto;
-    margin-left: 30px;
+    margin-left: 20px;
   }
 
   .DiamondSponsors {
@@ -1884,10 +1940,11 @@
   }
 
   .logo_デロイト {
-    height: 100px;
+    height: 40px;
     width: auto;
     align-items: center;
     margin-top: 10px;
+    margin-bottom: 30px;
   }
 
   .silver {
@@ -1901,6 +1958,7 @@
     align-items: center;
     /* 子要素を中央揃え */
     justify-content: center;
+    margin-bottom: 20px;
   }
 
   .silver-container img {
@@ -1910,13 +1968,14 @@
 
   .logo_サイボウズ {
     width: auto;
-    height: 80px;
+    height: 40px;
     margin-left: 20px;
   }
 
   .logo_STORES {
     width: auto;
-    height: 80px;
+    height: 30px;
+    margin-left: 25px;
   }
 
   .supporter {
@@ -1936,30 +1995,32 @@
   }
 
   .logo_アドウェイズ {
-    height: 100px;
+    height: 30px;
     width: auto;
   }
 
   .logo_Lenovo {
-    height: 50px;
+    height: 20px;
     width: auto;
     margin-top: 100px;
   }
 
   .sponsor_content p {
+    padding: 25px 15px;
+    font-size: 10px;
     color: #5a544b;
   }
 
   .sponsor_content h2 {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     color: #5a544b;
   }
 
   .sponsor_content hr {
     width: 80%;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 10px;
     border: 1.2px solid;
   }
 
@@ -1976,21 +2037,20 @@
 
   .footer_ {
     float: left;
-    margin-top: 20px;
+    padding-left: 5px;
   }
 
   .footer_ li {
     display: inline-block;
     list-style: none;
-    margin-top: 20px;
-    margin-left: 80px;
-    font-size: 15px;
+    margin-top: 10px;
+    font-size: 4.5px;
   }
 
   .sns {
     float: right;
-    padding-right: 220px;
-    margin-top: 20px;
+    margin-top: 2px;
+    margin-right: 5px;
   }
 
   .sns a {
@@ -1998,7 +2058,7 @@
   }
 
   .sns img {
-    width: 50px;
+    width: 15px;
   }
 
   .sns li {
