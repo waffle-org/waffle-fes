@@ -1385,8 +1385,7 @@
   }
 
   .about_content p {
-    text-align: left;
-    font-size: 10px;
+    font-size: 6px;
   }
 
   .about_content li {
@@ -1398,6 +1397,31 @@
   .attention li {
     text-indent: -1.3em;
     padding-left: 15px;
+  }
+
+  .title-container {
+    display: flex; /* 要素を横並びにする */
+    align-items: center; /* 項目を垂直方向に中央揃えする */
+    justify-content: space-between; /* 要素を水平方向に等間隔で配置する */
+  }
+
+  .title-container h4 {
+    margin-bottom: 0px;
+  }
+
+  .date {
+    margin-top: 13px;
+    margin-bottom: 2px;
+  }
+
+  .day1_contents hr {
+    margin-top: 2px;
+    margin-bottom: 5px;
+  }
+
+  .day2_contents hr {
+    margin-top: 2px;
+    margin-bottom: 5px;
   }
 
   /* メッセージ */
