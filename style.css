@@ -1008,7 +1008,7 @@
     width: 100%;
     background-color: #fff;
     background-attachment: scroll;
-    /* 重なり防止 */
+    
   }
 
   .footer_ {
@@ -1026,7 +1026,7 @@
 
   .sns {
     float: right;
-    padding-right: 220px;
+    padding-right: 120px;
     margin-top: 20px;
   }
 
