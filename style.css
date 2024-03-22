@@ -83,7 +83,7 @@
     width: 20%;
   }
 
-  .navbar-nav_mr-auto ul{
+  .navbar-nav_mr-auto ul {
     float: right;
     margin-right: 50px;
     margin-top: 20px;
@@ -97,19 +97,18 @@
     font-size: 23px;
   }
 
-  .navbar-nav_mr-auto li:last-child{
+  .navbar-nav_mr-auto li:last-child {
     margin-right: 40px;
   }
-  
+
   .navbar-nav_mr-auto a {
     text-decoration: none;
     color: #5a544b;
   }
-  
+
   .navbar-nav_mr-auto a:hover {
     color: #eb5f6e;
   }
-
 
   /* 見出し */
   .contents {
@@ -516,19 +515,16 @@
   padding: 0px;
 } */
 
+  .event_main h2 {
+    padding: 0px;
+    font-size: 20px;
+  }
 
-
-.event_main h2 {
-  padding: 0px;
-  font-size: 20px;
-}
-
-.event_lifork h2 {
-  padding: 0px;
-  font-size: 20px;
-} */
-
-  .event_main button {
+  .event_lifork h2 {
+    padding: 0px;
+    font-size: 20px;
+  }
+  */ .event_main button {
     width: 100%;
     height: 100%;
   }
@@ -672,7 +668,6 @@
     content: "";
   }
 
-
   .voice_msg5:before {
     position: absolute;
     top: 100%;
@@ -705,7 +700,6 @@
     margin-bottom: 10px;
   }
 
-
   .voice_img2 img {
     width: 150px;
     margin-right: 10px;
@@ -713,12 +707,11 @@
     margin-bottom: 10px;
   }
 
-  .voice_img6 img{
+  .voice_img6 img {
     width: 140px;
     margin-right: 10px;
     margin-top: 50px;
     margin-bottom: 10px;
-
   }
   /* FAQ 質問 */
   /*==================================================
@@ -950,11 +943,10 @@
     margin-top: 15px;
   }
 
-
   .silver-container img:last-child {
     margin-right: 0;
   }
-  
+
   .logo_サイボウズ {
     width: auto;
     height: 50px;
