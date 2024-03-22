@@ -4,16 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
   <title>Document</title>
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" type="text/css"
     href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <script src="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -25,38 +25,7 @@
         class="waffleimage"></a>
 
     <!-- ヘッダーメニュー -->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: white !important;">
-        <!-- 省略… -->
-      
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav_mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#ABOUT">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#message">MESSAGE</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#timetable">TIMETABLE</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#FAQ">FAQ</a>
-              </li>
-              <!-- ドロップダウンメニュー省略… -->
-            </ul>
-            <!-- フォーム省略… -->
-          </div>
-      
-        <!-- 省略… -->
-    </nav>
-
-
-    <!-- <div class="headermenu">
+    <div class="headermenu">
       <ul>
         <li><a href="#ABOUT">ABOUT</a></li>
         <li><a href="#message">MESSAGE</a></li>
@@ -64,8 +33,7 @@
         <li><a href="#FAQ">FAQ</a></li>
       </ul>
     </div>
-    </div> -->
-
+    </div>
   </header>
 
 
@@ -77,8 +45,7 @@
   <main>
     <!-- KV -->
     <div class="KV">
-      <img class="pc" src="wafflefes_kv_3.jpg">
-      <img class="sp" src="WF_SP.jpg">
+      <img src="wafflefes_kv_3.jpg">
     </div>
 
 
@@ -93,7 +60,7 @@
 
         <button type="button" class="fixed_btn" onclick="location.href='https://waffle-fes2024.peatix.com'">
           <p1>お申し込みは<br>こちら</p1><br>
-          <p2>5.26 SUN</p2>
+          <p2>5.26 SAT</p2>
         </button>
 
 
@@ -101,10 +68,12 @@
         <section class="content">
           <ul class="slider">
             <li>
+              <img class="slider-img" src="いちご.jpeg" alt="">
               <time class="data">2024.1.15</time>
               <p>登壇者に◯◯さんが決定！！</p>
             </li>
             <li>
+              <img class="slider-img" src="いちご2.jpeg" alt="">
               <time class="data">2024.3.20</time>
               <p>Waffle Fesサイトを公開しました!!</p>
             </li>
@@ -116,63 +85,60 @@
         <h2 id="ABOUT">ABOUT</h2>
         <section class="content">
           <div class="about_content">
-            <div class="day1_contents">
-              <div class="title-container">
+            <div class="about_title">
               <h4>Day１</h4>
-              <p class="date">2024.05.25(土)</p>
-              </div>
-              <hr>
+              <p>2024.05.25(土)</p>
+            </div>
             <h2>「Technovation Girls（テクノベーションガールズ）」<br>日本リージョン公式ピッチイベント</h2>
             <p>※会場参加は関係者に限定させていただいています。</p>
+
+            <div class="about_title">
+              <h4>Day２</h4>
+              <p>2024.05.26(日) 10:00-17:00（受付開始 9:30）</p>
             </div>
 
-            <div class="day2_contents">
-              <div class="title-container">
-                <h4>Day２</h4>
-                <p class="date">2024.05.26(日) 10:00-17:00（受付開始 9:30）</p>
-              </div>
-              
-              <hr>
-              
-              <h2>Conference ＆ Workshop</h2>
-              <p>参加費　無料（事前登録制）</p>
-              <h2>Access</h2>
-              <p>JR原宿駅周辺（東京都渋谷区）
-                ※会場の詳細は、お申込みいただいた方に別途ご案内します。
-                ※オンライン配信あり（一部コンテンツを除く）。
-              </p>
+            <h2>Conference ＆ Workshop</h2>
+            <p>参加費　無料（事前登録制）</p>
+            <div class="about_detail">
+            <h2>Access</h2>
+            <p>JR原宿駅周辺（東京都渋谷区）
+              ※会場の詳細は、お申込みいただいた方に別途ご案内します。
+              ※オンライン配信あり（一部コンテンツを除く）。
+            </p>
             </div>
-            
-
-
+            <div class="about_detail">
             <h2>注意事項</h2>
             <ul class="attention">
-              <li>申込者が多数の場合は、抽選とさせていただきます。</li>
-              <li>5月25日（土）の「Technovation Girls 日本リージョン公式ピッチイベント」は、一般の方は会場参加はできません。</li>
-              <li>オンライン配信にてご視聴ください。</li>
-              <li>ワークショップの一部は、別途、事前のお申込みが必要です。</li>
-              <li>イベントの内容は、予告なく変更／中止させていただく場合がございます。</li>
-              <li>会場内では、Waffleや取材メディアによる写真や動画撮影が行われる予定です。会場内の参加者が映り込む場合があります。また、後日露出／掲載される場合がありますので、あらかじめご了承ください。</li>
+              <li><p>申込者が多数の場合は、抽選とさせていただきます。</p></li>
+              <li><p>5月25日（土）の「Technovation Girls 日本リージョン公式ピッチイベント」は、一般の方は会場参加はできません。</p></li>
+              <li><p>オンライン配信にてご視聴ください。</p></li>
+              <li><p>ワークショップの一部は、別途、事前のお申込みが必要です。</p></li>
+              <li><p>イベントの内容は、予告なく変更／中止させていただく場合がございます。</p></li>
+              <li><p>会場内では、Waffleや取材メディアによる写真や動画撮影が行われる予定です。会場内の参加者が映り込む場合があります。また、後日露出／掲載される場合がありますので、あらかじめご了承ください。</p></li>
             </ul>
+          </div>
           </div>
         </section>
 
 
 
 
+
+
+
         <h2 id="message">MESSAGE</h2>
-        <section class="message_contents">
-          <p>「やりたいことを探せ」と大人は言うけれど、そう簡単には見つからない。</br>SNSにもたくさんの情報があるけれど、いったいどれを信じたらいいんだろう？</p>
+        <section class="content">
+          <p>「やりたいことを探せ」と大人は言うけれど、そう簡単には見つからない。SNSにもたくさんの情報があるけれど、いったいどれを信じたらいいんだろう？</p>
           <p>いざやりたいことを口にしてみたら、「女の子なんだし違うのにしたら？」「こっちの方があなたに合っているのでは？」なんて言われる。</p>
           <p>
-            そこでわたしたちWaffleは、将来を考える女子およびジェンダーマイノリティのみなさんに向けたイベントを開催することにしました。<span class="bold_message">Waffleの目指す「ITで楽しく人生を切り拓く」ことをもっと身近に感じてもらうために、IT業界で生き生きと働く女性とみなさんをつなぐための場所</span>です。
+            そこでわたしたちWaffleは、将来を考える女子およびジェンダーマイノリティのみなさんに向けたイベントを開催することにしました。Waffleの目指す「ITで楽しく人生を切り拓く」ことをもっと身近に感じてもらうために、IT業界で生き生きと働く女性とみなさんをつなぐための場所です。
           </p>
-          <span class="bold_message">ITスキルは、令和の時代の「手に職」。</span>
+          <p>ITスキルは、令和の時代の「手に職」。</p>
           <p>時代が変わり、働き方が変わり、次々と塗り替わっていく価値観の最先端をひた走る皆さんが、自分が主人公の人生を描けるように。</p>
-          <p>女子とノンバイナリーが、もっともっと、社会で翼を広げるために。<span class="bold_message"><br>願わくば、テックを味方にできるように。</span></p>
+          <p>女子とノンバイナリーが、もっともっと、社会で翼を広げるために。願わくば、テックを味方にできるように。</p>
           <p>イベントに来るにはあらゆるハードルがあることは、わたしたちにもよく分かる。同世代の友達は、まだ将来のことなんて考えていないかも。</p>
           <p>でも、一歩を踏み出した人だけが出会える選択肢があって、それを切り拓くことができるのは、ほかでもない自分自身です。</p>
-          <span class="imp_message">さあ、テックとともに、未来を手に入れよう。</span>
+          <p>さあ、テックとともに、未来を手に入れよう。</p>
         </section>
 
 
@@ -180,26 +146,26 @@
         <h2 id="timetable">TIMETABLE</h2>
         <section class="content">
           <div class="timetable_section">
-            <div class="timetable_day1">
-              <h4>Day１</h4>
-              <p>2024.05.25(土)</p>
-            </div>
-            <p>Technovation Girls 日本リージョン公式ピッチイベント</p>
+          <div class="timetable_day1">
+            <h4>Day１</h4>
+            <p>2024.05.25(土)</p>
+          </div>
+              <p>Technovation Girls 日本リージョン公式ピッチイベント</p>
 
-            <div class="timetable_day2">
-              <h4>Day２</h4>
-              <p>2024.05.26(日)</p>
-            </div>
+          <div class="timetable_day2">
+            <h4>Day２</h4>
+            <p>2024.05.26(日)</p>
+          </div>
 
-            <div class="timetable_contents">
-              <div class="timetable_line" style="grid-column: 2/5; grid-row: 1/1;"></div>
-              <div class="timetable_line" style="grid-column: 2/5; grid-row: 6/6;"></div>
-              <div class="timetable_line" style="grid-column: 2/5; grid-row: 12/12;"></div>
-              <div class="timetable_line" style="grid-column: 2/5; grid-row: 18/18;"></div>
-              <div class="timetable_line" style="grid-column: 2/5; grid-row: 24/24;"></div>
-              <div class="timetable_line" style="grid-column: 2/5; grid-row: 30/30;"></div>
-              <div class="timetable_line" style="grid-column: 2/5; grid-row: 36/36;"></div>
-              <div class="timetable_line" style="grid-column: 2/5; grid-row: 42/42;"></div>
+          <div class="timetable_contents">
+            <div class="timetable_line" style="grid-column: 2/5; grid-row: 1/1;"></div>
+            <div class="timetable_line" style="grid-column: 2/5; grid-row: 6/6;"></div>
+            <div class="timetable_line" style="grid-column: 2/5; grid-row: 12/12;"></div>
+            <div class="timetable_line" style="grid-column: 2/5; grid-row: 18/18;"></div>
+            <div class="timetable_line" style="grid-column: 2/5; grid-row: 24/24;"></div>
+            <div class="timetable_line" style="grid-column: 2/5; grid-row: 30/30;"></div>
+            <div class="timetable_line" style="grid-column: 2/5; grid-row: 36/36;"></div>
+            <div class="timetable_line" style="grid-column: 2/5; grid-row: 42/42;"></div>
 
               <p class="time" style="grid-row: 1/1">10:00</p>
               <p class="time" style="grid-row: 6/6">11:00</p>
@@ -212,79 +178,79 @@
 
 
 
-              <div class="event_main" style="grid-row: 1/5">
-                <button type="button" data-bs-toggle="modal" data-bs-target="#main_1" class="btn">
-                  <p>10:00-10:50</p>
-                  <h2>Welcome to Waffle Festival!!</h2>
-              </div>
+            <div class="event_main" style="grid-row: 1/5">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#main_1" class="btn">
+                <p>10:00-10:50</p>
+                <h2>Welcome to Waffle Festival!!</h2>
+            </div> 
 
-              <div class="event_main" style="grid-row: 7/9">
-                <button type="button" data-bs-toggle="modal" data-bs-target="#main_2" class="btn">
-                  <p>11:10-11:30</p>
-                  <h2>Waffle College 座談会</h2>
-              </div>
-              <div class="event_main" style="grid-row: 10/13">
-                <button type="button" data-bs-toggle="modal" data-bs-target="#main_3" class="btn">
-                  <p>11:40-12:10</p>
-                  <h2>アメリカ大使館に聞く！<br>米国留学AtoZ</h2>
-              </div>
-              <div class="event_main" style="grid-row: 15/19">
-                <button type="button" data-bs-toggle="modal" data-bs-target="#main_4" class="btn">
-                  <p>12:30-13:10</p>
-                  <h2>AIと生きる、AIを活かす<br>（AIのある世界で、私たちはどう<br>ふるまうか？）</h2>
-              </div>
-              <div class="event_main" style="grid-row: 20/23">
-                <button type="button" data-bs-toggle="modal" data-bs-target="#main_5" class="btn">
-                  <p>13:20-13:50</p>
-                  <h2>仕事・生活・私　もしくは　人生を楽しみながら仕事する！働くわたしの<br>ライフレッスン</h2>
-              </div>
-              <div class="event_main" style="grid-row: 24/27">
-                <button type="button" data-bs-toggle="modal" data-bs-target="#main_6" class="btn">
-                  <p>14:00-14:30</p>
-                  <h2>わたしがエンジニアになるまで</h2>
-              </div>
-              <div class="event_main" style="grid-row: 28/31">
-                <button type="button" data-bs-toggle="modal" data-bs-target="#main_7" class="btn">
-                  <p>14:40-15:10</p>
-                  <h2>タイトル未定 SONY</h2>
-              </div>
-              <div class="event_main" style="grid-row: 35/41">
-                <button type="button" data-bs-toggle="modal" data-bs-target="#main_8" class="btn">
-                  <p>15:50-16:50</p>
-                  <h2>身近な課題をITで解決！<br>アイデアワークショップ</h2>
-              </div>
-              <div class="event_main" style="grid-row: 41/42">
-                <button type="button" data-bs-toggle="modal" data-bs-target="#main_9" class="btn">
-                  <p>16:50-17:00</p>
-                  <h2>写真撮影・閉会の言葉</h2>
-              </div>
-              <!-- lifork -->
-              <div class="event_lifork" style="grid-row: 6/18">
-                <button type="button" data-bs-toggle="modal" data-bs-target="#lifork_1" class="btn">
-                  <p>11:00-13:00</p>
-                  <h2>タイトル未定　ワークショップ</h2>
-              </div>
-              <div class="event_lifork" style="grid-row: 20/25">
-                <button type="button" data-bs-toggle="modal" data-bs-target="#lifork_2" class="btn">
-                  <p>13:20-14:10</p>
-                  <h2>気づこう、無意識の思い込み</h2>
-              </div>
-              <div class="event_lifork" style="grid-row: 27/30">
-                <button type="button" data-bs-toggle="modal" data-bs-target="#lifork_3" class="btn">
-                  <p>14:30-15:00</p>
-                  <h2>さまざまな領域における<br>IT技術職とDEIとの関わり</h2>
-              </div>
-              <div class="event_lifork" style="grid-row: 31/34">
-                <button type="button" data-bs-toggle="modal" data-bs-target="#lifork_4" class="btn">
-                  <p>15:10-15:40</p>
-                  <h2>タイトル未定 STORES</h2>
-              </div>
-
+            <div class="event_main" style="grid-row: 7/9">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#main_2" class="btn">
+                <p>11:10-11:30</p>
+                <h2>Waffle College 座談会</h2>
             </div>
+            <div class="event_main" style="grid-row: 10/13">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#main_3" class="btn">
+                <p>11:40-12:10</p>
+                <h2>アメリカ大使館に聞く！<br>米国留学AtoZ</h2>
+              </div>
+            <div class="event_main" style="grid-row: 15/19">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#main_4" class="btn">
+                <p>12:30-13:10</p>
+                <h2>AIと生きる、AIを活かす<br>（AIのある世界で、私たちはどうふるまうか？）</h2>
+            </div>
+            <div class="event_main" style="grid-row: 20/23">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#main_5" class="btn">
+                <p>13:20-13:50</p>
+                <h2>仕事・生活・私　もしくは　人生を楽しみながら仕事する！働くわたしのライフレッスン</h2>
+              </div>
+            <div class="event_main" style="grid-row: 24/27">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#main_6" class="btn">
+                <p>14:00-14:30</p>
+                <h2>わたしがエンジニアになるまで</h2>
+            </div>
+            <div class="event_main" style="grid-row: 28/31">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#main_7" class="btn">
+                <p>14:40-15:10</p>
+                <h2>タイトル未定 SONY</h2>
+            </div>
+            <div class="event_main" style="grid-row: 35/41">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#main_8" class="btn">
+                <p>15:50-16:50</p>
+                <h2>身近な課題をITで解決！<br>アイデアワークショップ</h2>
+            </div>
+            <div class="event_main" style="grid-row: 41/42">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#main_9" class="btn">
+                <p>16:50-17:00</p>
+                <h2>写真撮影・閉会の言葉</h2>
+            </div>
+<!-- lifork -->
+            <div class="event_lifork" style="grid-row: 6/18">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#lifork_1" class="btn">
+                <p>11:00-13:00</p>
+                <h2>タイトル未定　ワークショップ</h2>
+            </div>
+            <div class="event_lifork" style="grid-row: 20/25">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#lifork_2" class="btn">
+                <p>13:20-14:10</p>
+                <h2>気づこう、無意識の思い込み</h2>
+            </div>
+            <div class="event_lifork" style="grid-row: 27/30">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#lifork_3" class="btn">
+                <p>14:30-15:00</p>
+                <h2>さまざまな領域における<br>IT技術職とDEIとの関わり</h2>
+            </div>
+            <div class="event_lifork" style="grid-row: 31/34">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#lifork_4" class="btn">
+                <p>15:10-15:40</p>
+                <h2>タイトル未定 STORES</h2>
+              </div>
 
-          </div>
+</div>
 
-          <!-- modal main-->
+</div>
+
+<!-- modal main-->
 
           <div class="modal fade" id="main_1">
             <div class="modal-dialog modal-dialog-centered">
@@ -296,9 +262,9 @@
                   </div>
                   <div class="modal-body">
                     <div class="modal_description">
-                      <p>Waffle Festivalを120％楽しむための、オープニングセッションです！</p>
+                        <p>Waffle Festivalを120％楽しむための、オープニングセッションです！</p>
                     </div>
-
+                   
                     <p class="speaker">登壇者：田中沙弥果（NPO法人Waffle）、スプツニ子！</p>
                     <p>経歴：</p>
                   </div>
@@ -319,7 +285,7 @@
                     <div class="modal_description">
                       <p>1年間のプログラムを通して、まったくの初心者からIT企業でインターンを獲得したり、エンジニアを目指したり。登壇者は数年後のあなたかも。</p>
                     </div>
-
+                    
                     <p class="speaker">登壇者：</p>
                     <p>経歴：</p>
                   </div>
@@ -339,17 +305,14 @@
                     <div class="modal_description">
                       <p>海外で学んだり、仕事をするのに、興味はあるけれど......。「けれど」の先に立ちはだかる壁の、最初の手がかりをつかみましょう！</p>
                     </div>
-
+                  
                     <ul>
                       <li>
-                        <img src="https://i.ibb.co/TYPRLBG/image.jpg">
-                      </li>
-                      <li>
-                        <p class="speaker">登壇者：シルバ 智子</p>
-                        <P>
-                          経歴：東京都生まれ　NY州立大学バッファロー校卒業。アメリカで異文化コミュニケーションを学ぶ。日米の違いに戸惑い、世界規模での差に魅力を感じるようになる。2009年より米国大使館勤務。情報管理課、保安課を経て2017年より広報文化交流部に配属。米国留学促進を行うEducationUSA日本チームの責任者。
-                        </P>
-                      </li>
+                        <img src="https://i.ibb.co/TYPRLBG/image.jpg"></li>
+                        <li> 
+                          <p class="speaker">登壇者：シルバ 智子</p>
+                          <P>経歴：東京都生まれ　NY州立大学バッファロー校卒業。アメリカで異文化コミュニケーションを学ぶ。日米の違いに戸惑い、世界規模での差に魅力を感じるようになる。2009年より米国大使館勤務。情報管理課、保安課を経て2017年より広報文化交流部に配属。米国留学促進を行うEducationUSA日本チームの責任者。</P>
+                        </li>
                     </ul>
                   </div>
                 </div>
@@ -368,15 +331,14 @@
                     <div class="modal_description">
                       <p>AIと生きる、AIを活かす（AIのある世界で、私たちはどうふるまうか？）</p>
                     </div>
-
+                  
                     <ul>
                       <li>
-                        <img src="">
-                      </li>
-                      <li>
-                        <p class="speaker">登壇者：</p>
-                        <P>経歴：</P>
-                      </li>
+                        <img src=""></li>
+                        <li> 
+                          <p class="speaker">登壇者：</p>
+                          <P>経歴：</P>
+                        </li>
                     </ul>
                   </div>
                 </div>
@@ -393,17 +355,16 @@
                   </div>
                   <div class="modal-body">
                     <div class="modal_description">
-                      <p>仕事とライフイベントを、軽やかに両立したい。自分の未来を、自分で動かすための道しるべとなるセッションです。</p>
+                        <p>仕事とライフイベントを、軽やかに両立したい。自分の未来を、自分で動かすための道しるべとなるセッションです。</p>
                     </div>
-
+                  
                     <ul>
                       <li>
-                        <img src="">
-                      </li>
-                      <li>
-                        <p class="speaker">登壇者：</p>
-                        <p>経歴：</p>
-                      </li>
+                        <img src=""></li>
+                        <li> 
+                          <p class="speaker">登壇者：</p>
+                          <p>経歴：</p>
+                        </li>
                     </ul>
                   </div>
                 </div>
@@ -422,15 +383,15 @@
                     <div class="modal_description">
                       <p>ずばり、エンジニアになるには？さまざまなハンデを乗り越えて、エンジニアとして活躍するまでの道すじを深堀りします。</p>
                     </div>
-
+                
                     <ul>
                       <li>
                         <img src="https://i.ibb.co/ZgCCd7N/image.jpg">
                       </li>
-                      <li>
-                        <p class="speaker">登壇者：</p>
-                        <p>経歴：</p>
-                      </li>
+                        <li> 
+                          <p class="speaker">登壇者：</p>
+                          <p>経歴：</p>
+                        </li>
                     </ul>
                   </div>
                 </div>
@@ -447,18 +408,16 @@
                   </div>
                   <div class="modal-body">
                     <div class="modal_description">
-                      <p>男性が多いイメージのIT業界で、すすむDEI（diversity, equity and
-                        inclusion）。「男女平等」という言葉が独り歩きする最近ですが、「まったく同じ」ならいいのでしょうか？企業の取り組みを通じて、平等と公平の違いについて考えてみましょう。</p>
+                        <p>男性が多いイメージのIT業界で、すすむDEI（diversity, equity and inclusion）。「男女平等」という言葉が独り歩きする最近ですが、「まったく同じ」ならいいのでしょうか？企業の取り組みを通じて、平等と公平の違いについて考えてみましょう。</p>
                     </div>
-
+                   
                     <ul>
                       <li>
-                        <img src="">
-                      </li>
-                      <li>
-                        <p class="speaker">登壇者：</p>
-                        <p>経歴：</p>
-                      </li>
+                        <img src=""></li>
+                        <li> 
+                          <p class="speaker">登壇者：</p>
+                          <p>経歴：</p>
+                        </li>
                     </ul>
                   </div>
                 </div>
@@ -477,15 +436,14 @@
                     <div class="modal_description">
                       <p>身近で小さな困りごとも、実は多くの人が抱えている悩みかも。みんなでオリジナルのアプリを考える、協力型ワークショップです。</p>
                     </div>
-
+                
                     <ul>
                       <li>
-                        <img src="">
-                      </li>
-                      <li>
-                        <p class="speaker">登壇者：</p>
-                        <p>経歴：</p>
-                      </li>
+                        <img src=""></li>
+                        <li> 
+                          <p class="speaker">登壇者：</p>
+                          <p>経歴：</p>
+                        </li>
                     </ul>
                   </div>
                 </div>
@@ -502,26 +460,23 @@
                   </div>
                   <div class="modal-body">
                     <div class="modal_description">
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti dignissimos rerum illum,
-                        aperiam eaque officiis natus nostrum quae voluptatum voluptates earum vel consectetur qui
-                        blanditiis soluta, eveniet, beatae repudiandae sit?</p>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti dignissimos rerum illum, aperiam eaque officiis natus nostrum quae voluptatum voluptates earum vel consectetur qui blanditiis soluta, eveniet, beatae repudiandae sit?</p>
                     </div>
-
+                   
                     <ul>
                       <li>
-                        <img src="">
-                      </li>
-                      <li>
-                        <p class="speaker">登壇者：</p>
-                        <p>経歴：</p>
-                      </li>
+                        <img src=""></li>
+                        <li> 
+                          <p class="speaker">登壇者：</p>
+                          <p>経歴：</p>
+                        </li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- modal lifork -->
+<!-- modal lifork -->
           <div class="modal fade" id="lifork_1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-dialog">
@@ -532,19 +487,16 @@
                   </div>
                   <div class="modal-body">
                     <div class="modal_description">
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis earum rerum, maiores
-                        necessitatibus quae quo aperiam neque vel quas enim animi voluptatibus sit, a obcaecati hic! Aut
-                        magnam doloribus eius?</p>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis earum rerum, maiores necessitatibus quae quo aperiam neque vel quas enim animi voluptatibus sit, a obcaecati hic! Aut magnam doloribus eius?</p>
                     </div>
-
+        
                     <ul>
                       <li>
-                        <img src="">
-                      </li>
-                      <li>
-                        <p class="speaker">登壇者：</p>
-                        <p>経歴：</p>
-                      </li>
+                        <img src=""></li>
+                        <li> 
+                          <p class="speaker">登壇者：</p>
+                          <p>経歴：</p>
+                        </li>
                     </ul>
                   </div>
                 </div>
@@ -564,21 +516,17 @@
                   </div>
                   <div class="modal-body">
                     <div class="modal_description">
-                      <p>
-                        日傘、たばこ、単身赴任、アフタヌーンティ、これらの言葉を聞いて思い浮かべるのは、どの性別ですか？性別に限らず、私たちの「無意識の思い込み」をあぶりだし、よりよい私と社会をめざすワークショップです。<br>（※参加には事前予約が必要です）</br>
-                      </p>
+                      <p>日傘、たばこ、単身赴任、アフタヌーンティ、これらの言葉を聞いて思い浮かべるのは、どの性別ですか？性別に限らず、私たちの「無意識の思い込み」をあぶりだし、よりよい私と社会をめざすワークショップです。<br>（※参加には事前予約が必要です）</br></p>
                     </div>
-
+                   
                     <ul>
                       <li>
                         <img src="https://i.ibb.co/vxz1Yhj/image.jpg">
                       </li>
-                      <li>
-                        <p class="speaker">登壇者：岡田 恵利子</p>
-                        <p>経歴：ソーシャルデザインスタジオ ニアカリ代表、川崎市男女平等推進審議会委員、株式会社アドウェイズ
-                          社外取締役、他。デンマークで経験したジェンダー平等のカルチャーショックから、地元川崎でジェンダー平等について身近に対話・考える場づくりのデザインに挑戦するべく、ジェンクロス・カワサキを2021年に設立。2022年「ジェンダーもやもや発見カード」を川崎市男女共同参画センター協働事業にて制作、地域で展開を進める。
-                        </p>
-                      </li>
+                        <li> 
+                          <p class="speaker">登壇者：岡田 恵利子</p>
+                          <p>経歴：ソーシャルデザインスタジオ ニアカリ代表、川崎市男女平等推進審議会委員、株式会社アドウェイズ 社外取締役、他。デンマークで経験したジェンダー平等のカルチャーショックから、地元川崎でジェンダー平等について身近に対話・考える場づくりのデザインに挑戦するべく、ジェンクロス・カワサキを2021年に設立。2022年「ジェンダーもやもや発見カード」を川崎市男女共同参画センター協働事業にて制作、地域で展開を進める。</p>
+                        </li>
                     </ul>
                   </div>
                 </div>
@@ -600,19 +548,15 @@
                     <div class="modal_description">
 
                     </div>
-                    <p class="modal_description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos a, sit
-                      error accusantium nulla, nesciunt consequuntur deleniti animi cum consequatur ad debitis tempora,
-                      quia adipisci accusamus ex amet dicta eum.</p>
+                    <p class="modal_description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos a, sit error accusantium nulla, nesciunt consequuntur deleniti animi cum consequatur ad debitis tempora, quia adipisci accusamus ex amet dicta eum.</p>
                     <ul>
                       <li>
                         <img src="https://i.ibb.co/9NxD6rp/image.jpg">
                       </li>
-                      <li>
-                        <p class="speaker">登壇者：斉藤 裕希</p>
-                        <p>
-                          経歴：北海道札幌市出身、小樽商科大学商学部卒業。プログラマーからキャリアをスタートし、転職を経てQAエンジニアにキャリアチェンジ。2022年1月にサイボウズに入社。現在はQAエンジニアとしてサイボウズOffice・メールワイズの試験を担当。最近はアイドルのオーディション番組を見ることにハマっています。
-                        </p>
-                      </li>
+                        <li> 
+                          <p class="speaker">登壇者：斉藤 裕希</p>
+                          <p>経歴：北海道札幌市出身、小樽商科大学商学部卒業。プログラマーからキャリアをスタートし、転職を経てQAエンジニアにキャリアチェンジ。2022年1月にサイボウズに入社。現在はQAエンジニアとしてサイボウズOffice・メールワイズの試験を担当。最近はアイドルのオーディション番組を見ることにハマっています。</p>
+                        </li>
                     </ul>
                   </div>
                 </div>
@@ -633,18 +577,15 @@
                     <div class="modal_description">
 
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugiat consectetur harum error
-                      doloremque eos dolores et odit sit, nemo soluta maxime in nulla, sint quaerat hic cupiditate.
-                      Provident, laudantium.</p>
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugiat consectetur harum error doloremque eos dolores et odit sit, nemo soluta maxime in nulla, sint quaerat hic cupiditate. Provident, laudantium.</p>
                     <ul>
                       <li>
                         <img src="https://i.ibb.co/tpnKGh8/STORES.png">
                       </li>
-                      <li>
-                        <p class="speaker">登壇者：みっちゃん</p>
-                        <p>経歴：2022年、STORES 株式会社に入社。テクノロジー部門モバイル開発本部でAndroidエンジニアとしてお店のキャッシュレスをサポートする STORES 決済
-                          アプリの開発に従事している。</p>
-                      </li>
+                        <li> 
+                          <p class="speaker">登壇者：みっちゃん</p>
+                          <p>経歴：2022年、STORES 株式会社に入社。テクノロジー部門モバイル開発本部でAndroidエンジニアとしてお店のキャッシュレスをサポートする STORES 決済 アプリの開発に従事している。</p>
+                        </li>
                     </ul>
                   </div>
                 </div>
@@ -660,49 +601,43 @@
 
         <h2 id="FeaturedContents">Featured Contents</h2>
         <section class="content">
-          <div class="featured_main">
-            <div class="career_talk">
-              <ul>
-                <li> <img src="https://i.ibb.co/MPfNPSR/image.jpg"></li>
-                <li>
-                  <h4>キャリアトーク</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas asperiores ea expedita et
-                    dicta
-                    adipisci magnam nisi perferendis modi corrupti hic ratione laborum repellat deleniti porro
-                    explicabo,
-                    magni
-                    quia.</p>
-                </li>
-              </ul>
+        <div class="featured_main">
+          
+          <ul>
+            <li>  <img src="https://i.ibb.co/MPfNPSR/image.jpg"></li>
+            <li>
+               <h4>キャリアトーク</h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas asperiores ea expedita et dicta
+              adipisci magnam nisi perferendis modi corrupti hic ratione laborum repellat deleniti porro explicabo, magni
+              quia.</p>
+            </li>
+          </ul>
+         
+          <ul>
+            <li> 
+              <h4>ワークショップ</h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas asperiores ea expedita et dicta
+              adipisci magnam nisi perferendis modi corrupti hic ratione laborum repellat deleniti porro explicabo, magni
+              quia.</p>
+            </li>
+              <li>  <img src="https://i.ibb.co/MPfNPSR/image.jpg"></li>
+          </ul>
+         </div>
+   
+            <div class="featured_sub">
+              <h4>エンパワメントされる本の展示や、アメリカ留学の相談ブースも！！</h4>
+<ul>
+  <li>
+    <img src="https://i.ibb.co/QbczQ4r/featured.png">
+  </li>
+  <li>
+  <img src="https://i.ibb.co/XjvMBHW/featured-book.png">
+  </li>
+  <li>
+    <img src="https://i.ibb.co/yptnB2M/featured.png">
+  </li>
+</ul>
             </div>
-
-            <div class="work_shop">
-              <ul>
-                <li>
-                  <h4>ワークショップ</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quas asperiores ea expedita et
-                    dicta
-                    adipisci magnam nisi perferendis modi corrupti hic ratione laborum repellat deleniti porro
-                    explicabo,
-                    magni
-                    quia.</p>
-                </li>
-                <li> <img src="https://i.ibb.co/MPfNPSR/image.jpg"></li>
-              </ul>
-            </div>
-
-          </div>
-
-          <div class="featured_sub">
-            <h4>エンパワメントされる本の展示や、アメリカ留学の相談ブースも！！</h4>
-
-            <div class="featured_sub-container">
-              <img src="featured_米国大使館.PNG">
-              <img src="featured_ book.PNG">
-              <img src="featured_もやもや.PNG">
-            </div>
-
-          </div>
         </section>
 
 
@@ -822,7 +757,7 @@
 
             <hr>
           </div>
-
+          
 
           <div class="gold">
             <h2>Gold Sponsors</h2>
@@ -834,7 +769,6 @@
               </div>
               <div class="lower">
                 <img src="logo_CyberAgent.png" class="logo_CyberAgent">
-                <img src="logo_unity.png" class="logo_unity">
               </div>
 
               <hr>
@@ -854,7 +788,7 @@
             <h2>Silver Sponsors</h2>
             <div class="silver-container">
               <img src="logo_STORES.jpeg" class="logo_STORES">
-              <img src="logo_cybozu_Horizon_A.png" class="logo_サイボウズ">
+              <img src="logo_サイボウズ.png" class="logo_サイボウズ">
 
             </div>
             <hr>
@@ -865,10 +799,10 @@
 
 
             <div class="supporter-container">
-              <img src="logo_アドウェイズ.jpeg" class="logo_アドウェイズ">
+              <img src="logo_アドウェイズ.png" class="logo_アドウェイズ">
               <img src="logo_Lenovo.PNG" class="logo_Lenovo">
 
-
+            
             </div>
           </div>
 
@@ -926,30 +860,21 @@
     });
   </script>
 
-<script>
-    $(document).ready(function () {
-      $(".navbar-toggler").click(function () {
-        $(".collapse").toggle();
-      });
-    });
-  </script>
-
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script> -->
+    crossorigin="anonymous"></script>
 
 
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-    
-    <!-- アコーディオン用ライブラリ -->
-    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-2-2/js/9-2-2.js"></script>
-    <!--  -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
-</html>
 
+</html>
+<!-- アコーディオン用ライブラリ -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-2-2/js/9-2-2.js"></script>
+<!--  -->
+</body>
