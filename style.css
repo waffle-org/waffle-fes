@@ -516,13 +516,13 @@
   .event_main button:hover {
     background-color: orange;
     color: white;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
   }
 
   .event_lifork button:hover {
     background-color: orange;
     color: white;
-    transition-duration: 0.7s;
+    transition-duration: 0.3s;
   }
 
   /* timetable中身 モダール */
@@ -1532,13 +1532,13 @@
   .event_main button:hover {
     background-color: orange;
     color: white;
-    transition-duration: 0.7s;
+    transition-duration: 0.3s;
   }
 
   .event_lifork button:hover {
     background-color: orange;
     color: white;
-    transition-duration: 0.7s;
+    transition-duration: 0.3s;
   }
 
   /* timetable中身 モダール */
