@@ -2021,14 +2021,14 @@
 
   .logo_サイボウズ {
     width: auto;
-    height: 40px;
-    margin-left: 20px;
+    height: 20px;
+    margin-left: 5px;
   }
 
   .logo_STORES {
     width: auto;
     height: 30px;
-    margin-left: 25px;
+    margin-left: 30px;
   }
 
   .supporter {
@@ -2081,7 +2081,7 @@
 
   footer {
     position: absolute;
-    height: 50px;
+    height: 70px;
     width: 100%;
     background-color: #fff;
     background-attachment: scroll;
@@ -2094,15 +2094,14 @@
   }
 
   .footer_ li {
-    display: inline-block;
     list-style: none;
     margin-top: 10px;
-    font-size: 4.5px;
+    font-size: 8px;
   }
 
   .sns {
     float: right;
-    margin-top: 2px;
+    margin-top: 35px;
     margin-right: 5px;
   }
 
@@ -2111,7 +2110,7 @@
   }
 
   .sns img {
-    width: 15px;
+    width: 30px;
   }
 
   .sns li {
