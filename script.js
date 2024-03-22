@@ -10,3 +10,4 @@ $(".slider").slick({
   variableWidth: true,
   dots: true,
 });
+

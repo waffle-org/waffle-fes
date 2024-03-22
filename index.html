@@ -34,7 +34,7 @@
         </button>
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav_mr-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="#ABOUT">ABOUT</a>
               </li>
@@ -65,6 +65,7 @@
       </ul>
     </div>
     </div> -->
+
   </header>
 
 
@@ -231,12 +232,12 @@
               <div class="event_main" style="grid-row: 16/20">
                 <button type="button" data-bs-toggle="modal" data-bs-target="#main_4" class="btn">
                   <p>12:30-13:10</p>
-                  <h2>AIと生きる、AIを活かす<br>（AIのある世界で、私たちはどうふるまうか？）</h2>
+                  <h2>AIと生きる、AIを活かす<br>（AIのある世界で、私たちはどう<br>ふるまうか？）</h2>
               </div>
               <div class="event_main" style="grid-row: 21/24">
                 <button type="button" data-bs-toggle="modal" data-bs-target="#main_5" class="btn">
                   <p>13:20-13:50</p>
-                  <h2>仕事・生活・私　もしくは　人生を楽しみながら仕事する！働くわたしのライフレッスン</h2>
+                  <h2>仕事・生活・私　もしくは　人生を楽しみながら仕事する！働くわたしの<br>ライフレッスン</h2>
               </div>
               <div class="event_main" style="grid-row: 25/28">
                 <button type="button" data-bs-toggle="modal" data-bs-target="#main_6" class="btn">
@@ -854,7 +855,7 @@
             <h2>Silver Sponsors</h2>
             <div class="silver-container">
               <img src="logo_STORES.jpeg" class="logo_STORES">
-              <img src="logo_サイボウズ.png" class="logo_サイボウズ">
+              <img src="logo_cybozu_Horizon_A.png" class="logo_サイボウズ">
 
             </div>
             <hr>
@@ -865,7 +866,7 @@
 
 
             <div class="supporter-container">
-              <img src="logo_アドウェイズ.png" class="logo_アドウェイズ">
+              <img src="logo_アドウェイズ.jpeg" class="logo_アドウェイズ">
               <img src="logo_Lenovo.PNG" class="logo_Lenovo">
 
 
@@ -933,6 +934,24 @@
       });
     });
   </script>
+
+
+<script>
+jQuery(window).on("scroll", function() {
+    // ボタンがフッターの手前に達したら
+    if (jQuery(this).scrollTop() > (jQuery('footer').offset().top - jQuery(window).height())) {
+        // ボタンを非表示にする
+        jQuery('.fixed_btn').fadeOut();
+    } else if (jQuery(this).scrollTop() > 400) {
+        // スクロールが300pxを超えた場合はボタンを表示する
+        jQuery('.fixed_btn').fadeIn();
+    } else {
+        // それ以外の場合はボタンを非表示にする
+        jQuery('.fixed_btn').fadeOut();
+    }
+});
+</script>
+
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

@@ -83,9 +83,33 @@
     width: 20%;
   }
 
-  .nav-link {
-    font-size: 25px !important;
+  .navbar-nav_mr-auto ul{
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
   }
+
+  .navbar-nav_mr-auto li {
+    display: inline-block;
+    list-style: none;
+    margin-top: 12px;
+    margin-left: 20px;
+    font-size: 23px;
+  }
+
+  .navbar-nav_mr-auto li:last-child{
+    margin-right: 40px;
+  }
+  
+  .navbar-nav_mr-auto a {
+    text-decoration: none;
+    color: #5a544b;
+  }
+  
+  .navbar-nav_mr-auto a:hover {
+    color: #eb5f6e;
+  }
+
 
   /* 見出し */
   .contents {
@@ -406,11 +430,6 @@
     font-size: 20px;
   }
 
-  .attention ul {
-    margin: 0px;
-    padding: 0;
-  }
-
   .attention li {
     text-indent: -1.3em;
     padding-left: 1em;
@@ -497,7 +516,9 @@
   padding: 0px;
 } */
 
-  /* .event_main h2 {
+
+
+.event_main h2 {
   padding: 0px;
   font-size: 20px;
 }
@@ -651,29 +672,6 @@
     content: "";
   }
 
-  .voice_msg3:before {
-    position: absolute;
-    top: 100%;
-    right: 50px;
-    transform: skew(45deg);
-    height: 25px;
-    width: 15px;
-    border-left: 3px solid #333;
-    background-color: #fff;
-    content: "";
-  }
-
-  .voice_msg4:before {
-    position: absolute;
-    top: 100%;
-    left: 50px;
-    transform: skew(-25deg);
-    height: 25px;
-    width: 15px;
-    border-right: 3px solid #333;
-    background-color: #fff;
-    content: "";
-  }
 
   .voice_msg5:before {
     position: absolute;
@@ -700,7 +698,6 @@
   }
 
   .voice_img1,
-  .voice_img3,
   .voice_img5 img {
     width: 165px;
     margin-left: 10px;
@@ -708,15 +705,21 @@
     margin-bottom: 10px;
   }
 
-  .voice_img2,
-  .voice_img4,
-  .voice_img6 img {
+
+  .voice_img2 img {
     width: 150px;
     margin-right: 10px;
     margin-top: 50px;
     margin-bottom: 10px;
   }
 
+  .voice_img6 img{
+    width: 140px;
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+  }
   /* FAQ 質問 */
   /*==================================================
 アコーディオンのためのcss
@@ -947,10 +950,14 @@
     margin-top: 15px;
   }
 
+
+  .silver-container img:last-child {
+    margin-right: 0;
+  }
+  
   .logo_サイボウズ {
     width: auto;
-    height: 80px;
-    margin-left: 20px;
+    height: 50px;
   }
 
   .logo_STORES {
@@ -970,13 +977,18 @@
   }
 
   .supporter-container img {
-    margin-right: 20px;
+    margin-right: 50px;
     margin-top: 15px;
   }
+
+  /* .supporter-container img:last-child {
+    margin-right: 0;
+  } */
 
   .logo_アドウェイズ {
     height: 100px;
     width: auto;
+    margin-left: 20px;
   }
 
   .logo_Lenovo {
@@ -986,6 +998,7 @@
   }
 
   .sponsor_content p {
+    margin-top: 20px;
     color: #5a544b;
   }
 
