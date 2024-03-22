@@ -76,9 +76,33 @@
     width: 20%;
   }
 
-  .nav-link {
-    font-size: 25px !important;
+  .navbar-nav_mr-auto ul{
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
   }
+  
+  .navbar-nav_mr-auto li {
+    display: inline-block;
+    list-style: none;
+    margin-top: 12px;
+    margin-left: 20px;
+    font-size: 23px;
+  }
+
+  .navbar-nav_mr-auto li:last-child{
+    margin-right: 40px;
+  }
+  
+  .navbar-nav_mr-auto a {
+    text-decoration: none;
+    color: #5a544b;
+  }
+  
+  .navbar-nav_mr-auto a:hover {
+    color: #eb5f6e;
+  }
+
 
   /* 見出し */
   #NEWS,
@@ -633,29 +657,6 @@
     content: "";
   }
 
-  .voice_msg3:before {
-    position: absolute;
-    top: 100%;
-    right: 50px;
-    transform: skew(45deg);
-    height: 25px;
-    width: 15px;
-    border-left: 3px solid #333;
-    background-color: #fff;
-    content: "";
-  }
-
-  .voice_msg4:before {
-    position: absolute;
-    top: 100%;
-    left: 50px;
-    transform: skew(-25deg);
-    height: 25px;
-    width: 15px;
-    border-right: 3px solid #333;
-    background-color: #fff;
-    content: "";
-  }
 
   .voice_msg5:before {
     position: absolute;
@@ -682,7 +683,6 @@
   }
 
   .voice_img1,
-  .voice_img3,
   .voice_img5 img {
     width: 165px;
     margin-left: 10px;
@@ -690,15 +690,21 @@
     margin-bottom: 10px;
   }
 
-  .voice_img2,
-  .voice_img4,
-  .voice_img6 img {
+
+  .voice_img2 img {
     width: 150px;
     margin-right: 10px;
     margin-top: 50px;
     margin-bottom: 10px;
   }
 
+  .voice_img6 img{
+    width: 140px;
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+  }
   /* FAQ 質問 */
   /*==================================================
 アコーディオンのためのcss
@@ -977,6 +983,7 @@
   }
 
   .sponsor_content p {
+    margin-top: 20px;
     color: #5a544b;
   }
 
