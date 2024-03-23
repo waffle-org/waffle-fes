@@ -38,7 +38,7 @@
     width: 370px;
     height: 370px;
     border-radius: 50%;
-    border: solid 1px rgba(163, 163, 163, 0.4);
+    border: solid 1px rgba(163, 163, 163, 0.8);
     left: -45px;
     top: -15px;
     z-index: 2;
@@ -48,7 +48,7 @@
     width: 620px;
     height: 620px;
     border-radius: 50%;
-    border: solid 0.4px rgba(163, 163, 163, 0.4);
+    border: solid 0.4px rgba(213, 129, 152, 0.8);
     left: 980px;
     top: 300px;
     z-index: 2;
@@ -58,11 +58,12 @@
     width: 420px;
     height: 420px;
     border-radius: 50%;
-    border: solid 0.4px rgba(163, 163, 163, 0.4);
+    border: solid 0.4px rgba(163, 163, 163, 0.8);
     left: 840px;
     top: 600px;
     z-index: 2;
   }
+
 
   /* header ヘッダー */
   header {
@@ -110,6 +111,7 @@
     color: #eb5f6e;
   }
 
+
   /* 見出し */
   .contents {
     margin-top: 850px;
@@ -131,6 +133,7 @@
     /* 水平中心 */
 
     margin-top: 0%;
+   
   }
 
   #NEWS::before,
@@ -189,7 +192,6 @@
     height: 160px;
     /* background: #eb5f6e; */
     background-image: linear-gradient(#f696a0 0%, #eb5f6e 100%);
-    z-index: 4;
   }
 
   .fixed_btn p1 {
@@ -247,6 +249,8 @@
     background-size: 150% 20%;
   } */
 
+
+
   .message_contents {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -257,6 +261,7 @@
     margin-right: auto;
     margin-bottom: 200px;
     font-size: 20px;
+
   }
 
   .bold_message {
@@ -269,7 +274,7 @@
     font-size: 60px;
     margin-top: 50px;
     padding-top: 80px;
-    background: linear-gradient(to right, #21ff00 0%, #ffff00 100%);
+    background: linear-gradient(to right,#EB5F6E 0%,#ffbfca 20%, #F9BCA4 30%, #fef076 40%, #a2fff4 80%);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 150% 20%;
@@ -578,12 +583,17 @@
     list-style: none;
   }
 
-  .キャリアトーク {
+  .career_talk {
     margin-top: 40px;
   }
 
-  .ワークショップ {
+  .work_shop {
     margin-top: 60px;
+  }
+  .workshop_img{
+    width:50%;
+    height: auto;
+    padding: 0%;
   }
 
   .featured_sub {
@@ -602,10 +612,9 @@
   .featured_sub-container img {
     margin-right: 30px;
     /* 画像間の間隔 */
-    max-width: 20%;
-    /* 画像の幅を調整 */
+    width: 25%;
     height: auto;
-    /* アスペクト比を保つ */
+    border-radius:50%;
   }
 
   /* 最後の画像にはマージンを適用しない */
