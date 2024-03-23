@@ -1409,6 +1409,7 @@
   }
 
   .about_content p {
+    text-align: left;
     font-size: 6px;
   }
 
@@ -1423,13 +1424,19 @@
     padding-left: 15px;
   }
 
+  .day2_contents p {
+    font-size: 7px;
+  }
+
   .title-container {
     display: flex; /* 要素を横並びにする */
     align-items: center; /* 項目を垂直方向に中央揃えする */
     justify-content: space-between; /* 要素を水平方向に等間隔で配置する */
+    font-size: 6px !important;
   }
 
   .title-container h4 {
+    font-size: 20px;
     margin-bottom: 0px;
   }
 
