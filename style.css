@@ -57,7 +57,6 @@
     z-index: 2;
   }
 
-
   /* header ヘッダー */
   header {
     position: fixed;
@@ -104,7 +103,6 @@
     color: #eb5f6e;
   }
 
-
   /* 見出し */
   .contents {
     margin-top: 850px;
@@ -126,7 +124,6 @@
     /* 水平中心 */
 
     margin-top: 0%;
-   
   }
 
   #NEWS::before,
@@ -242,8 +239,6 @@
     background-size: 150% 20%;
   } */
 
-
-
   .message_contents {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -254,7 +249,6 @@
     margin-right: auto;
     margin-bottom: 200px;
     font-size: 20px;
-
   }
 
   .bold_message {
@@ -267,7 +261,7 @@
     font-size: 60px;
     margin-top: 50px;
     padding-top: 80px;
-    background: linear-gradient(to right,#EB5F6E 0%,#ffbfca 20%, #F9BCA4 30%, #fef076 40%, #a2fff4 80%);
+    background: linear-gradient(to right, #eb5f6e 0%, #ffbfca 20%, #f9bca4 30%, #fef076 40%, #a2fff4 80%);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 150% 20%;
@@ -427,8 +421,7 @@
     font-size: 20px;
   }
 
-  .attention
-  .attention li {
+  .attention .attention li {
     text-indent: -1.3em;
     padding-left: 1em;
   }
@@ -515,12 +508,11 @@
   }
 
   #main_tab {
-    background-color: rgb(201, 201, 201);
+    background-color: #ff9ea7;
   }
 
-
   #lifork_tab {
-    background-color: rgb(201, 201, 201);
+    background-color: #bce9e4;
   }
   .event_main h2 {
     padding: 0px;
@@ -607,19 +599,14 @@
     width: 180px;
   }
 
-
-
-
-
-
   /* featured コンテンツ*/
 
   .featured_sub {
     margin-top: 60px;
   }
-.featured_sub h4{
-  font-size: 20px;
-}
+  .featured_sub h4 {
+    font-size: 20px;
+  }
 
   .featured_sub-container {
     display: flex;
@@ -634,7 +621,7 @@
     /* 画像間の間隔 */
     width: 25%;
     height: auto;
-    border-radius:50%;
+    border-radius: 50%;
   }
 
   /* 最後の画像にはマージンを適用しない */
@@ -642,85 +629,79 @@
     margin-right: 0;
   }
 
-
-/* カードレイアウト部分をラッピングし、
+  /* カードレイアウト部分をラッピングし、
 Flexboxを指定"space-between"で各アイテムを均等に配置し、
 最初と最後のアイテムを端に寄せます。*/
-#cardlayout-wrap {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  margin: 2em auto;
-  max-width: 960px;
-  width: 80%;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-}
+  #cardlayout-wrap {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    margin: 2em auto;
+    max-width: 960px;
+    width: 80%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
 
-/* リンクテキストの下線を非表示 */
-a.card-link {
-  text-decoration: none;
-}
+  /* リンクテキストの下線を非表示 */
+  a.card-link {
+    text-decoration: none;
+  }
 
-/* カードレイアウト内の画像を幅いっぱいに表示 */
-#cardlayout-wrap img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  border-radius: 1% 1%;
-}
+  /* カードレイアウト内の画像を幅いっぱいに表示 */
+  #cardlayout-wrap img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 1% 1%;
+  }
 
-.card-figure {
-  margin: 0;
-  padding: 0;
-}
+  .card-figure {
+    margin: 0;
+    padding: 0;
+  }
 
-/* カードレイアウトのタイトル部分 */
-.card-title {
-  margin: 0.6em 0 0;
-  color: #818181 !important;
-  text-align: center;
-  font-size: 22px;
+  /* カードレイアウトのタイトル部分 */
+  .card-title {
+    margin: 0.6em 0 0;
+    color: #818181 !important;
+    text-align: center;
+    font-size: 22px;
+  }
 
-}
-
-/* .card-title h2{
+  /* .card-title h2{
   color: #818181;
 } */
 
-/* カードレイアウトの説明文部分 */
-.card-text-tax {
-  margin: 0;
-  padding: 18px;
-  color: #818181;
-  text-align: left;
-  font-size: 15px;
-}
+  /* カードレイアウトの説明文部分 */
+  .card-text-tax {
+    margin: 0;
+    padding: 18px;
+    color: #818181;
+    text-align: left;
+    font-size: 15px;
+  }
 
+  /* カードレイアウトを1カラムで配置 */
+  .card-list {
+    margin: 0.5em auto;
+    padding: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 1%;
+    width: calc(94% / 2); /* 96%幅を2で割るという指定 */
+  }
 
-/* カードレイアウトを1カラムで配置 */
-.card-list {
-  margin: 0.5em auto;
-  padding: 0;
-  width: 100%;
-  background: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 1%;
-  width: calc(94% / 2); /* 96%幅を2で割るという指定 */
-}
-
-
-.card-list hr{
-  margin: 10px auto 0 auto;
-  width: 70%;
-  border: 1px solid #ec5160;
-
-}
-
+  .card-list hr {
+    margin: 10px auto 0 auto;
+    width: 70%;
+    border: 1px solid #ec5160;
+  }
 
   /* voices 参加者の声 */
   .voices h2 {
@@ -823,8 +804,6 @@ a.card-link {
     margin-bottom: 10px;
   }
 
-
-  
   /* FAQ 質問 */
   /*==================================================
 アコーディオンのためのcss
@@ -907,7 +886,7 @@ a.card-link {
   /* お問い合わせボタン */
   a.ask_button {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     text-decoration: none;
     width: 700px;
