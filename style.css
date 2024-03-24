@@ -1524,49 +1524,53 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .timetable_contents {
     display: grid;
     grid-gap: 0em 2em;
-    margin-top: 50px;
+    margin-top: 16px;
     grid-template-columns: repeat(5, 1fr); /* 5列のグリッド */
-    grid-template-rows: repeat(43, 30px);
+    grid-template-rows: repeat(43, 25px);
     grid-template-columns: 1fr 7fr 7fr;
   }
-
-  /* .timetable_contents p {
-  padding-top: 0px;
-} */
 
   .timetable_section {
     margin: 40px;
   }
 
+  .theme p {
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 20px;
+  }
+
   .timetable_day1 {
     border-bottom: solid 1px #333;
-    height: 30px;
+    height: 34px;
   }
 
   .timetable_day2 {
     border-bottom: solid 1px #333;
-    height: 30px;
-    margin-top: 35px;
+    height: 34px;
+    margin-top: 39px;
   }
 
   .timetable_day1 h4 {
     float: left;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .timetable_day2 h4 {
     float: left;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .timetable_day1 p {
     float: right;
-    font-size: 10px;
+    font-size: 11px;
+    margin-top: 14px;
   }
 
   .timetable_day2 p {
     float: right;
-    font-size: 10px;
+    font-size: 11px;
+    margin-top: 14px;
   }
 
   .timetable_line {
@@ -1575,65 +1579,80 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
 
   .time {
     grid-column: 1;
-    font-size: 8px;
+    font-size: 11px;
   }
 
   .event_main {
     grid-column: 2;
     background-color: rgb(255 255 255);
+    display: grid;
+    place-items: center;
+    border: solid 1px #adb5bd;
   }
 
   .event_lifork {
     grid-column: 3;
     background-color: rgb(255 255 255);
+    display: grid;
+    place-items: center;
+    border: solid 1px #adb5bd;
   }
 
-  .event_main p {
-    font-size: 8px;
+  #main_tab {
+    background-color: #ff9ea7;
   }
 
-  .event_lifork p {
-    font-size: 8px;
+  #lifork_tab {
+    background-color: #bce9e4;
   }
-
   .event_main h2 {
     padding: 0px;
-    font-size: 8px;
+    font-size: 7px;
   }
 
   .event_lifork h2 {
     padding: 0px;
-    font-size: 8px;
+    font-size: 7px;
+  }
+
+  .event_main p {
+    font-size: 7px;
+    margin-bottom: 0px;
+  }
+
+  .event_lifork p {
+    font-size: 7px;
+    margin-bottom: 0px;
   }
 
   .event_main button {
     width: 100%;
     height: 100%;
-    padding: 0;
+    border-radius: 0px;
   }
 
   .event_lifork button {
     width: 100%;
     height: 100%;
-    padding: 0;
+    border-radius: 0px;
   }
 
   .event_main button:hover {
-    background-color: orange;
+    background-color: #ffa51e;
     color: white;
     transition-duration: 0.3s;
   }
 
   .event_lifork button:hover {
-    background-color: orange;
+    background-color: #ffa51e;
     color: white;
     transition-duration: 0.3s;
   }
 
   /* timetable中身 モダール */
   .modal {
-    --bs-modal-width: 900px;
-    --bs-modal-padding: 6rem;
+    /* --bs-modal-width: 60px !important; */
+    --bs-modal-padding: 2rem !important;
   }
 
   .modal-body ul {
@@ -1642,19 +1661,35 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   .modal_description p {
-    text-align: left;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
-  }
-
-  .modal-body p {
     text-align: left;
   }
 
-  .speaker {
-    font-size: 20px;
+  .modal-body ul {
+    padding-left: 0px;
+  }
+  .modal-body li {
+    padding: 20px;
   }
 
+  .modal-body li p {
+    text-align: left;
+    font-size: 8px;
+    padding-top: 4px;
+  }
+
+  .modal-body h2 {
+    text-align: left;
+    font-size: 12px;
+    padding-top: 7px;
+    font-weight: 400;
+  }
+
+  .modal-body img {
+    width: 100px;
+    padding-top: 4px;
+  }
   /* featured コンテンツ*/
 
   .featured_main {
