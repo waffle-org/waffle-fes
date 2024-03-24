@@ -252,20 +252,20 @@
   }
 
   .message_contents p {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 30px;
   }
 
   .bold_message {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 19px;
   }
 
   .imp_message {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 50px;
-    padding-top: 22px;
+    padding-top: 24px;
     background: linear-gradient(
       to right,
       #eb5f6e 0%,
@@ -446,7 +446,6 @@
     margin-top: 50px;
     font-size: 30px;
     text-align: left;
-    
   }
 
   .about_content hr {
@@ -478,68 +477,65 @@
     text-indent: -1.3em;
     padding-left: 1em;
   }
-.access_top{
-  margin-top: 50px;
-}
+  .access_top {
+    margin-top: 50px;
+  }
 
-.access_container {
+  .access_container {
     width: 80%;
     padding: 0;
     margin-top: 80px;
-}
+  }
 
-.access_container h2,
-.access_container p {
+  .access_container h2,
+  .access_container p {
     display: inline-block; /* h2 と p を横並びに配置 */
     vertical-align: top; /* 上揃え */
     margin: 0; /* デフォルトの余白を削除 */
     padding: 0; /* デフォルトの余白を削除 */
-}
+  }
 
-.access_container h2{
-  font-size: 18px;
-  margin: 0;
-}
+  .access_container h2 {
+    font-size: 18px;
+    margin: 0;
+  }
 
-.access_container p{
-  font-size: 15px;
-  margin-left: 55px;
-}
+  .access_container p {
+    font-size: 15px;
+    margin-left: 55px;
+  }
 
+  .attention_container {
+    width: 100%;
+    padding: 0;
+    margin-top: 60px;
+  }
 
-.attention_container {
-  width: 100%;
-  padding: 0;
-  margin-top: 60px;
-}
+  .attention_container h2,
+  .attention_container ul {
+    display: inline-block; /* h2 と ul を横並びに配置 */
+    vertical-align: top; /* 上揃え */
+    margin: 0; /* デフォルトの余白を削除 */
+    padding: 0; /* デフォルトの余白を削除 */
+  }
 
-.attention_container h2,
-.attention_container ul {
-  display: inline-block; /* h2 と ul を横並びに配置 */
-  vertical-align: top; /* 上揃え */
-  margin: 0; /* デフォルトの余白を削除 */
-  padding: 0; /* デフォルトの余白を削除 */
-}
+  .attention_container h2 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+  }
 
-.attention_container h2 {
-  font-size: 18px;
-  margin: 0;
-  padding: 0;
-  width: 10%;
-}
+  .attention_container ul {
+    width: 80%;
+    margin-left: 30px;
+  }
 
-.attention_container ul {
-  width: 80%;
-  margin-left: 30px;
-}
-
-.attention_container li{
-  font-size: 15px;
-  text-indent: -1.2em;
-  padding-left: 1em;
-}
-
-
+  .attention_container li {
+    font-size: 15px;
+    text-indent: -1.2em;
+    padding-left: 1em;
+  }
 
   /* メッセージ */
   #message {
