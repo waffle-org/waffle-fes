@@ -208,7 +208,7 @@
     width: 980px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
   }
 
   /* .message_contents {
@@ -606,7 +606,8 @@
     background-color: rgb(255 255 255);
     display: grid;
     place-items: center;
-    border: solid 1px #adb5bd;
+    /* border: solid 1px #adb5bd; */
+    
   }
 
   .event_lifork {
@@ -614,7 +615,7 @@
     background-color: rgb(255 255 255);
     display: grid;
     place-items: center;
-    border: solid 1px #adb5bd;
+    /* border: solid 1px #adb5bd; */
   }
 
   #main_tab {
@@ -657,13 +658,14 @@
   }
 
   .event_main button:hover {
-    background-color: #ffa51e;
+    background-color:#ff9ea7;
     color: white;
     transition-duration: 0.3s;
+    
   }
 
   .event_lifork button:hover {
-    background-color: #ffa51e;
+    background-color:#bce9e4 ;
     color: white;
     transition-duration: 0.3s;
   }
@@ -826,7 +828,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     display: flex;
     list-style: none;
     height: auto;
-    width: 90%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -845,76 +847,37 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     border: 2px solid #333;
     background-color: #fff;
     color: #333;
-    font-size: 17px;
+    font-size: 16px;
   }
 
-  .voice_msg1:before {
-    position: absolute;
-    top: 100%;
-    right: 50px;
-    transform: skew(45deg);
-    height: 25px;
-    width: 15px;
-    border-left: 3px solid #333;
-    background-color: #fff;
-    content: "";
-  }
-
-  .voice_msg2:before {
-    position: absolute;
-    top: 100%;
-    left: 50px;
-    transform: skew(-25deg);
-    height: 25px;
-    width: 15px;
-    border-right: 3px solid #333;
-    background-color: #fff;
-    content: "";
-  }
-
-  .voice_msg5:before {
-    position: absolute;
-    top: 100%;
-    right: 50px;
-    transform: skew(45deg);
-    height: 25px;
-    width: 15px;
-    border-left: 3px solid #333;
-    background-color: #fff;
-    content: "";
-  }
-
-  .voice_msg6:before {
-    position: absolute;
-    top: 100%;
-    left: 50px;
-    transform: skew(-25deg);
-    height: 25px;
-    width: 15px;
-    border-right: 3px solid #333;
-    background-color: #fff;
-    content: "";
+  
+  .voice_msg1{
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
 
   .voice_img1,
   .voice_img5 img {
     width: 165px;
     margin-left: 10px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-bottom: 10px;
   }
-
+  .voice_img1{
+    margin-top: 30px;
+  }
+  
   .voice_img2 img {
     width: 150px;
     margin-right: 10px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-bottom: 10px;
   }
 
   .voice_img6 img {
-    width: 140px;
+    width: 130px;
     margin-right: 10px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-bottom: 10px;
   }
 
