@@ -15,13 +15,7 @@
 
   .background {
     height: 100%;
-    background: linear-gradient(
-      213deg,
-      rgba(249, 188, 164, 0.64) 5%,
-      rgba(155, 210, 204, 0.64) 35%,
-      rgba(251, 204, 159, 0.64) 65%,
-      rgba(255, 204, 191, 0.64) 94%
-    );
+    background: linear-gradient(213deg, rgba(249, 188, 164, 0.64) 5%, rgba(155, 210, 204, 0.64) 35%, rgba(251, 204, 159, 0.64) 65%, rgba(255, 204, 191, 0.64) 94%);
     padding-top: 150px;
     padding-bottom: 1px;
     background-attachment: fixed;
@@ -449,12 +443,14 @@
     grid-template-columns: 1fr 7fr 7fr;
   }
 
-  /* .timetable_contents p {
-  padding-top: 0px;
-} */
-
   .timetable_section {
     margin: 40px;
+  }
+
+  .theme p {
+    font-size: 23px;
+    font-weight: 400;
+    padding-top: 50px;
   }
 
   .timetable_day1 {
@@ -500,56 +496,74 @@
   .event_main {
     grid-column: 2;
     background-color: rgb(255 255 255);
+    display: grid;
+    place-items: center;
+    border: solid 1px #adb5bd;
   }
 
   .event_lifork {
     grid-column: 3;
     background-color: rgb(255 255 255);
+    display: grid;
+    place-items: center;
+    border: solid 1px #adb5bd;
   }
 
-  /* .event_main p {
-  padding: 0px;
-}
+  #main_tab {
+    background-color: rgb(201, 201, 201);
+  }
 
-.event_lifork p {
-  padding: 0px;
-} */
-
+  #lifork_tab {
+    background-color: rgb(201, 201, 201);
+  }
   .event_main h2 {
     padding: 0px;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .event_lifork h2 {
     padding: 0px;
-    font-size: 20px;
+    font-size: 18px;
   }
+
+  .event_main p {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+
+  .event_lifork p {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+
   .event_main button {
     width: 100%;
     height: 100%;
+    border-radius: 0px;
   }
 
   .event_lifork button {
     width: 100%;
     height: 100%;
+    border-radius: 0px;
   }
 
   .event_main button:hover {
-    background-color: orange;
+    background-color: #ffa51e;
     color: white;
     transition-duration: 0.3s;
   }
 
   .event_lifork button:hover {
-    background-color: orange;
+    background-color: #ffa51e;
     color: white;
     transition-duration: 0.3s;
   }
 
   /* timetable中身 モダール */
   .modal {
-    --bs-modal-width: 900px;
-    --bs-modal-padding: 6rem;
+    --bs-modal-width: 800px !important;
+    --bs-modal-padding: 2rem !important;
   }
 
   .modal-body ul {
@@ -558,19 +572,34 @@
   }
 
   .modal_description p {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .modal-body ul {
+    padding-left: 0px;
+  }
+  .modal-body li {
+    padding: 20px;
+  }
+
+  .modal-body li p {
+    text-align: left;
+    font-size: 15px;
+    padding-top: 35px;
+  }
+
+  .modal-body h2 {
     text-align: left;
     font-size: 20px;
-    font-weight: 500;
+    padding-top: 7px;
+    font-weight: 400;
   }
 
-  .modal-body p {
-    text-align: left;
+  .modal-body img {
+    width: 180px;
   }
-
-  .speaker {
-    font-size: 30px;
-  }
-
   /* featured コンテンツ*/
 
   .featured_main ul {
@@ -1068,13 +1097,7 @@
 
   .background {
     height: 100%;
-    background: linear-gradient(
-      213deg,
-      rgba(249, 188, 164, 0.64) 5%,
-      rgba(155, 210, 204, 0.64) 35%,
-      rgba(251, 204, 159, 0.64) 65%,
-      rgba(255, 204, 191, 0.64) 94%
-    );
+    background: linear-gradient(213deg, rgba(249, 188, 164, 0.64) 5%, rgba(155, 210, 204, 0.64) 35%, rgba(251, 204, 159, 0.64) 65%, rgba(255, 204, 191, 0.64) 94%);
     background-attachment: fixed;
     padding-top: 40px;
     padding-bottom: 1px;
