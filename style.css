@@ -488,12 +488,14 @@
     grid-template-columns: 1fr 7fr 7fr;
   }
 
-  /* .timetable_contents p {
-  padding-top: 0px;
-} */
-
   .timetable_section {
     margin: 40px;
+  }
+
+  .theme p {
+    font-size: 23px;
+    font-weight: 400;
+    padding-top: 50px;
   }
 
   .timetable_day1 {
@@ -539,56 +541,74 @@
   .event_main {
     grid-column: 2;
     background-color: rgb(255 255 255);
+    display: grid;
+    place-items: center;
+    border: solid 1px #adb5bd;
   }
 
   .event_lifork {
     grid-column: 3;
     background-color: rgb(255 255 255);
+    display: grid;
+    place-items: center;
+    border: solid 1px #adb5bd;
   }
 
-  .event_main p {
-    margin: 0px;
+  #main_tab {
+    background-color: #ff9ea7;
   }
 
-  .event_lifork p {
-    margin: 0px;
+  #lifork_tab {
+    background-color: #bce9e4;
   }
-
   .event_main h2 {
     padding: 0px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .event_lifork h2 {
     padding: 0px;
-    font-size: 16px;
+    font-size: 18px;
   }
+
+  .event_main p {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+
+  .event_lifork p {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+
   .event_main button {
     width: 100%;
     height: 100%;
+    border-radius: 0px;
   }
 
   .event_lifork button {
     width: 100%;
     height: 100%;
+    border-radius: 0px;
   }
 
   .event_main button:hover {
-    background-color: orange;
+    background-color: #ffa51e;
     color: white;
     transition-duration: 0.3s;
   }
 
   .event_lifork button:hover {
-    background-color: orange;
+    background-color: #ffa51e;
     color: white;
     transition-duration: 0.3s;
   }
 
   /* timetable中身 モダール */
   .modal {
-    --bs-modal-width: 900px;
-    --bs-modal-padding: 6rem;
+    --bs-modal-width: 800px !important;
+    --bs-modal-padding: 2rem !important;
   }
 
   .modal-body ul {
@@ -597,13 +617,33 @@
   }
 
   .modal_description p {
-    text-align: left;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
+    text-align: left;
   }
 
-  .modal-body p {
+  .modal-body ul {
+    padding-left: 0px;
+  }
+  .modal-body li {
+    padding: 20px;
+  }
+
+  .modal-body li p {
     text-align: left;
+    font-size: 15px;
+    padding-top: 35px;
+  }
+
+  .modal-body h2 {
+    text-align: left;
+    font-size: 20px;
+    padding-top: 7px;
+    font-weight: 400;
+  }
+
+  .modal-body img {
+    width: 180px;
   }
 
   .speaker {
