@@ -251,16 +251,21 @@
     font-size: 20px;
   }
 
+  .message_contents p {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
   .bold_message {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .imp_message {
     font-weight: bold;
-    font-size: 60px;
+    font-size: 20px;
     margin-top: 50px;
-    padding-top: 80px;
+    padding-top: 22px;
     background: linear-gradient(
       to right,
       #eb5f6e 0%,
