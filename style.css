@@ -1555,7 +1555,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   .timetable_section {
-    margin: 40px;
+margin: 15px;
   }
 
   .theme p {
