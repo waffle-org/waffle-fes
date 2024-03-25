@@ -7,7 +7,7 @@
 
   body {
     overflow: hidden;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     color: #333;
   }
 
@@ -67,6 +67,7 @@
     background-color: #fff;
     /* 重なり防止 */
     z-index: 1;
+
   }
 
   .waffleimage {
@@ -124,6 +125,7 @@
     /* 水平中心 */
 
     margin-top: 0%;
+
   }
 
   #NEWS::before,
@@ -181,6 +183,10 @@
     height: 160px;
     /* background: #eb5f6e; */
     background-image: linear-gradient(#f696a0 0%, #eb5f6e 100%);
+
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
   .fixed_btn p1 {
@@ -206,9 +212,15 @@
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 10px;
     width: 980px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 150px;
+
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
   }
 
   /* .message_contents {
@@ -254,6 +266,10 @@
   .message_contents p {
     font-size: 16px;
     margin-bottom: 30px;
+
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
   .bold_message {
@@ -785,7 +801,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   /* カードレイアウトのタイトル部分 */
   .card-title {
     margin: 0.6em 0 0;
-    color: #818181 !important;
+    color: black !important;
     text-align: center;
     font-size: 22px;
   }
@@ -798,7 +814,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .card-text-tax {
     margin: 0;
     padding: 18px;
-    color: #818181;
+    color: black;
     text-align: left;
     font-size: 15px;
   }
@@ -849,6 +865,11 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     background-color: #fff;
     color: #333;
     font-size: 16px;
+
+
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
   
@@ -893,6 +914,10 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     width: 96%;
     max-width: 900px;
     margin: 0 auto;
+
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   }
 
   .accordion-area li {
@@ -908,7 +933,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     position: relative;
     /*+マークの位置基準とするためrelative指定*/
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: normal;
     padding: 3% 3% 3% 50px;
     transition: all 0.5s ease;
@@ -979,6 +1004,10 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     transition: 0.5s;
 
     margin-bottom: 150px;
+
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   }
 
   a.ask_button::before {
