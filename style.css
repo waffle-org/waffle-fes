@@ -1242,13 +1242,13 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   #voice,
   #FAQ,
   #SPONSOR {
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     /* 垂直中心 */
     justify-content: center;
     /* 水平中心 */
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     margin-top: 0%;
   }
 
@@ -1260,9 +1260,9 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   #voice::before,
   #FAQ::before,
   #SPONSOR::before {
-    border-top: 1px solid;
+    border-top: 0.8px solid;
     content: "";
-    width: 3em;
+    width: 2em;
     /* 線の長さ */
     margin-right: 1em;
     /* 文字の右隣 */
@@ -1276,9 +1276,9 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   #voice::after,
   #FAQ::after,
   #SPONSOR::after {
-    border-top: 1px solid;
+    border-top: 0.8px solid;
     content: "";
-    width: 3em;
+    width: 2em;
     /* 線の長さ */
     margin-left: 1em;
     /* 文字の右隣 */
@@ -1905,7 +1905,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     list-style: none;
     width: 96%;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
   }
 
   .accordion-area li {
