@@ -21,36 +21,6 @@
     padding-bottom: 1px;
   }
 
-  .circle_1 {
-    width: 370px;
-    height: 370px;
-    border-radius: 50%;
-    border: solid 1px rgba(163, 163, 163, 0.4);
-    margin-left: -45px;
-    margin-top: -15px;
-    position: fixed;
-  }
-
-  .circle_2 {
-    width: 620px;
-    height: 620px;
-    border-radius: 50%;
-    border: solid 0.4px rgba(163, 163, 163, 0.4);
-    margin-left: 980px;
-    margin-top: 300px;
-    position: fixed;
-  }
-
-  .circle_3 {
-    width: 420px;
-    height: 420px;
-    border-radius: 50%;
-    border: solid 0.4px rgba(163, 163, 163, 0.4);
-    margin-left: 840px;
-    margin-top: 600px;
-    position: fixed;
-  }
-
   /* header ヘッダー */
   header {
     position: fixed;
@@ -1160,16 +1130,10 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   /* background 背景 */
 
   .background {
-    height: 100%;
-    background: linear-gradient(
-      213deg,
-      rgba(249, 188, 164, 0.64) 5%,
-      rgba(155, 210, 204, 0.64) 35%,
-      rgba(251, 204, 159, 0.64) 65%,
-      rgba(255, 204, 191, 0.64) 94%
-    );
+    background-image: url(スマホ背景.jpg);
+    background-size: cover;
     background-attachment: fixed;
-    padding-top: 40px;
+    padding-top: 90px;
     padding-bottom: 1px;
   }
 
@@ -1344,7 +1308,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     margin: 0 auto; /* 水平方向に中央に配置 */
     margin-bottom: 60px;
     font-size: 10px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.55);
 
     font-family: "Zen Kaku Gothic New", sans-serif;
     font-weight: 400;
