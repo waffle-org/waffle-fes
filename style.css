@@ -181,13 +181,21 @@
     font-style: normal;
   }
 
-  .fixed_btn p1 {
+  .fixed_btn .p1 {
     font-size: 19px;
     font-weight: bold;
     color: #fff;
+    margin-bottom: 0px;
   }
 
-  .fixed_btn p2 {
+  .fixed_btn .p2 {
+    font-size: 19px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0px;
+  }
+
+  .fixed_btn .p3 {
     color: #fff;
     font-size: 18px;
   }
@@ -1165,7 +1173,6 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     padding-bottom: 1px;
   }
 
-
   /* header ヘッダー */
   header {
     position: fixed;
@@ -1302,14 +1309,23 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     z-index: 4;
   }
 
-  .fixed_btn p1 {
-    padding-top: 5px;
+  .fixed_btn .p1 {
+    margin-top: 5px;
     font-size: 9px;
     font-weight: bold;
     color: #fff;
+    margin-bottom: 0px;
   }
 
-  .fixed_btn p2 {
+  .fixed_btn .p2 {
+    font-size: 9px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0px;
+  }
+
+  .fixed_btn .p3 {
+    padding-top: 5px;
     color: #fff;
     font-size: 8px;
   }
@@ -1367,6 +1383,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
 
   /* news ニュース */
   .space {
+    margin-top: 20px;
     border-bottom: 1px solid #333;
     margin-bottom: 0px;
     margin-left: 30px;
@@ -1751,13 +1768,13 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     padding: 0;
   }
 
-/* カードレイアウトのタイトル部分 */
-.card-title {
-  margin: 0.6em 0 0;
-  color: black !important;
-  text-align: center;
-  font-size: 12px;
-}
+  /* カードレイアウトのタイトル部分 */
+  .card-title {
+    margin: 0.6em 0 0;
+    color: black !important;
+    text-align: center;
+    font-size: 12px;
+  }
 
   /* カードレイアウトの説明文部分 */
   .card-text-tax {
@@ -1768,23 +1785,23 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     font-size: 7px;
   }
 
-/* カードレイアウトを1カラムで配置 */
-.card-list {
-  margin: 0.5em auto;
-  padding: 0;
-  width: 100%;
-  background: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 1%;
-  width: calc(94% / 1); 
-}
+  /* カードレイアウトを1カラムで配置 */
+  .card-list {
+    margin: 0.5em auto;
+    padding: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 1%;
+    width: calc(94% / 1);
+  }
 
-.card-list hr {
-  margin: 2px auto 0 auto;
-  width: 70%;
-  border: 0.5px solid #ec5160;
-}
-  .featured_sub h4{
+  .card-list hr {
+    margin: 2px auto 0 auto;
+    width: 70%;
+    border: 0.5px solid #ec5160;
+  }
+  .featured_sub h4 {
     width: 80%;
     font-size: 9px;
     margin: auto;
@@ -1838,14 +1855,13 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     width: 90%;
     height: 60%;
     position: relative;
-    padding:5px;
+    padding: 5px;
     border-radius: 5px;
     border: 0.5px solid #333;
     background-color: #fff;
     color: #333;
     font-size: 6px;
     text-align: left;
-
 
     font-family: "Zen Maru Gothic", serif;
     font-weight: 400;
@@ -2207,13 +2223,13 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
 
   .footer_ li {
     list-style: none;
-    margin-top: 10px;
-    font-size: 8px;
+    margin-top: 5px;
+    font-size: 6px;
   }
 
   .sns {
     float: right;
-    margin-top: 35px;
+    margin-top: 10px;
     margin-right: 5px;
   }
 
@@ -2222,7 +2238,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   .sns img {
-    width: 30px;
+    width: 20px;
   }
 
   .sns li {
