@@ -21,7 +21,6 @@
     padding-bottom: 1px;
   }
 
-
   /* header ヘッダー */
   header {
     position: fixed;
@@ -1168,7 +1167,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     top: 64px; /* ナビゲーションバーの高さに合わせる */
     right: -300px; /* バーが最初は右側に隠れている状態 */
     width: 150px; /* バーの幅 */
-    height: 24%;
+    height: 160px;
     background-color: #f8f9fa; /* バーの背景色 */
     transition: right 0.3s ease; /* アニメーションを追加 */
     z-index: 1030; /* ナビゲーションバーよりも手前に表示 */
@@ -1250,7 +1249,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   .KV {
-    padding-top: 70px;
+    padding-top: 60px;
   }
 
   .pc {
@@ -1310,6 +1309,10 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     margin-bottom: 60px;
     font-size: 10px;
     background-color: rgba(255, 255, 255, 0.55);
+
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
   .message_contents {
@@ -1362,7 +1365,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     text-align: left;
   }
   .news_content {
-    padding: 20px 0px;
+    padding: 7px 0px;
     border-bottom: 1px solid #333;
   }
 
@@ -1927,7 +1930,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
 
   /*アコーディオンで現れるエリア*/
 
-  .sp_hide{
+  .sp_hide {
     display: none;
   }
 
@@ -1944,7 +1947,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     font-size: 8px;
     text-align: left;
     padding-left: 1.4em;
-    text-indent:  -1.5em;
+    text-indent: -1.5em;
   }
 
   h2 {
@@ -1962,7 +1965,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     width: 60%;
     height: 40px;
     margin: auto;
-    font-size: 10px;
+    font-size: 9.5px;
     padding: 1rem 4rem;
     background: #fff;
     color: black;
@@ -2174,7 +2177,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
 
   footer {
     position: absolute;
-    height: 70px;
+    height: 50px;
     width: 100%;
     background-color: #fff;
     background-attachment: scroll;
@@ -2184,6 +2187,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .footer_ {
     float: left;
     padding-left: 5px;
+    margin-bottom: 0px;
   }
 
   .footer_ li {
@@ -2195,7 +2199,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .sns {
     float: right;
     margin-top: 10px;
-    margin-right: 5px;
+    margin-right: 15px;
   }
 
   .sns a {
@@ -2208,8 +2212,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
 
   .sns li {
     padding-top: 10px;
-    padding-bottom: 20px;
     display: inline-block;
-    padding-left: 10px;
+    padding-left: 5px;
   }
 }
