@@ -1283,6 +1283,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     left: 0;
     width: 100%;
     background-color: #fff;
+    z-index: 5;
   }
 
   .waffleimage {
