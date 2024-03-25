@@ -1270,35 +1270,6 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     padding-bottom: 1px;
   }
 
-  .circle_1 {
-    width: 370px;
-    height: 370px;
-    border-radius: 50%;
-    border: solid 1px rgba(163, 163, 163, 0.4);
-    margin-left: -45px;
-    margin-top: -15px;
-    position: fixed;
-  }
-
-  .circle_2 {
-    width: 620px;
-    height: 620px;
-    border-radius: 50%;
-    border: solid 0.4px rgba(163, 163, 163, 0.4);
-    margin-left: 980px;
-    margin-top: 300px;
-    position: fixed;
-  }
-
-  .circle_3 {
-    width: 420px;
-    height: 420px;
-    border-radius: 50%;
-    border: solid 0.4px rgba(163, 163, 163, 0.4);
-    margin-left: 840px;
-    margin-top: 600px;
-    position: fixed;
-  }
 
   /* header ヘッダー */
   header {
@@ -1439,12 +1410,12 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   /* コンテンツ（白い枠） */
   .content {
     padding-top: 5px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     text-align: center;
     border-radius: 10px;
     width: 80%; /* 要素の幅を設定 */
     margin: 0 auto; /* 水平方向に中央に配置 */
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     font-size: 10px;
     background-color: rgba(255, 255, 255, 0.4);
   }
@@ -1552,7 +1523,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   .about_content {
-    margin: 40px;
+    margin: 20px 40px 20px 40px;
   }
 
   .about_content h2 {
@@ -1882,10 +1853,6 @@ a.card-link {
   font-size: 12px;
 }
 
-/* .card-title h2{
-color: #818181;
-} */
-
 /* カードレイアウトの説明文部分 */
 .card-text-tax {
   margin: 0;
@@ -1903,7 +1870,7 @@ color: #818181;
   background: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 1%;
-  width: calc(94% / 1); /* 96%幅を2で割るという指定 */
+  width: calc(94% / 1); 
 }
 
 .card-list hr {
@@ -1911,9 +1878,6 @@ color: #818181;
   width: 70%;
   border: 0.5px solid #ec5160;
 }
-
-
-
   .featured_sub h4{
     width: 80%;
     font-size: 9px;
@@ -1951,121 +1915,67 @@ color: #818181;
 
 
   /* voices 参加者の声 */
+
   .voices h2 {
-    font-size: 20px;
+    font-size: 10px;
+    margin-bottom: 0;
+    margin-top: 15px;
   }
 
   .voices ul {
     display: flex;
     list-style: none;
     height: auto;
-    width: 90%;
+    width: 88%;
+    margin: 0 auto 0 auto;
+    padding: 0;
   }
 
   .voice_msg1,
-  .voice_msg3,
   .voice_msg5,
   .voice_msg2,
-  .voice_msg4,
   .voice_msg6 {
     width: 90%;
     height: 60%;
     position: relative;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 2px solid #333;
+    padding:5px;
+    border-radius: 5px;
+    border: 0.5px solid #333;
     background-color: #fff;
     color: #333;
     font-size: 6px;
+    text-align: left;
+
+
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
-  .voice_msg1:before {
-    position: absolute;
-    top: 100%;
-    right: 50px;
-    transform: skew(45deg);
-    height: 25px;
-    width: 15px;
-    border-left: 3px solid #333;
-    background-color: #fff;
-    content: "";
-  }
-
-  .voice_msg2:before {
-    position: absolute;
-    top: 100%;
-    left: 50px;
-    transform: skew(-25deg);
-    height: 25px;
-    width: 15px;
-    border-right: 3px solid #333;
-    background-color: #fff;
-    content: "";
-  }
-
-  .voice_msg3:before {
-    position: absolute;
-    top: 100%;
-    right: 50px;
-    transform: skew(45deg);
-    height: 25px;
-    width: 15px;
-    border-left: 3px solid #333;
-    background-color: #fff;
-    content: "";
-  }
-
-  .voice_msg4:before {
-    position: absolute;
-    top: 100%;
-    left: 50px;
-    transform: skew(-25deg);
-    height: 25px;
-    width: 15px;
-    border-right: 3px solid #333;
-    background-color: #fff;
-    content: "";
-  }
-
-  .voice_msg5:before {
-    position: absolute;
-    top: 100%;
-    right: 50px;
-    transform: skew(45deg);
-    height: 25px;
-    width: 15px;
-    border-left: 3px solid #333;
-    background-color: #fff;
-    content: "";
-  }
-
-  .voice_msg6:before {
-    position: absolute;
-    top: 100%;
-    left: 50px;
-    transform: skew(-25deg);
-    height: 25px;
-    width: 15px;
-    border-right: 3px solid #333;
-    background-color: #fff;
-    content: "";
+  .voice_msg1 {
+    margin-bottom: 10px;
+    margin-top: 15px;
   }
 
   .voice_img1,
-  .voice_img3,
   .voice_img5 img {
-    width: 100px;
+    width: 60px;
     margin-left: 10px;
-    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .voice_img1 {
+    margin-top: 15px;
+  }
+
+  .voice_img2 img {
+    width: 50px;
+    margin-right: 10px;
     margin-bottom: 10px;
   }
 
-  .voice_img2,
-  .voice_img4,
   .voice_img6 img {
-    width: 100px;
+    width: 40px;
     margin-right: 10px;
-    margin-top: 50px;
     margin-bottom: 10px;
   }
 
