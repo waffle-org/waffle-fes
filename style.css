@@ -2283,13 +2283,13 @@ color: #818181;
 
   .footer_ li {
     list-style: none;
-    margin-top: 10px;
-    font-size: 8px;
+    margin-top: 5px;
+    font-size: 6px;
   }
 
   .sns {
     float: right;
-    margin-top: 35px;
+    margin-top: 10px;
     margin-right: 5px;
   }
 
@@ -2298,7 +2298,7 @@ color: #818181;
   }
 
   .sns img {
-    width: 30px;
+    width: 20px;
   }
 
   .sns li {
