@@ -1893,7 +1893,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   .accordion-area li {
-    margin: 10px 0;
+    margin: 5px 0;
   }
 
   .accordion-area section {
@@ -1905,9 +1905,9 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     position: relative;
     /*+マークの位置基準とするためrelative指定*/
     cursor: pointer;
-    font-size: 10px;
+    font-size: 9px;
     font-weight: normal;
-    padding: 3% 3% 3% 50px;
+    padding: 1% 1% 1% 15px;
     margin: 10px 0px;
     transition: all 0.5s ease;
   }
@@ -1917,8 +1917,8 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .title::after {
     position: absolute;
     content: "";
-    width: 10px;
-    height: 2px;
+    width: 8px;
+    height: 1px;
     background-color: #333;
   }
 
@@ -1945,6 +1945,11 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   /*アコーディオンで現れるエリア*/
+
+  .sp_hide{
+    display: none;
+  }
+
   .box {
     display: none;
     /*はじめは非表示*/
@@ -1955,6 +1960,10 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
 
   .box p {
     margin-bottom: 0px;
+    font-size: 8px;
+    text-align: left;
+    padding-left: 1.4em;
+    text-indent:  -1.5em;
   }
 
   h2 {
@@ -1969,10 +1978,10 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
-    width: 80%;
-    height: 60px;
+    width: 60%;
+    height: 40px;
     margin: auto;
-    font-size: 15px;
+    font-size: 10px;
     padding: 1rem 4rem;
     background: #fff;
     color: black;
@@ -1999,7 +2008,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     top: 50%;
     right: 1em;
     transform: translateY(-50%);
-    width: 50px;
+    width: 30px;
     height: 1px;
     background-color: #27acd9;
   }
@@ -2023,13 +2032,13 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
 
   /* sponser スポンサー */
   .special img {
-    margin-top: 25px;
-    width: 60%;
+    margin-top: 15px;
+    width: 40%;
     height: auto;
   }
 
   .gold {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .gold-container {
@@ -2053,12 +2062,12 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
 
   .lower {
     margin-right: 10px;
-    margin-top: 15px;
-    margin-bottom: 30px;
+    margin-top: 5px;
+    margin-bottom: 15px;
   }
 
   .logo_SONY {
-    height: 50px;
+    height: 46px;
     width: auto;
     padding-left: 5px;
     padding-top: 5px;
@@ -2066,23 +2075,23 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
 
   .logo_日本総研 {
     margin-top: 15px;
-    height: 30px;
+    height: 25px;
     width: auto;
   }
 
   .logo_CyberAgent {
-    height: 33px;
+    height: 25px;
     width: auto;
   }
 
   .logo_unity {
-    height: 35px;
+    height: 27px;
     width: auto;
     margin-left: 20px;
   }
 
   .DiamondSponsors {
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center;
     /* テキストを中央揃え */
   }
@@ -2097,11 +2106,11 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     width: auto;
     align-items: center;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .silver {
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: center;
     /* 中央揃え */
   }
@@ -2129,10 +2138,11 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     width: auto;
     height: 30px;
     margin-left: 30px;
+    margin-right: 10px !important;
   }
 
   .supporter {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .supporter-container {
@@ -2150,6 +2160,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .logo_アドウェイズ {
     height: 30px;
     width: auto;
+    margin-left: 10px;
   }
 
   .logo_Lenovo {
@@ -2159,22 +2170,23 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   .sponsor_content p {
-    padding: 25px 15px;
-    font-size: 10px;
+    padding: 10px 5px;
+    font-size: 6px;
     color: #5a544b;
   }
 
   .sponsor_content h2 {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 12px;
     color: #5a544b;
+    margin-bottom: 0%;
   }
 
   .sponsor_content hr {
     width: 80%;
     margin: 0 auto;
-    margin-top: 10px;
-    border: 1.2px solid;
+    margin-top: 5px;
+    border: 0.6px solid;
   }
 
   /* footer フッター */
