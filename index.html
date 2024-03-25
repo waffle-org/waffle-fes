@@ -926,11 +926,12 @@
   </script>
 
   <script>
-    $(document).ready(function () {
-      $(".navbar-toggler").click(function () {
-        $(".collapse").toggle();
-      });
+    $(document).ready(function(){
+    // ナビゲーションバーのトグルボタンがクリックされたときに、ナビゲーションバーを開閉する
+    $(".navbar-toggler").click(function(){
+      $("#navbarSupportedContent").toggleClass("show");
     });
+  });
   </script>
 
 
