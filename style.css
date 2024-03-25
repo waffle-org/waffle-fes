@@ -1220,6 +1220,21 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     border: none !important;
   }
 
+  .navbar-collapse {
+    position: fixed;
+    top: 64px; /* ナビゲーションバーの高さに合わせる */
+    right: -300px; /* バーが最初は右側に隠れている状態 */
+    width: 150px; /* バーの幅 */
+    height: 24%;
+    background-color: #f8f9fa; /* バーの背景色 */
+    transition: right 0.3s ease; /* アニメーションを追加 */
+    z-index: 1030; /* ナビゲーションバーよりも手前に表示 */
+  }
+
+  .navbar-collapse.show {
+    right: 0;
+  }
+
   .navbar-nav_mr-auto ul {
     float: right;
     margin-top: 20px;
@@ -1233,6 +1248,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .navbar-nav_mr-auto a {
     text-decoration: none;
     color: #5a544b;
+    padding: 6px 0px;
   }
 
   .navbar-nav_mr-auto a:hover {
