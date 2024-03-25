@@ -1321,7 +1321,28 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     background-color: white;
     margin-top: 10px;
     margin-right: 10px;
+    border: none !important;
   }
+
+  .navbar-nav_mr-auto ul {
+    float: right;
+    margin-top: 20px;
+  }
+
+  .navbar-nav_mr-auto li {
+    list-style: none;
+    font-size: 18px;
+  }
+
+  .navbar-nav_mr-auto a {
+    text-decoration: none;
+    color: #5a544b;
+  }
+
+  .navbar-nav_mr-auto a:hover {
+    color: #eb5f6e;
+  }
+
 
   /* 見出し */
   #NEWS,
@@ -1403,6 +1424,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     font-size: 9px;
     font-weight: bold;
     color: #fff;
+
   }
 
   .fixed_btn p2 {
@@ -1814,72 +1836,119 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     width: 100px;
     padding-top: 4px;
   }
+
+
+
+
   /* featured コンテンツ*/
 
-  .featured_main {
-    padding-top: 25px;
-  }
+#cardlayout-wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  margin: 2em auto;
+  max-width: 960px;
+  width: 65%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
 
-  .featured_main ul {
-    display: flex;
-    list-style: none;
-    padding-left: 0px;
-  }
+/* リンクテキストの下線を非表示 */
+a.card-link {
+  text-decoration: none;
+}
 
-  .career_talk {
-    padding: 0px 10px;
-  }
+/* カードレイアウト内の画像を幅いっぱいに表示 */
+#cardlayout-wrap img {
+  display: block;
+  width: 100%;
+  border-radius: 1% 1%;
+}
 
-  .career_talk h4 {
-    font-size: 15px;
-  }
+.card-figure {
+  margin: 0;
+  padding: 0;
+}
 
-  .career_talk p {
-    font-size: 8px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
+/* カードレイアウトのタイトル部分 */
+.card-title {
+  margin: 0.6em 0 0;
+  color: black !important;
+  text-align: center;
+  font-size: 12px;
+}
 
-  .work_shop {
-    padding: 0px 10px;
-  }
+/* .card-title h2{
+color: #818181;
+} */
 
-  .featured_main img {
-    padding-top: 20px;
-  }
+/* カードレイアウトの説明文部分 */
+.card-text-tax {
+  margin: 0;
+  padding: 5px 12px 12px 15px;
+  color: black;
+  text-align: left;
+  font-size: 7px;
+}
 
-  .featured_sub {
-    margin-top: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+/* カードレイアウトを1カラムで配置 */
+.card-list {
+  margin: 0.5em auto;
+  padding: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 1%;
+  width: calc(94% / 1); /* 96%幅を2で割るという指定 */
+}
 
-  .featured_sub h4 {
-    font-size: 15px;
+.card-list hr {
+  margin: 2px auto 0 auto;
+  width: 70%;
+  border: 0.5px solid #ec5160;
+}
+
+
+
+  .featured_sub h4{
+    width: 80%;
+    font-size: 9px;
+    margin: auto;
   }
 
   .featured_sub-container {
     display: flex;
     /* コンテナ内の要素を横並びに配置 */
     justify-content: center;
-
-    margin-top: 40px;
-    margin-bottom: 40px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .featured_sub-container img {
-    margin-right: 30px;
+    margin-right: 10px;
     /* 画像間の間隔 */
-    max-width: 20%;
+    max-width: 25%;
     /* 画像の幅を調整 */
     height: auto;
     /* アスペクト比を保つ */
+    border-radius: 50%;
   }
 
   /* 最後の画像にはマージンを適用しない */
   .featured_sub-container img:last-child {
     margin-right: 0;
   }
+
+
+
+
+
+
 
   /* voices 参加者の声 */
   .voices h2 {
