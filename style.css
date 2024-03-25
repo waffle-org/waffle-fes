@@ -427,6 +427,11 @@
   }
 
   /* timetable タイムテーブル */
+  .pc_hide{
+    display: none;
+  }
+/* ↑レスポンシブ用の改行 */
+
   .timetable_contents {
     display: grid;
     grid-gap: 0em 2em;
@@ -1133,7 +1138,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     background-image: url(スマホ背景.jpg);
     background-size: cover;
     background-attachment: fixed;
-    padding-top: 90px;
+    padding-top: 40px;
     padding-bottom: 1px;
   }
 
