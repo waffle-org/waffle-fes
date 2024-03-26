@@ -91,8 +91,9 @@
       <div class="contents">
 
         <button type="button" class="fixed_btn" onclick="location.href='https://waffle-fes2024.peatix.com'">
-          <p1>お申し込みは<br>こちら</p1><br>
-          <p2>5.26 SUN</p2>
+          <div class="p1">お申し込みは</div>
+          <div class="p2">こちら</div>
+          <div class="p3">5.26 SUN</div>
         </button>
 
 
@@ -181,7 +182,7 @@
           </p>
           <p>時代が変わり、働き方が変わり、次々と塗り替わっていく価値観の最先端をひた走る皆さんが、自分が主人公の人生を描けるように。</p>
           <p>女子とノンバイナリーが、もっともっと、社会で翼を広げるために。<span class="bold_message"><br>願わくば、テックを味方にできるように。</span></p>
-          <p>イベントに来るにはあらゆるハードルがあることは、わたしたちにもよく分かる。同世代の友達は、まだ将来のことなんて考えていないかも。</p>
+          <p>イベントに来るにはあらゆるハードルがあることは、わたしたちにもよく分かる。<br>同世代の友達は、まだ将来のことなんて考えていないかも。</p>
           <p>でも、一歩を踏み出した人だけが出会える選択肢があって、それを切り拓くことができるのは、ほかでもない自分自身です。</p>
           <span class="imp_message">さあ、テックとともに、未来を手に入れよう。</span>
         </section>
@@ -196,7 +197,7 @@
               <p>2024.05.25(土)</p>
             </div>
           <div class="theme">
-            <p>Technovation Girls 日本リージョン公式ピッチイベント</p>
+            <p>Technovation Girls<br class="pc_hide">日本リージョン公式ピッチイベント</p>
           </div>
 
             <div class="timetable_day2">
@@ -775,7 +776,7 @@
                 <h3 class="title">Q　会場内で飲食はできますか？
                 </h3>
                 <div class="box ">
-                  <p>A　飲食（アルコール類は除く）は自由です（PCなどを使用する一部のコンテンツを除く）。<br>ぜひリラックスしてお楽しみください。</p>
+                  <p>A　飲食（アルコール類は除く）は自由です（PCなどを使用する一部のコンテンツを除く）。<br class="sp_hide">ぜひリラックスしてお楽しみください。</p>
                 </div>
               </section>
 
@@ -785,7 +786,7 @@
                 <h3 class="title">Q　お昼はでますか？
                 </h3>
                 <div class="box ">
-                  <p>A　各自でご用意をお願いします。会場内は飲食は自由ですので、お持ち込みも可能です。<br>近隣のレストランもあわせてご利用ください。
+                  <p>A　各自でご用意をお願いします。会場内は飲食は自由ですので、お持ち込みも可能です。<br class="sp_hide">近隣のレストランもあわせてご利用ください。
                   </p>
                 </div>
               </section>
@@ -796,7 +797,7 @@
                 </h3>
                 <div class="box ">
                   <p>
-                    A　本イベントは、女子およびノンバイナリーの中高生や大学生（高専生や専門学校生、大学院生を<br>含む）を対象としています。男性の方は、同伴の保護者の方のみ参加可能です<br>（必ずお子さんと一緒にご参加ください）。
+                    A　本イベントは、女子およびノンバイナリーの中高生や大学生（高専生や専門学校生、大学院生を<br class="sp_hide">含む）を対象としています。男性の方は、同伴の保護者の方のみ参加可能です<br>（必ずお子さんと一緒にご参加ください）。
                   </p>
                 </div>
               </section>
@@ -927,11 +928,12 @@
   </script>
 
   <script>
-    $(document).ready(function () {
-      $(".navbar-toggler").click(function () {
-        $(".collapse").toggle();
-      });
+    $(document).ready(function(){
+    // ナビゲーションバーのトグルボタンがクリックされたときに、ナビゲーションバーを開閉する
+    $(".navbar-toggler").click(function(){
+      $("#navbarSupportedContent").toggleClass("show");
     });
+  });
   </script>
 
 
