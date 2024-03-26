@@ -251,14 +251,7 @@
     font-size: 25px;
     margin-top: 50px;
     padding-top: 24px;
-    background: linear-gradient(
-      to right,
-      #eb5f6e 0%,
-      #ffbfca 20%,
-      #f9bca4 30%,
-      #fef076 40%,
-      #a2fff4 80%
-    );
+    background: linear-gradient(to right, #eb5f6e 0%, #ffbfca 20%, #f9bca4 30%, #fef076 40%, #a2fff4 80%);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 150% 20%;
@@ -427,10 +420,10 @@
   }
 
   /* timetable タイムテーブル */
-  .pc_hide{
+  .pc_hide {
     display: none;
   }
-/* ↑レスポンシブ用の改行 */
+  /* ↑レスポンシブ用の改行 */
 
   .timetable_contents {
     display: grid;
@@ -441,8 +434,11 @@
     grid-template-columns: 1fr 7fr 7fr;
   }
 
-  .timetable_section {
+  .timetable_section_PC {
     margin: 40px;
+  }
+  .timetable_section_SP {
+    display: none;
   }
 
   .theme p {
@@ -496,7 +492,7 @@
     background-color: rgb(255 255 255);
     display: grid;
     place-items: center;
-    /* border: solid 1px #adb5bd; */
+    border: solid 1px #9d9d9d;
   }
 
   .event_lifork {
@@ -504,7 +500,7 @@
     background-color: rgb(255 255 255);
     display: grid;
     place-items: center;
-    /* border: solid 1px #adb5bd; */
+    border: solid 1px #9d9d9d;
   }
 
   #main_tab {
@@ -538,24 +534,36 @@
     width: 100%;
     height: 100%;
     border-radius: 0px;
+    background-color: #ff9ea7;
   }
 
   .event_lifork button {
     width: 100%;
     height: 100%;
     border-radius: 0px;
+    background-color: #bce9e4;
   }
 
   .event_main button:hover {
-    background-color: #ff9ea7;
-    color: white;
+    background-color: white;
+    color: #ff9ea7;
     transition-duration: 0.3s;
   }
 
   .event_lifork button:hover {
-    background-color: #bce9e4;
-    color: white;
+    background-color: white;
+    color: #bce9e4;
     transition-duration: 0.3s;
+  }
+  .comingSoon_main {
+    background-color: #ff9ea7;
+    height: 100%;
+    width: 100%;
+  }
+  .comingSoon_lifork {
+    background-color: #bce9e4;
+    height: 100%;
+    width: 100%;
   }
 
   /* timetable中身 モダール */
@@ -1283,14 +1291,6 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     font-size: 9px;
     font-weight: bold;
     color: #fff;
-    margin-bottom: 0px;
-  }
-
-  .fixed_btn .p2 {
-    font-size: 9px;
-    font-weight: bold;
-    color: #fff;
-    margin-bottom: 0px;
   }
 
   .fixed_btn .p3 {
@@ -1341,14 +1341,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     font-size: 14px;
     margin-top: 50px;
     padding-top: 20px;
-    background: linear-gradient(
-      to right,
-      #eb5f6e 0%,
-      #ffbfca 20%,
-      #f9bca4 30%,
-      #fef076 40%,
-      #a2fff4 80%
-    );
+    background: linear-gradient(to right, #eb5f6e 0%, #ffbfca 20%, #f9bca4 30%, #fef076 40%, #a2fff4 80%);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 150% 20%;
@@ -1537,17 +1530,82 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   /* timetable タイムテーブル */
+  /*タブ切り替え全体のスタイル*/
+  .tabs {
+    margin-top: 50px;
+    padding-bottom: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    background-color: white;
+  }
+
+  /*タブのスタイル*/
+  .tab_item {
+    width: calc(100% / 2);
+    height: 35px;
+    border-bottom: 3px solid #5ab4bd;
+    background-color: #d9d9d9;
+    line-height: 35px;
+    font-size: 10px;
+    text-align: center;
+    color: #565656;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+  }
+  .tab_item:hover {
+    opacity: 0.75;
+  }
+
+  /*ラジオボタンを全て消す*/
+  input[name="tab_item"] {
+    display: none;
+  }
+
+  /*タブ切り替えの中身のスタイル*/
+  .tab_content {
+    display: none;
+    padding: 0px 25px 0px;
+    clear: both;
+    overflow: hidden;
+  }
+
+  /*選択されているタブのコンテンツのみを表示*/
+  #all:checked ~ #all_content,
+  #design:checked ~ #design_content {
+    display: block;
+  }
+
+  /*選択されているタブのスタイルを変える*/
+  #all:checked + .tab_item {
+    background-color: #ff9ea7;
+    opacity: 1;
+  }
+  #design:checked + .tab_item {
+    background-color: #bce9e4;
+  }
+  /* 
+  #tt_background {
+    background-color: #f8e5e7;
+    border: none;
+    margin: -5px -4px;
+  } */
+
   .timetable_contents {
     display: grid;
     grid-gap: 0em 2em;
-    margin-top: 16px;
-    grid-template-columns: repeat(5, 1fr); /* 5列のグリッド */
-    grid-template-rows: repeat(43, 25px);
-    grid-template-columns: 1fr 7fr 7fr;
+    grid-template-columns: repeat(3, 1fr); /* 3列のグリッド */
+    grid-template-rows: repeat(43, 20px);
+    grid-template-columns: 1fr 7fr;
   }
 
-  .timetable_section {
-    margin: 40px;
+  .timetable_section_PC {
+    display: none;
+  }
+  .timetable_section_SP {
+    margin: 15px;
   }
 
   .theme p {
@@ -1596,6 +1654,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .time {
     grid-column: 1;
     font-size: 11px;
+    margin-top: -7px;
   }
 
   .event_main {
@@ -1603,32 +1662,27 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     background-color: rgb(255 255 255);
     display: grid;
     place-items: center;
-    border: solid 1px #adb5bd;
+    border: solid 1px #9d9d9d;
   }
 
   .event_lifork {
-    grid-column: 3;
+    grid-column: 2;
     background-color: rgb(255 255 255);
     display: grid;
     place-items: center;
-    border: solid 1px #adb5bd;
+    border: solid 1px #9d9d9d;
   }
 
-  #main_tab {
-    background-color: #ff9ea7;
-  }
-
-  #lifork_tab {
-    background-color: #bce9e4;
-  }
   .event_main h2 {
     padding: 0px;
     font-size: 7px;
+    margin-bottom: 0px;
   }
 
   .event_lifork h2 {
     padding: 0px;
     font-size: 7px;
+    margin-bottom: 0px;
   }
 
   .event_main p {
@@ -1645,24 +1699,37 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     width: 100%;
     height: 100%;
     border-radius: 0px;
+    background-color: #ff9ea7;
   }
 
   .event_lifork button {
     width: 100%;
     height: 100%;
     border-radius: 0px;
+    background-color: #bce9e4;
   }
 
   .event_main button:hover {
-    background-color: #ffa51e;
-    color: white;
+    background-color: white;
+    color: #ff9ea7;
     transition-duration: 0.3s;
   }
 
   .event_lifork button:hover {
-    background-color: #ffa51e;
-    color: white;
+    background-color: white;
+    color: #bce9e4;
     transition-duration: 0.3s;
+  }
+  .comingSoon_main {
+    background-color: #ff9ea7;
+    height: 100%;
+    width: 100%;
+  }
+
+  .comingSoon_lifork {
+    background-color: #bce9e4;
+    height: 100%;
+    width: 100%;
   }
 
   /* timetable中身 モダール */
@@ -1749,6 +1816,10 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     font-size: 12px;
   }
 
+  /* .card-title h2{
+color: #818181;
+} */
+
   /* カードレイアウトの説明文部分 */
   .card-text-tax {
     margin: 0;
@@ -1766,7 +1837,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 1%;
-    width: calc(94% / 1);
+    width: calc(94% / 1); /* 96%幅を2で割るという指定 */
   }
 
   .card-list hr {
@@ -1774,6 +1845,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     width: 70%;
     border: 0.5px solid #ec5160;
   }
+
   .featured_sub h4 {
     width: 80%;
     font-size: 9px;
