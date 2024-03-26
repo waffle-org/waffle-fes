@@ -1536,6 +1536,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     padding-bottom: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
+    background-color: white;
   }
 
   /*タブのスタイル*/
@@ -1584,14 +1585,19 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
   #design:checked + .tab_item {
     background-color: #bce9e4;
-    opacity: 1;
   }
+  /* 
+  #tt_background {
+    background-color: #f8e5e7;
+    border: none;
+    margin: -5px -4px;
+  } */
 
   .timetable_contents {
     display: grid;
     grid-gap: 0em 2em;
     grid-template-columns: repeat(3, 1fr); /* 3列のグリッド */
-    grid-template-rows: repeat(43, 25px);
+    grid-template-rows: repeat(43, 20px);
     grid-template-columns: 1fr 7fr;
   }
 
@@ -1656,7 +1662,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     background-color: rgb(255 255 255);
     display: grid;
     place-items: center;
-    border: solid 1px #9d9d9d;
+    /* border: solid 1px #9d9d9d; */
   }
 
   .event_lifork {
@@ -1664,19 +1670,19 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     background-color: rgb(255 255 255);
     display: grid;
     place-items: center;
-    border: solid 1px #9d9d9d;
+    /* border: solid 1px #9d9d9d; */
   }
 
   .event_main h2 {
     padding: 0px;
-    font-size: 9px;
-    margin-bottom: 2px;
+    font-size: 7px;
+    margin-bottom: 0px;
   }
 
   .event_lifork h2 {
     padding: 0px;
-    font-size: 9px;
-    margin-bottom: 2px;
+    font-size: 7px;
+    margin-bottom: 0px;
   }
 
   .event_main p {
