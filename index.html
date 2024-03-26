@@ -351,172 +351,169 @@
                   <p>Conference</p>
                 </div>
 
-                              <!-- タブ切り替え用 -->
-                        <div class="tabs">
-                          <input id="main_tab" type="radio" name="tab_item" checked>
-                          <label class="tab_item" for="main_tab">MAIN</label>
-                          <input id="lifork_tab" type="radio" name="tab_item">
-                          <label class="tab_item" for="lifork_tab">LIFORK</label>
-                          </div>
-
-                          
-                          <div class="tab_content" id="main_contents">
-                              <p>mainの内容</p>
-                          </div>
-
-                                                    
-                          <div class="tab_content" id="lifork_contents">
-                            <p>liforkの内容</p>
-                        </div>
+ 
+                <div class="tabs">
+                  <input id="all" type="radio" name="tab_item" checked>
+                  <label class="tab_item" for="all">総合</label>
+                  <input id="design" type="radio" name="tab_item">
+                  <label class="tab_item" for="design">デザイン</label>
+                  <div class="tab_content" id="all_content">
+                    <div class="main_contents">
+                      <div class="timetable_contents">
+                        <div class="timetable_line" style="grid-column: 2/3; grid-row: 2/2;"></div>
+                        <div class="timetable_line" style="grid-column: 2/3; grid-row: 8/8;"></div>
+                        <div class="timetable_line" style="grid-column: 2/3; grid-row: 14/14;"></div>
+                        <div class="timetable_line" style="grid-column: 2/3; grid-row: 20/20;"></div>
+                        <div class="timetable_line" style="grid-column: 2/3; grid-row: 26/26;"></div>
+                        <div class="timetable_line" style="grid-column: 2/3; grid-row: 32/32;"></div>
+                        <div class="timetable_line" style="grid-column: 2/3; grid-row: 38/38;"></div>
+                        <div class="timetable_line" style="grid-column: 2/3; grid-row: 44/44;"></div>
+          
+                        <p class="time" style="grid-row: 2/2">10:00</p>
+                        <p class="time" style="grid-row: 8/8">11:00</p>
+                        <p class="time" style="grid-row: 14/14">12:00</p>
+                        <p class="time" style="grid-row: 20/20">13:00</p>
+                        <p class="time" style="grid-row: 26/26">14:00</p>
+                        <p class="time" style="grid-row: 32/32">15:00</p>
+                        <p class="time" style="grid-row: 38/38">16:00</p>
+                        <p class="time" style="grid-row: 44/44">17:00</p>
+          
+                        <label class="event_main" style="grid-row: 1/2;" id="main_tab" for="main_tab">
+                          <h2>MAIN</h2>
+                          </label>
+          
+                          <div class="event_main" style="grid-row: 2/7;">
+                            <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#main_1" class="btn"> -->
+                                <div class="comingSoon_main">
+                                  <p>10:00-10:50</p>
+                                  <h2>Coming Soon</h2>
+                                  </div>
+                              <!-- <p>10:00-10:50</p>
+                              <h2>Welcome to Waffle Festival!!</h2> -->
+                            </div>
+                       
             
-
-                        <div class="main_contents">
-                          <div class="timetable_contents">
-                            <div class="timetable_line" style="grid-column: 2/3; grid-row: 2/2;"></div>
-                            <div class="timetable_line" style="grid-column: 2/3; grid-row: 8/8;"></div>
-                            <div class="timetable_line" style="grid-column: 2/3; grid-row: 14/14;"></div>
-                            <div class="timetable_line" style="grid-column: 2/3; grid-row: 20/20;"></div>
-                            <div class="timetable_line" style="grid-column: 2/3; grid-row: 26/26;"></div>
-                            <div class="timetable_line" style="grid-column: 2/3; grid-row: 32/32;"></div>
-                            <div class="timetable_line" style="grid-column: 2/3; grid-row: 38/38;"></div>
-                            <div class="timetable_line" style="grid-column: 2/3; grid-row: 44/44;"></div>
-              
-                            <p class="time" style="grid-row: 2/2">10:00</p>
-                            <p class="time" style="grid-row: 8/8">11:00</p>
-                            <p class="time" style="grid-row: 14/14">12:00</p>
-                            <p class="time" style="grid-row: 20/20">13:00</p>
-                            <p class="time" style="grid-row: 26/26">14:00</p>
-                            <p class="time" style="grid-row: 32/32">15:00</p>
-                            <p class="time" style="grid-row: 38/38">16:00</p>
-                            <p class="time" style="grid-row: 44/44">17:00</p>
-              
-                            <label class="event_main" style="grid-row: 1/2;" id="main_tab" for="main_tab">
-                              <h2>MAIN</h2>
-                              </label>
-              
-                              <div class="event_main" style="grid-row: 2/7;">
-                                <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#main_1" class="btn"> -->
-                                    <div class="comingSoon_main">
-                                      <p>10:00-10:50</p>
-                                      <h2>Coming Soon</h2>
-                                      </div>
-                                  <!-- <p>10:00-10:50</p>
-                                  <h2>Welcome to Waffle Festival!!</h2> -->
+                          <div class="event_main" style="grid-row: 9/11">
+                            <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#main_2" class="btn"> -->
+                              <div class="comingSoon_main">
+                                <p>11:10-11:30</p>
+                                <h2>Coming Soon</h2>
                                 </div>
-                           
-                
-                              <div class="event_main" style="grid-row: 9/11">
-                                <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#main_2" class="btn"> -->
-                                  <div class="comingSoon_main">
-                                    <p>11:10-11:30</p>
+                              <!-- <p>11:10-11:30</p>
+                              <h2>Waffle College 座談会</h2> -->
+                          </div>
+                          <div class="event_main" style="grid-row: 12/15">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#main_3" class="btn">
+                              <p>11:40-12:10</p>
+                              <h2>アメリカ大使館に聞く！<br>米国留学AtoZ</h2>
+                          </div>
+                          <div class="event_main" style="grid-row: 17/21">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#main_4" class="btn">
+                              <p>12:30-13:10</p>
+                              <h2>AIと生きる、AIを活かす</h2>
+                          </div>
+                          <div class="event_main" style="grid-row: 23/25">
+                            <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#main_5" class="btn"> -->
+                              <div class="comingSoon_main">
+                              <p>13:20-13:50</p>
+                              <h2>Coming Soon</h2>
+                              </div>
+                          </div>
+                          <div class="event_main" style="grid-row: 26/29">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#main_6" class="btn">
+                              <p>14:00-14:30</p>
+                              <h2>わたしがエンジニアになるまで</h2>
+                          </div>
+                          <div class="event_main" style="grid-row: 30/33">
+                            <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#main_7" class="btn"> -->
+                              <div class="comingSoon_main">
+                              <p>14:40-15:10</p>
+                              <h2>Coming Soon</h2>
+                              </div>
+                          </div>
+                          <div class="event_main" style="grid-row: 37/43">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#main_8" class="btn">
+                              <p>15:50-16:50</p>
+                              <h2>身近な課題をITで解決！<br>アイデアワークショップ</h2>
+                          </div>
+                          <div class="event_main" style="grid-row: 43/44">
+                            <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#main_9" class="btn"> -->
+                              <!-- 背景に色を入れるためにcomingsoonクラス指定 -->
+                              <div class="comingSoon_main">  
+                              <p>16:50-17:00</p>
+                              <h2>写真撮影・閉会の言葉</h2>
+                              </div>
+                          </div>
+                        </div>
+
+                  </div>
+
+</div>
+
+
+<div class="tab_content" id="design_content">
+                              <!-- lifork -->
+              
+                              <div class="lifork_contents">
+              
+                                <div class="timetable_contents">
+                                  <div class="timetable_line" style="grid-column: 2/3; grid-row: 2/2;"></div>
+                                  <div class="timetable_line" style="grid-column: 2/3; grid-row: 8/8;"></div>
+                                  <div class="timetable_line" style="grid-column: 2/3; grid-row: 14/14;"></div>
+                                  <div class="timetable_line" style="grid-column: 2/3; grid-row: 20/20;"></div>
+                                  <div class="timetable_line" style="grid-column: 2/3; grid-row: 26/26;"></div>
+                                  <div class="timetable_line" style="grid-column: 2/3; grid-row: 32/32;"></div>
+                                  <div class="timetable_line" style="grid-column: 2/3; grid-row: 38/38;"></div>
+                                  <div class="timetable_line" style="grid-column: 2/3; grid-row: 44/44;"></div>
+                    
+                                  <p class="time" style="grid-row: 2/2">10:00</p>
+                                  <p class="time" style="grid-row: 8/8">11:00</p>
+                                  <p class="time" style="grid-row: 14/14">12:00</p>
+                                  <p class="time" style="grid-row: 20/20">13:00</p>
+                                  <p class="time" style="grid-row: 26/26">14:00</p>
+                                  <p class="time" style="grid-row: 32/32">15:00</p>
+                                  <p class="time" style="grid-row: 38/38">16:00</p>
+                                  <p class="time" style="grid-row: 44/44">17:00</p>
+                  
+                                  <label class="event_lifork" style="grid-row: 1/2;" id="lifork_tab" for="lifork_tab">
+                                    <h2>LIFORK</h2>
+                                    </label>
+                  
+                                <div class="event_lifork" style="grid-row: 8/20">
+                                  <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#lifork_1" class="btn"> -->
+                                    <div class="comingSoon_lifork">
+                                      <p>11:00-13:00</p>
                                     <h2>Coming Soon</h2>
                                     </div>
-                                  <!-- <p>11:10-11:30</p>
-                                  <h2>Waffle College 座談会</h2> -->
-                              </div>
-                              <div class="event_main" style="grid-row: 12/15">
-                                <button type="button" data-bs-toggle="modal" data-bs-target="#main_3" class="btn">
-                                  <p>11:40-12:10</p>
-                                  <h2>アメリカ大使館に聞く！<br>米国留学AtoZ</h2>
-                              </div>
-                              <div class="event_main" style="grid-row: 17/21">
-                                <button type="button" data-bs-toggle="modal" data-bs-target="#main_4" class="btn">
-                                  <p>12:30-13:10</p>
-                                  <h2>AIと生きる、AIを活かす</h2>
-                              </div>
-                              <div class="event_main" style="grid-row: 23/25">
-                                <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#main_5" class="btn"> -->
-                                  <div class="comingSoon_main">
-                                  <p>13:20-13:50</p>
-                                  <h2>Coming Soon</h2>
-                                  </div>
-                              </div>
-                              <div class="event_main" style="grid-row: 26/29">
-                                <button type="button" data-bs-toggle="modal" data-bs-target="#main_6" class="btn">
-                                  <p>14:00-14:30</p>
-                                  <h2>わたしがエンジニアになるまで</h2>
-                              </div>
-                              <div class="event_main" style="grid-row: 30/33">
-                                <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#main_7" class="btn"> -->
-                                  <div class="comingSoon_main">
-                                  <p>14:40-15:10</p>
-                                  <h2>Coming Soon</h2>
-                                  </div>
-                              </div>
-                              <div class="event_main" style="grid-row: 37/43">
-                                <button type="button" data-bs-toggle="modal" data-bs-target="#main_8" class="btn">
-                                  <p>15:50-16:50</p>
-                                  <h2>身近な課題をITで解決！<br>アイデアワークショップ</h2>
-                              </div>
-                              <div class="event_main" style="grid-row: 43/44">
-                                <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#main_9" class="btn"> -->
-                                  <!-- 背景に色を入れるためにcomingsoonクラス指定 -->
-                                  <div class="comingSoon_main">  
-                                  <p>16:50-17:00</p>
-                                  <h2>写真撮影・閉会の言葉</h2>
-                                  </div>
-                              </div>
-                            </div>
-                            <!-- lifork -->
-              
-                            <div class="lifork_contents">
-              
-                            <div class="timetable_contents">
-                              <div class="timetable_line" style="grid-column: 2/3; grid-row: 2/2;"></div>
-                              <div class="timetable_line" style="grid-column: 2/3; grid-row: 8/8;"></div>
-                              <div class="timetable_line" style="grid-column: 2/3; grid-row: 14/14;"></div>
-                              <div class="timetable_line" style="grid-column: 2/3; grid-row: 20/20;"></div>
-                              <div class="timetable_line" style="grid-column: 2/3; grid-row: 26/26;"></div>
-                              <div class="timetable_line" style="grid-column: 2/3; grid-row: 32/32;"></div>
-                              <div class="timetable_line" style="grid-column: 2/3; grid-row: 38/38;"></div>
-                              <div class="timetable_line" style="grid-column: 2/3; grid-row: 44/44;"></div>
-                
-                              <p class="time" style="grid-row: 2/2">10:00</p>
-                              <p class="time" style="grid-row: 8/8">11:00</p>
-                              <p class="time" style="grid-row: 14/14">12:00</p>
-                              <p class="time" style="grid-row: 20/20">13:00</p>
-                              <p class="time" style="grid-row: 26/26">14:00</p>
-                              <p class="time" style="grid-row: 32/32">15:00</p>
-                              <p class="time" style="grid-row: 38/38">16:00</p>
-                              <p class="time" style="grid-row: 44/44">17:00</p>
-              
-                              <label class="event_lifork" style="grid-row: 1/2;" id="lifork_tab" for="lifork_tab">
-                                <h2>LIFORK</h2>
-                                </label>
-              
-                            <div class="event_lifork" style="grid-row: 8/20">
-                              <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#lifork_1" class="btn"> -->
-                                <div class="comingSoon_lifork">
-                                  <p>11:00-13:00</p>
-                                <h2>Coming Soon</h2>
                                 </div>
-                            </div>
-                            <div class="event_lifork" style="grid-row: 22/27">
-                              <button type="button" data-bs-toggle="modal" data-bs-target="#lifork_2" class="btn">
-                                <p>13:20-14:10</p>
-                                <h2>気づこう、無意識の思い込みや偏見の<br>もやもや</h2>
-                            </div>
-                            <div class="event_lifork" style="grid-row: 29/32">
-                              <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#lifork_3" class="btn"> -->
-                                <div class="comingSoon_lifork">
-                                <p>14:30-15:00</p>
-                                <h2>Coming Soon</h2>
+                                <div class="event_lifork" style="grid-row: 22/27">
+                                  <button type="button" data-bs-toggle="modal" data-bs-target="#lifork_2" class="btn">
+                                    <p>13:20-14:10</p>
+                                    <h2>気づこう、無意識の思い込みや偏見の<br>もやもや</h2>
                                 </div>
-                            </div>
-                            <div class="event_lifork" style="grid-row: 33/36">
-                              <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#lifork_4" class="btn"> -->
-                                <div class="comingSoon_lifork">
-                                <p>15:10-15:40</p>
-                                <h2>Coming Soon</h2>
+                                <div class="event_lifork" style="grid-row: 29/32">
+                                  <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#lifork_3" class="btn"> -->
+                                    <div class="comingSoon_lifork">
+                                    <p>14:30-15:00</p>
+                                    <h2>Coming Soon</h2>
+                                    </div>
                                 </div>
+                                <div class="event_lifork" style="grid-row: 33/36">
+                                  <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#lifork_4" class="btn"> -->
+                                    <div class="comingSoon_lifork">
+                                    <p>15:10-15:40</p>
+                                    <h2>Coming Soon</h2>
+                                    </div>
+                                </div>
+                  
+                              </div>
+                  
+                  
+                              </div>
+                  
                             </div>
-              
-                          </div>
-              
-              
-                          </div>
-              
-                        </div>
+</div>
+</div>
 
 
           <!-- modal main-->
