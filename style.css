@@ -1662,7 +1662,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     background-color: rgb(255 255 255);
     display: grid;
     place-items: center;
-    /* border: solid 1px #9d9d9d; */
+    border: solid 1px #9d9d9d;
   }
 
   .event_lifork {
@@ -1670,7 +1670,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     background-color: rgb(255 255 255);
     display: grid;
     place-items: center;
-    /* border: solid 1px #9d9d9d; */
+    border: solid 1px #9d9d9d;
   }
 
   .event_main h2 {
