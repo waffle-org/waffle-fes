@@ -61,7 +61,6 @@
     background-color: #fff;
     /* 重なり防止 */
     z-index: 1;
-
   }
 
   .waffleimage {
@@ -119,7 +118,6 @@
     /* 水平中心 */
 
     margin-top: 0%;
-
   }
 
   #NEWS::before,
@@ -211,10 +209,9 @@
     margin-right: auto;
     margin-bottom: 150px;
 
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
   /* .message_contents {
@@ -276,14 +273,7 @@
     font-size: 25px;
     margin-top: 50px;
     padding-top: 24px;
-    background: linear-gradient(
-      to right,
-      #eb5f6e 0%,
-      #ffbfca 20%,
-      #f9bca4 30%,
-      #fef076 40%,
-      #a2fff4 80%
-    );
+    background: linear-gradient(to right, #eb5f6e 0%, #ffbfca 20%, #f9bca4 30%, #fef076 40%, #a2fff4 80%);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 150% 20%;
@@ -483,7 +473,7 @@
     font-size: 20px;
   }
 
- .attention li {
+  .attention li {
     text-indent: -1.3em;
     padding-left: 1em;
   }
@@ -617,7 +607,7 @@
     background-color: rgb(255 255 255);
     display: grid;
     place-items: center;
-    /* border: solid 1px #adb5bd; */
+    border: solid 1px #9d9d9d;
   }
 
   .event_lifork {
@@ -625,7 +615,7 @@
     background-color: rgb(255 255 255);
     display: grid;
     place-items: center;
-    /* border: solid 1px #adb5bd; */
+    border: solid 1px #9d9d9d;
   }
 
   #main_tab {
@@ -659,24 +649,36 @@
     width: 100%;
     height: 100%;
     border-radius: 0px;
+    background-color: #ff9ea7;
   }
 
   .event_lifork button {
     width: 100%;
     height: 100%;
     border-radius: 0px;
+    background-color: #bce9e4;
   }
 
   .event_main button:hover {
-    background-color: #ff9ea7;
-    color: white;
+    background-color: white;
+    color: #ff9ea7;
     transition-duration: 0.3s;
   }
 
   .event_lifork button:hover {
-    background-color: #bce9e4;
-    color: white;
+    background-color: white;
+    color: #bce9e4;
     transition-duration: 0.3s;
+  }
+  .comingSoon_main {
+    background-color: #ff9ea7;
+    height: 100%;
+    width: 100%;
+  }
+  .comingSoon_lifork {
+    background-color: #bce9e4;
+    height: 100%;
+    width: 100%;
   }
 
   /* timetable中身 モダール */
@@ -858,7 +860,6 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     color: #333;
     font-size: 16px;
 
-
     font-family: "Zen Maru Gothic", serif;
     font-weight: 400;
     font-style: normal;
@@ -906,9 +907,9 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     max-width: 900px;
     margin: 0 auto;
 
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
   .accordion-area li {
@@ -996,9 +997,9 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
 
     margin-bottom: 150px;
 
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
   a.ask_button::before {
@@ -1258,13 +1259,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
 
   .background {
     height: 100%;
-    background: linear-gradient(
-      213deg,
-      rgba(249, 188, 164, 0.64) 5%,
-      rgba(155, 210, 204, 0.64) 35%,
-      rgba(251, 204, 159, 0.64) 65%,
-      rgba(255, 204, 191, 0.64) 94%
-    );
+    background: linear-gradient(213deg, rgba(249, 188, 164, 0.64) 5%, rgba(155, 210, 204, 0.64) 35%, rgba(251, 204, 159, 0.64) 65%, rgba(255, 204, 191, 0.64) 94%);
     background-attachment: fixed;
     padding-top: 40px;
     padding-bottom: 1px;
@@ -1342,7 +1337,6 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .navbar-nav_mr-auto a:hover {
     color: #eb5f6e;
   }
-
 
   /* 見出し */
   #NEWS,
@@ -1424,7 +1418,6 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     font-size: 9px;
     font-weight: bold;
     color: #fff;
-
   }
 
   .fixed_btn p2 {
@@ -1470,14 +1463,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     font-size: 14px;
     margin-top: 50px;
     padding-top: 20px;
-    background: linear-gradient(
-      to right,
-      #eb5f6e 0%,
-      #ffbfca 20%,
-      #f9bca4 30%,
-      #fef076 40%,
-      #a2fff4 80%
-    );
+    background: linear-gradient(to right, #eb5f6e 0%, #ffbfca 20%, #f9bca4 30%, #fef076 40%, #a2fff4 80%);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 150% 20%;
@@ -1572,7 +1558,6 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     list-style-position: inside;
     font-size: 10px;
   }
-
 
   .access_container {
     width: 80%;
@@ -1677,7 +1662,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   .timetable_section {
-margin: 15px;
+    margin: 15px;
   }
 
   .theme p {
@@ -1733,7 +1718,7 @@ margin: 15px;
     background-color: rgb(255 255 255);
     display: grid;
     place-items: center;
-    border: solid 1px #adb5bd;
+    border: solid 1px #9d9d9d;
   }
 
   .event_lifork {
@@ -1741,7 +1726,7 @@ margin: 15px;
     background-color: rgb(255 255 255);
     display: grid;
     place-items: center;
-    border: solid 1px #adb5bd;
+    border: solid 1px #9d9d9d;
   }
 
   #main_tab {
@@ -1775,24 +1760,37 @@ margin: 15px;
     width: 100%;
     height: 100%;
     border-radius: 0px;
+    background-color: #ff9ea7;
   }
 
   .event_lifork button {
     width: 100%;
     height: 100%;
     border-radius: 0px;
+    background-color: #bce9e4;
   }
 
   .event_main button:hover {
-    background-color: #ffa51e;
-    color: white;
+    background-color: white;
+    color: #ff9ea7;
     transition-duration: 0.3s;
   }
 
   .event_lifork button:hover {
-    background-color: #ffa51e;
-    color: white;
+    background-color: white;
+    color: #bce9e4;
     transition-duration: 0.3s;
+  }
+  .comingSoon_main {
+    background-color: #ff9ea7;
+    height: 100%;
+    width: 100%;
+  }
+
+  .comingSoon_lifork {
+    background-color: #bce9e4;
+    height: 100%;
+    width: 100%;
   }
 
   /* timetable中身 モダール */
@@ -1837,84 +1835,79 @@ margin: 15px;
     padding-top: 4px;
   }
 
-
-
-
   /* featured コンテンツ*/
 
-#cardlayout-wrap {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  margin: 2em auto;
-  max-width: 960px;
-  width: 65%;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-}
+  #cardlayout-wrap {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    margin: 2em auto;
+    max-width: 960px;
+    width: 65%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
 
-/* リンクテキストの下線を非表示 */
-a.card-link {
-  text-decoration: none;
-}
+  /* リンクテキストの下線を非表示 */
+  a.card-link {
+    text-decoration: none;
+  }
 
-/* カードレイアウト内の画像を幅いっぱいに表示 */
-#cardlayout-wrap img {
-  display: block;
-  width: 100%;
-  border-radius: 1% 1%;
-}
+  /* カードレイアウト内の画像を幅いっぱいに表示 */
+  #cardlayout-wrap img {
+    display: block;
+    width: 100%;
+    border-radius: 1% 1%;
+  }
 
-.card-figure {
-  margin: 0;
-  padding: 0;
-}
+  .card-figure {
+    margin: 0;
+    padding: 0;
+  }
 
-/* カードレイアウトのタイトル部分 */
-.card-title {
-  margin: 0.6em 0 0;
-  color: black !important;
-  text-align: center;
-  font-size: 12px;
-}
+  /* カードレイアウトのタイトル部分 */
+  .card-title {
+    margin: 0.6em 0 0;
+    color: black !important;
+    text-align: center;
+    font-size: 12px;
+  }
 
-/* .card-title h2{
+  /* .card-title h2{
 color: #818181;
 } */
 
-/* カードレイアウトの説明文部分 */
-.card-text-tax {
-  margin: 0;
-  padding: 5px 12px 12px 15px;
-  color: black;
-  text-align: left;
-  font-size: 7px;
-}
+  /* カードレイアウトの説明文部分 */
+  .card-text-tax {
+    margin: 0;
+    padding: 5px 12px 12px 15px;
+    color: black;
+    text-align: left;
+    font-size: 7px;
+  }
 
-/* カードレイアウトを1カラムで配置 */
-.card-list {
-  margin: 0.5em auto;
-  padding: 0;
-  width: 100%;
-  background: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 1%;
-  width: calc(94% / 1); /* 96%幅を2で割るという指定 */
-}
+  /* カードレイアウトを1カラムで配置 */
+  .card-list {
+    margin: 0.5em auto;
+    padding: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 1%;
+    width: calc(94% / 1); /* 96%幅を2で割るという指定 */
+  }
 
-.card-list hr {
-  margin: 2px auto 0 auto;
-  width: 70%;
-  border: 0.5px solid #ec5160;
-}
+  .card-list hr {
+    margin: 2px auto 0 auto;
+    width: 70%;
+    border: 0.5px solid #ec5160;
+  }
 
-
-
-  .featured_sub h4{
+  .featured_sub h4 {
     width: 80%;
     font-size: 9px;
     margin: auto;
@@ -1943,12 +1936,6 @@ color: #818181;
   .featured_sub-container img:last-child {
     margin-right: 0;
   }
-
-
-
-
-
-
 
   /* voices 参加者の声 */
   .voices h2 {
