@@ -420,10 +420,10 @@
   }
 
   /* timetable タイムテーブル */
-  .pc_hide{
+  .pc_hide {
     display: none;
   }
-/* ↑レスポンシブ用の改行 */
+  /* ↑レスポンシブ用の改行 */
 
   .timetable_contents {
     display: grid;
@@ -434,8 +434,11 @@
     grid-template-columns: 1fr 7fr 7fr;
   }
 
-  .timetable_section {
+  .timetable_section_PC {
     margin: 40px;
+  }
+  .timetable_section_SP {
+    display: none;
   }
 
   .theme p {
@@ -879,9 +882,9 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
 
     margin-bottom: 150px;
 
-      font-family: "Zen Kaku Gothic New", sans-serif;
-      font-weight: 400;
-      font-style: normal;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
   a.ask_button::before {
@@ -1531,12 +1534,15 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     display: grid;
     grid-gap: 0em 2em;
     margin-top: 16px;
-    grid-template-columns: repeat(5, 1fr); /* 5列のグリッド */
+    grid-template-columns: repeat(3, 1fr); /* 3列のグリッド */
     grid-template-rows: repeat(43, 25px);
-    grid-template-columns: 1fr 7fr 7fr;
+    grid-template-columns: 1fr 7fr;
   }
 
-  .timetable_section {
+  .timetable_section_PC {
+    display: none;
+  }
+  .timetable_section_SP {
     margin: 15px;
   }
 
@@ -1597,7 +1603,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   .event_lifork {
-    grid-column: 3;
+    grid-column: 2;
     background-color: rgb(255 255 255);
     display: grid;
     place-items: center;
@@ -1712,20 +1718,20 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
 
   /* featured コンテンツ*/
 
-    #cardlayout-wrap {
-      position: relative;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: justify;
-      margin: 2em auto;
-      max-width: 960px;
-      width: 65%;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-box-pack: justify;
-      justify-content: space-between;
-    }
+  #cardlayout-wrap {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    margin: 2em auto;
+    max-width: 960px;
+    width: 65%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
 
   /* リンクテキストの下線を非表示 */
   a.card-link {
@@ -1744,15 +1750,15 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     padding: 0;
   }
 
-/* カードレイアウトのタイトル部分 */
-.card-title {
-  margin: 0.6em 0 0;
-  color: black !important;
-  text-align: center;
-  font-size: 12px;
-}
+  /* カードレイアウトのタイトル部分 */
+  .card-title {
+    margin: 0.6em 0 0;
+    color: black !important;
+    text-align: center;
+    font-size: 12px;
+  }
 
-/* .card-title h2{
+  /* .card-title h2{
 color: #818181;
 } */
 
