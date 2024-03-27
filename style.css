@@ -1144,7 +1144,10 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
 
   .background {
     background-image: url(スマホ背景.jpg);
-    background-size: cover;
+    /* background-size: cover; */
+    background-size: contain; /* 画像がビューポートに完全に収まるように拡大・縮小 */
+    background-repeat: no-repeat; /* 画像の繰り返し表示を無効化 */
+    background-position: center; /* 画像を中央に配置 */
     background-attachment: fixed;
     padding-top: 40px;
     padding-bottom: 1px;
