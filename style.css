@@ -14,7 +14,7 @@
   /* background 背景 */
 
   .background {
-    background-image: url(名称未設定のデザイン3.jpg);
+    background-image: url(pc背景薄め.jpg);
     background-size: cover;
     background-attachment: fixed;
     padding-top: 90px;
@@ -179,7 +179,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.55);
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
     width: 980px;
     margin-top: 50px;
@@ -364,9 +364,10 @@
     margin-top: 80px;
   }
 
+
   .access_container h2,
-  .access_container p {
-    display: inline-block; /* h2 と p を横並びに配置 */
+  .access_container ul {
+    display: inline-block; /* h2 と ul を横並びに配置 */
     vertical-align: top; /* 上揃え */
     margin: 0; /* デフォルトの余白を削除 */
     padding: 0; /* デフォルトの余白を削除 */
@@ -377,15 +378,27 @@
     margin: 0;
   }
 
-  .access_container p {
-    font-size: 15px;
-    margin-left: 55px;
+
+  .access_container ul {
+    width: 80%;
+    margin-left: 60px;
   }
+
+  .access_container li {
+    font-size: 15px;
+    list-style: none;
+  }
+
 
   .attention_container {
     width: 100%;
     padding: 0;
     margin-top: 60px;
+  }
+
+  .access_container .small{
+    font-size: 11px;
+
   }
 
   .attention_container h2,
