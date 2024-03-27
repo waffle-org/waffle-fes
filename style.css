@@ -1138,18 +1138,20 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     overflow: hidden;
     font-family: Arial, sans-serif;
     color: #333;
+
+    background-image: url(背景チャレンジ.png);
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   /* background 背景 */
 
-  .background {
+  /* .background {
     background-image: url(背景チャレンジ.png);
+    background-size: cover;
     background-attachment: fixed;
-
-
-
     padding-top: 40px;
-    padding-bottom: 1px;
+    padding-bottom: 1px; */
   }
 
   /* header ヘッダー */
@@ -2294,4 +2296,3 @@ color: #818181;
     display: inline-block;
     padding-left: 5px;
   }
-}
