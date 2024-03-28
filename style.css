@@ -251,7 +251,14 @@
     font-size: 25px;
     margin-top: 50px;
     padding-top: 24px;
-    background: linear-gradient(to right, #eb5f6e 0%, #ffbfca 20%, #f9bca4 30%, #fef076 40%, #a2fff4 80%);
+    background: linear-gradient(
+      to right,
+      #eb5f6e 0%,
+      #ffbfca 20%,
+      #f9bca4 30%,
+      #fef076 40%,
+      #a2fff4 80%
+    );
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 150% 20%;
@@ -364,7 +371,6 @@
     margin-top: 80px;
   }
 
-
   .access_container h2,
   .access_container ul {
     display: inline-block; /* h2 と ul を横並びに配置 */
@@ -378,7 +384,6 @@
     margin: 0;
   }
 
-
   .access_container ul {
     width: 80%;
     margin-left: 60px;
@@ -389,16 +394,14 @@
     list-style: none;
   }
 
-
   .attention_container {
     width: 100%;
     padding: 0;
     margin-top: 60px;
   }
 
-  .access_container .small{
+  .access_container .small {
     font-size: 11px;
-
   }
 
   .attention_container h2,
@@ -1151,8 +1154,6 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     overflow: hidden;
     font-family: Arial, sans-serif;
     color: #333;
-
-    
   }
 
   /* background 背景 */
@@ -1308,6 +1309,13 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     color: #fff;
   }
 
+  .fixed_btn .p2 {
+    margin-top: 5px;
+    font-size: 9px;
+    font-weight: bold;
+    color: #fff;
+  }
+
   .fixed_btn .p3 {
     padding-top: 5px;
     color: #fff;
@@ -1356,7 +1364,14 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     font-size: 14px;
     margin-top: 50px;
     padding-top: 20px;
-    background: linear-gradient(to right, #eb5f6e 0%, #ffbfca 20%, #f9bca4 30%, #fef076 40%, #a2fff4 80%);
+    background: linear-gradient(
+      to right,
+      #eb5f6e 0%,
+      #ffbfca 20%,
+      #f9bca4 30%,
+      #fef076 40%,
+      #a2fff4 80%
+    );
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 150% 20%;
