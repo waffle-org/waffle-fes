@@ -1953,15 +1953,18 @@ color: #818181;
     color: #333;
     font-size: 8px;
     text-align: left;
-
     font-family: "Zen Maru Gothic", serif;
     font-weight: 400;
     font-style: normal;
   }
 
   .voice_msg1 {
-    margin-bottom: 10px;
+    margin-bottom: 3%;
     margin-top: 15px;
+  }
+
+  .voice_msg2,.voice_msg5,.voice_img6{
+    margin-bottom: 3%;
   }
 
   .voice_img1,
