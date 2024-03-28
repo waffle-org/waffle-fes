@@ -247,12 +247,7 @@
     font-size: 25px;
     margin-top: 50px;
     padding-top: 24px;
-    background: linear-gradient(to right,
-        #eb5f6e 0%,
-        #ffbfca 20%,
-        #f9bca4 30%,
-        #fef076 40%,
-        #a2fff4 80%);
+    background: linear-gradient(to right, #eb5f6e 0%, #ffbfca 20%, #f9bca4 30%, #fef076 40%, #a2fff4 80%);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 150% 20%;
@@ -550,31 +545,7 @@
   .event_main {
     font-size: 16px;
     margin-bottom: 0px;
-
   }
-
-  .comingSoon_main {
-    position: relative;
-    /* 相対位置指定 */
-    display: flex;
-    justify-content: center;
-    /* 水平方向中央揃え */
-    align-items: center;
-    /* 垂直方向中央揃え */
-    height: 100%;
-    /* 親要素の高さいっぱいに広げる */
-    text-align: center;
-    /* テキストを中央揃え */
-    flex-direction: column;
-    /* 垂直方向に列を作成 */
-  }
-
-  .comingSoon_main p,
-  .comingSoon_main h2 {
-    margin: 0;
-    /* デフォルトのマージンを削除 */
-  }
-
 
   .event_lifork p {
     font-size: 16px;
@@ -611,8 +582,33 @@
     background-color: #ff9ea7;
     height: 100%;
     width: 100%;
+    position: relative;
+    /* 相対位置指定 */
+    display: flex;
+    justify-content: center;
+    /* 水平方向中央揃え */
+    align-items: center;
+    /* 垂直方向中央揃え */
+    height: 100%;
+    /* 親要素の高さいっぱいに広げる */
     text-align: center;
+    /* テキストを中央揃え */
+    flex-direction: column;
+    /* 垂直方向に列を作成 */
   }
+
+  .comingSoon_main p,
+  .comingSoon_main h2 {
+    margin: 0;
+    /* デフォルトのマージンを削除 */
+  }
+
+  /* .comingSoon_main {
+    background-color: #ff9ea7;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  } */
 
   /* .comingSoon_lifork {
     background-color: #bce9e4;
@@ -1451,12 +1447,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     font-size: 14px;
     margin-top: 50px;
     padding-top: 20px;
-    background: linear-gradient(to right,
-        #eb5f6e 0%,
-        #ffbfca 20%,
-        #f9bca4 30%,
-        #fef076 40%,
-        #a2fff4 80%);
+    background: linear-gradient(to right, #eb5f6e 0%, #ffbfca 20%, #f9bca4 30%, #fef076 40%, #a2fff4 80%);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 150% 20%;
@@ -1718,18 +1709,18 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   /*選択されているタブのコンテンツのみを表示*/
-  #all:checked~#all_content,
-  #design:checked~#design_content {
+  #all:checked ~ #all_content,
+  #design:checked ~ #design_content {
     display: block;
   }
 
   /*選択されているタブのスタイルを変える*/
-  #all:checked+.tab_item {
+  #all:checked + .tab_item {
     background-color: #ff9ea7;
     opacity: 1;
   }
 
-  #design:checked+.tab_item {
+  #design:checked + .tab_item {
     background-color: #bce9e4;
   }
 
@@ -1874,7 +1865,33 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     background-color: #ff9ea7;
     height: 100%;
     width: 100%;
+    position: relative;
+    /* 相対位置指定 */
+    display: flex;
+    justify-content: center;
+    /* 水平方向中央揃え */
+    align-items: center;
+    /* 垂直方向中央揃え */
+    height: 100%;
+    /* 親要素の高さいっぱいに広げる */
+    text-align: center;
+    /* テキストを中央揃え */
+    flex-direction: column;
+    /* 垂直方向に列を作成 */
   }
+
+  .comingSoon_main p,
+  .comingSoon_main h2 {
+    margin: 0;
+    /* デフォルトのマージンを削除 */
+  }
+
+  /* .comingSoon_main {
+    background-color: #ff9ea7;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  } */
 
   /* .comingSoon_lifork {
     background-color: #bce9e4;
