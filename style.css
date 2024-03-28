@@ -1520,7 +1520,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   .attention_container ul {
-    width: 80%;
+    width: 100%;
     margin-top: 5px;
   }
 
