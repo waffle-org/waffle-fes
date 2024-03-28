@@ -393,7 +393,6 @@
     font-size: 11px;
   }
 
-
   .attention_container {
     width: 100%;
     padding: 0;
@@ -1095,22 +1094,22 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     border: 1.2px solid;
   }
 
-  .andmore_container hr{
+  .andmore_container hr {
     width: 80%;
     margin: 0 auto;
     margin-top: 40px;
     border: 1.2px solid;
   }
 
-  .andmore_container h2{
+  .andmore_container h2 {
     margin-top: 40px;
     font-weight: bold;
     font-size: 30px;
     color: #5a544b;
   }
- .andmore_container p{
-  font-size: 30px;
- }
+  .andmore_container p {
+    font-size: 30px;
+  }
   /* footer フッター */
 
   footer {
@@ -1166,17 +1165,22 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     overflow: hidden;
     font-family: Arial, sans-serif;
     color: #333;
-  }
-
-  /* background 背景 */
-
-  .background {
-    background-image: url(sp_background2.jpg);
+    background-image: url(背景チャレンジ.png);
     background-size: cover;
     background-attachment: fixed;
     padding-top: 40px;
     padding-bottom: 1px;
   }
+
+  /* background 背景 */
+
+  /* .background {
+    background-image: url(背景チャレンジ.png);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 40px;
+    padding-bottom: 1px;
+  } */
 
   /* header ヘッダー */
   header {
@@ -1289,9 +1293,9 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     /* 文字の右隣 */
   }
 
-  .KV {
+  /* .KV {
     padding-top: 60px;
-  }
+  } */
 
   .pc {
     display: none !important;
@@ -1390,6 +1394,10 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   /* news ニュース */
+  .contents {
+    margin-top: 30px;
+  }
+
   .space {
     margin-top: 20px;
     border-bottom: 1px solid #333;
@@ -1461,7 +1469,8 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     margin: 15px 40px 15px 40px;
   }
 
-  .day1_contents h2,.day2_contents h2 {
+  .day1_contents h2,
+  .day2_contents h2 {
     text-align: left;
     font-size: 12px;
     font-weight: bold;
@@ -1541,7 +1550,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     padding-left: 1em;
   }
 
-  .day2_contents p .day1_contents p{
+  .day2_contents p .day1_contents p {
     font-size: 7px;
   }
 
@@ -1974,7 +1983,9 @@ color: #818181;
     margin-top: 15px;
   }
 
-  .voice_msg2,.voice_msg5,.voice_img6{
+  .voice_msg2,
+  .voice_msg5,
+  .voice_img6 {
     margin-bottom: 3%;
   }
 
@@ -2310,25 +2321,24 @@ color: #818181;
     border: 0.6px solid;
   }
 
-  .andmore_container h2{ 
-    margin-top: 20px;   
+  .andmore_container h2 {
+    margin-top: 20px;
     font-weight: bold;
     font-size: 12px;
     color: #5a544b;
     margin-bottom: 0%;
   }
 
-  .andmore_container p{
+  .andmore_container p {
     font-size: 10px;
     margin-bottom: 0%;
-
   }
 
   /* footer フッター */
 
   footer {
     position: absolute;
-    height: 100px;
+    height: 120px;
     width: 100%;
     background-color: #fff;
     background-attachment: scroll;
