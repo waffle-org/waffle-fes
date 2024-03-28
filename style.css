@@ -14,7 +14,7 @@
   /* background 背景 */
 
   .background {
-    background-image: url(名称未設定のデザイン3.jpg);
+    background-image: url(pc背景薄め.jpg);
     background-size: cover;
     background-attachment: fixed;
     padding-top: 90px;
@@ -26,7 +26,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 80px;
     width: 100%;
     background-color: #fff;
     /* 重なり防止 */
@@ -68,9 +67,6 @@
   }
 
   /* 見出し */
-  .contents {
-    margin-top: 850px;
-  }
 
   #NEWS,
   #ABOUT,
@@ -123,7 +119,6 @@
   }
 
   .KV {
-    position: absolute;
     padding-top: 70px;
   }
 
@@ -179,7 +174,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.55);
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
     width: 980px;
     margin-top: 50px;
@@ -251,7 +246,14 @@
     font-size: 25px;
     margin-top: 50px;
     padding-top: 24px;
-    background: linear-gradient(to right, #eb5f6e 0%, #ffbfca 20%, #f9bca4 30%, #fef076 40%, #a2fff4 80%);
+    background: linear-gradient(
+      to right,
+      #eb5f6e 0%,
+      #ffbfca 20%,
+      #f9bca4 30%,
+      #fef076 40%,
+      #a2fff4 80%
+    );
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 150% 20%;
@@ -365,8 +367,8 @@
   }
 
   .access_container h2,
-  .access_container p {
-    display: inline-block; /* h2 と p を横並びに配置 */
+  .access_container ul {
+    display: inline-block; /* h2 と ul を横並びに配置 */
     vertical-align: top; /* 上揃え */
     margin: 0; /* デフォルトの余白を削除 */
     padding: 0; /* デフォルトの余白を削除 */
@@ -377,10 +379,20 @@
     margin: 0;
   }
 
-  .access_container p {
-    font-size: 15px;
-    margin-left: 55px;
+  .access_container ul {
+    width: 80%;
+    margin-left: 60px;
   }
+
+  .access_container li {
+    font-size: 15px;
+    list-style: none;
+  }
+
+  .access_container .small {
+    font-size: 11px;
+  }
+
 
   .attention_container {
     width: 100%;
@@ -1143,7 +1155,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   /* background 背景 */
 
   .background {
-    background-image: url(スマホ背景.jpg);
+    background-image: url(背景チャレンジ.png);
     background-size: cover;
     background-attachment: fixed;
     padding-top: 40px;
@@ -1157,7 +1169,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     left: 0;
     width: 100%;
     background-color: #fff;
-    z-index: 5;
+    z-index: 1;
   }
 
   .waffleimage {
@@ -1293,6 +1305,13 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     color: #fff;
   }
 
+  .fixed_btn .p2 {
+    margin-top: 5px;
+    font-size: 9px;
+    font-weight: bold;
+    color: #fff;
+  }
+
   .fixed_btn .p3 {
     padding-top: 5px;
     color: #fff;
@@ -1309,7 +1328,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     padding-bottom: 20px;
     text-align: center;
     border-radius: 10px;
-    width: 80%; /* 要素の幅を設定 */
+    width: 90%; /* 要素の幅を設定 */
     margin: 0 auto; /* 水平方向に中央に配置 */
     margin-bottom: 60px;
     font-size: 10px;
@@ -1341,7 +1360,14 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     font-size: 14px;
     margin-top: 50px;
     padding-top: 20px;
-    background: linear-gradient(to right, #eb5f6e 0%, #ffbfca 20%, #f9bca4 30%, #fef076 40%, #a2fff4 80%);
+    background: linear-gradient(
+      to right,
+      #eb5f6e 0%,
+      #ffbfca 20%,
+      #f9bca4 30%,
+      #fef076 40%,
+      #a2fff4 80%
+    );
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 150% 20%;
@@ -1416,12 +1442,12 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   .about_content {
-    margin: 20px 40px 20px 40px;
+    margin: 15px 40px 15px 40px;
   }
 
-  .about_content h2 {
+  .day1_contents h2,.day2_contents h2 {
     text-align: left;
-    font-size: 9px;
+    font-size: 12px;
     font-weight: bold;
     margin-bottom: 0%;
   }
@@ -1434,7 +1460,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .about_content li {
     text-align: left;
     list-style-position: inside;
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .access_container {
@@ -1443,22 +1469,37 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     margin-top: 15px;
   }
 
+  .access_container {
+    width: 80%;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
   .access_container h2,
-  .access_container p {
+  .access_container ul {
     margin: 0; /* デフォルトの余白を削除 */
     padding: 0; /* デフォルトの余白を削除 */
   }
 
   .access_container h2 {
-    font-size: 7px;
+    font-size: 8px;
     margin: 0;
   }
 
-  .access_container p {
+  .access_container ul {
+    width: 80%;
+    margin-left: 5px;
     margin-top: 5px;
-    margin-bottom: 10px;
-    font-size: 5px !important;
-    /* margin-left: 55px; */
+  }
+
+  .access_container li {
+    font-size: 7px;
+    list-style: none;
+  }
+
+  .access_container .small {
+    font-size: 5px;
   }
 
   .attention_container h2,
@@ -1468,18 +1509,18 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   .attention_container h2 {
-    font-size: 7px;
+    font-size: 8px;
     margin: 0;
     padding: 0;
   }
 
   .attention_container ul {
-    width: 80%;
+    width: 100%;
     margin-top: 5px;
   }
 
   .attention_container li {
-    font-size: 5px;
+    font-size: 7px;
     text-indent: -1.2em;
     padding-left: 1em;
   }
@@ -1784,7 +1825,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     -ms-flex-pack: justify;
     margin: 2em auto;
     max-width: 960px;
-    width: 65%;
+    width: 75%;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
@@ -1813,7 +1854,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     margin: 0.6em 0 0;
     color: black !important;
     text-align: center;
-    font-size: 12px;
+    font-size: 13px;
   }
 
   /* .card-title h2{
@@ -1826,7 +1867,7 @@ color: #818181;
     padding: 5px 12px 12px 15px;
     color: black;
     text-align: left;
-    font-size: 7px;
+    font-size: 9px;
   }
 
   /* カードレイアウトを1カラムで配置 */
@@ -1848,7 +1889,7 @@ color: #818181;
 
   .featured_sub h4 {
     width: 80%;
-    font-size: 9px;
+    font-size: 11px;
     margin: auto;
   }
 
@@ -1905,17 +1946,20 @@ color: #818181;
     border: 0.5px solid #333;
     background-color: #fff;
     color: #333;
-    font-size: 6px;
+    font-size: 8px;
     text-align: left;
-
     font-family: "Zen Maru Gothic", serif;
     font-weight: 400;
     font-style: normal;
   }
 
   .voice_msg1 {
-    margin-bottom: 10px;
+    margin-bottom: 3%;
     margin-top: 15px;
+  }
+
+  .voice_msg2,.voice_msg5,.voice_img6{
+    margin-bottom: 3%;
   }
 
   .voice_img1,
@@ -1966,7 +2010,7 @@ color: #818181;
     position: relative;
     /*+マークの位置基準とするためrelative指定*/
     cursor: pointer;
-    font-size: 9px;
+    font-size: 10px;
     font-weight: normal;
     padding: 1% 1% 1% 15px;
     margin: 10px 0px;
@@ -2021,7 +2065,7 @@ color: #818181;
 
   .box p {
     margin-bottom: 0px;
-    font-size: 8px;
+    font-size: 10px;
     text-align: left;
     padding-left: 1.4em;
     text-indent: -1.5em;
@@ -2254,7 +2298,7 @@ color: #818181;
 
   footer {
     position: absolute;
-    height: 50px;
+    height: 100px;
     width: 100%;
     background-color: #fff;
     background-attachment: scroll;
@@ -2263,20 +2307,20 @@ color: #818181;
 
   .footer_ {
     float: left;
-    padding-left: 5px;
+    padding-left: 15px;
     margin-bottom: 0px;
   }
 
   .footer_ li {
     list-style: none;
     margin-top: 5px;
-    font-size: 6px;
+    font-size: 8px;
   }
 
   .sns {
     float: right;
-    margin-top: 10px;
-    margin-right: 15px;
+    margin-right: 20px;
+    margin-bottom: 5px;
   }
 
   .sns a {
@@ -2284,7 +2328,7 @@ color: #818181;
   }
 
   .sns img {
-    width: 20px;
+    width: 35px;
   }
 
   .sns li {
