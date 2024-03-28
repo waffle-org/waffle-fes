@@ -125,6 +125,7 @@
   .pc {
     display: block !important;
   }
+
   .sp {
     display: none !important;
   }
@@ -246,14 +247,12 @@
     font-size: 25px;
     margin-top: 50px;
     padding-top: 24px;
-    background: linear-gradient(
-      to right,
-      #eb5f6e 0%,
-      #ffbfca 20%,
-      #f9bca4 30%,
-      #fef076 40%,
-      #a2fff4 80%
-    );
+    background: linear-gradient(to right,
+        #eb5f6e 0%,
+        #ffbfca 20%,
+        #f9bca4 30%,
+        #fef076 40%,
+        #a2fff4 80%);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 150% 20%;
@@ -273,6 +272,7 @@
     margin-bottom: 0px;
     text-align: left;
   }
+
   .news_content {
     padding: 20px 0px;
     border-bottom: 1px solid #333;
@@ -283,7 +283,8 @@
     padding: 0px 20px;
     font-family: cursive;
     height: 20px;
-    border-radius: 40px; /*heightの1/2を指定*/
+    border-radius: 40px;
+    /*heightの1/2を指定*/
     text-align: center;
     background: #eb5f6e;
     color: white;
@@ -292,6 +293,7 @@
   .open_date {
     padding: 0px 10px;
   }
+
   .new_text {
     margin-bottom: 0;
     padding: 0px 20px;
@@ -330,6 +332,7 @@
   .about_content hr {
     border: 1.2px solid;
   }
+
   .title-container {
     display: flex;
     justify-content: space-between;
@@ -356,6 +359,7 @@
     text-indent: -1.3em;
     padding-left: 1em;
   }
+
   .access_top {
     margin-top: 50px;
   }
@@ -368,10 +372,14 @@
 
   .access_container h2,
   .access_container ul {
-    display: inline-block; /* h2 と ul を横並びに配置 */
-    vertical-align: top; /* 上揃え */
-    margin: 0; /* デフォルトの余白を削除 */
-    padding: 0; /* デフォルトの余白を削除 */
+    display: inline-block;
+    /* h2 と ul を横並びに配置 */
+    vertical-align: top;
+    /* 上揃え */
+    margin: 0;
+    /* デフォルトの余白を削除 */
+    padding: 0;
+    /* デフォルトの余白を削除 */
   }
 
   .access_container h2 {
@@ -401,10 +409,14 @@
 
   .attention_container h2,
   .attention_container ul {
-    display: inline-block; /* h2 と ul を横並びに配置 */
-    vertical-align: top; /* 上揃え */
-    margin: 0; /* デフォルトの余白を削除 */
-    padding: 0; /* デフォルトの余白を削除 */
+    display: inline-block;
+    /* h2 と ul を横並びに配置 */
+    vertical-align: top;
+    /* 上揃え */
+    margin: 0;
+    /* デフォルトの余白を削除 */
+    padding: 0;
+    /* デフォルトの余白を削除 */
   }
 
   .attention_container h2 {
@@ -434,13 +446,15 @@
   .pc_hide {
     display: none;
   }
+
   /* ↑レスポンシブ用の改行 */
 
   .timetable_contents {
     display: grid;
     grid-gap: 0em 2em;
     margin-top: 50px;
-    grid-template-columns: repeat(5, 1fr); /* 5列のグリッド */
+    grid-template-columns: repeat(5, 1fr);
+    /* 5列のグリッド */
     grid-template-rows: repeat(43, 60px);
     grid-template-columns: 1fr 7fr 7fr;
   }
@@ -448,6 +462,7 @@
   .timetable_section_PC {
     margin: 40px;
   }
+
   .timetable_section_SP {
     display: none;
   }
@@ -521,6 +536,7 @@
   #lifork_tab {
     background-color: #bce9e4;
   }
+
   .event_main h2 {
     padding: 0px;
     font-size: 18px;
@@ -531,10 +547,34 @@
     font-size: 18px;
   }
 
-  .event_main p {
+  .event_main {
     font-size: 16px;
     margin-bottom: 0px;
+
   }
+
+  .comingSoon_main {
+    position: relative;
+    /* 相対位置指定 */
+    display: flex;
+    justify-content: center;
+    /* 水平方向中央揃え */
+    align-items: center;
+    /* 垂直方向中央揃え */
+    height: 100%;
+    /* 親要素の高さいっぱいに広げる */
+    text-align: center;
+    /* テキストを中央揃え */
+    flex-direction: column;
+    /* 垂直方向に列を作成 */
+  }
+
+  .comingSoon_main p,
+  .comingSoon_main h2 {
+    margin: 0;
+    /* デフォルトのマージンを削除 */
+  }
+
 
   .event_lifork p {
     font-size: 16px;
@@ -566,11 +606,14 @@
     color: #bce9e4;
     transition-duration: 0.3s;
   }
+
   .comingSoon_main {
     background-color: #ff9ea7;
     height: 100%;
     width: 100%;
+    text-align: center;
   }
+
   /* .comingSoon_lifork {
     background-color: #bce9e4;
     height: 100%;
@@ -597,6 +640,7 @@
   .modal-body ul {
     padding-left: 0px;
   }
+
   .modal-body li {
     padding: 20px;
   }
@@ -627,6 +671,7 @@
   .featured_sub {
     margin-top: 60px;
   }
+
   .featured_sub h4 {
     font-size: 20px;
   }
@@ -717,7 +762,8 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 1%;
-    width: calc(94% / 2); /* 96%幅を2で割るという指定 */
+    width: calc(94% / 2);
+    /* 96%幅を2で割るという指定 */
   }
 
   .card-list hr {
@@ -773,6 +819,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     /* margin-top: 50px; */
     margin-bottom: 10px;
   }
+
   .voice_img1 {
     margin-top: 30px;
   }
@@ -1107,9 +1154,11 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     font-size: 30px;
     color: #5a544b;
   }
+
   .andmore_container p {
     font-size: 30px;
   }
+
   /* footer フッター */
 
   footer {
@@ -1165,7 +1214,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     /* overflow: hidden; */
     font-family: Arial, sans-serif;
     color: #333;
-    background-image: url(背景チャレンジ.png);
+    background-image: url(sp_background2.jpg);
     background-size: cover;
     background-attachment: fixed;
     padding-top: 40px;
@@ -1209,13 +1258,19 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
 
   .navbar-collapse {
     position: fixed;
-    top: 64px; /* ナビゲーションバーの高さに合わせる */
-    right: -300px; /* バーが最初は右側に隠れている状態 */
-    width: 150px; /* バーの幅 */
+    top: 64px;
+    /* ナビゲーションバーの高さに合わせる */
+    right: -300px;
+    /* バーが最初は右側に隠れている状態 */
+    width: 150px;
+    /* バーの幅 */
     height: 160px;
-    background-color: #f8f9fa; /* バーの背景色 */
-    transition: right 0.3s ease; /* アニメーションを追加 */
-    z-index: 1030; /* ナビゲーションバーよりも手前に表示 */
+    background-color: #f8f9fa;
+    /* バーの背景色 */
+    transition: right 0.3s ease;
+    /* アニメーションを追加 */
+    z-index: 1030;
+    /* ナビゲーションバーよりも手前に表示 */
   }
 
   .navbar-collapse.show {
@@ -1300,6 +1355,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .pc {
     display: none !important;
   }
+
   .sp {
     display: block !important;
   }
@@ -1348,8 +1404,10 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     padding-bottom: 20px;
     text-align: center;
     border-radius: 10px;
-    width: 90%; /* 要素の幅を設定 */
-    margin: 0 auto; /* 水平方向に中央に配置 */
+    width: 90%;
+    /* 要素の幅を設定 */
+    margin: 0 auto;
+    /* 水平方向に中央に配置 */
     margin-bottom: 60px;
     font-size: 10px;
     background-color: rgba(255, 255, 255, 0.6);
@@ -1380,14 +1438,12 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     font-size: 14px;
     margin-top: 50px;
     padding-top: 20px;
-    background: linear-gradient(
-      to right,
-      #eb5f6e 0%,
-      #ffbfca 20%,
-      #f9bca4 30%,
-      #fef076 40%,
-      #a2fff4 80%
-    );
+    background: linear-gradient(to right,
+        #eb5f6e 0%,
+        #ffbfca 20%,
+        #f9bca4 30%,
+        #fef076 40%,
+        #a2fff4 80%);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 150% 20%;
@@ -1412,6 +1468,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     margin-bottom: 0px;
     text-align: left;
   }
+
   .news_content {
     padding: 7px 0px;
     border-bottom: 1px solid #333;
@@ -1423,7 +1480,8 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     font-family: cursive;
     font-size: 8px;
     height: 15px;
-    border-radius: 40px; /*heightの1/2を指定*/
+    border-radius: 40px;
+    /*heightの1/2を指定*/
     text-align: center;
     background: #eb5f6e;
     color: white;
@@ -1503,8 +1561,10 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
 
   .access_container h2,
   .access_container ul {
-    margin: 0; /* デフォルトの余白を削除 */
-    padding: 0; /* デフォルトの余白を削除 */
+    margin: 0;
+    /* デフォルトの余白を削除 */
+    padding: 0;
+    /* デフォルトの余白を削除 */
   }
 
   .access_container h2 {
@@ -1529,8 +1589,10 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
 
   .attention_container h2,
   .attention_container ul {
-    margin: 0; /* デフォルトの余白を削除 */
-    padding: 0; /* デフォルトの余白を削除 */
+    margin: 0;
+    /* デフォルトの余白を削除 */
+    padding: 0;
+    /* デフォルトの余白を削除 */
   }
 
   .attention_container h2 {
@@ -1555,9 +1617,12 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   .title-container {
-    display: flex; /* 要素を横並びにする */
-    align-items: center; /* 項目を垂直方向に中央揃えする */
-    justify-content: space-between; /* 要素を水平方向に等間隔で配置する */
+    display: flex;
+    /* 要素を横並びにする */
+    align-items: center;
+    /* 項目を垂直方向に中央揃えする */
+    justify-content: space-between;
+    /* 要素を水平方向に等間隔で配置する */
     font-size: 6px !important;
   }
 
@@ -1621,6 +1686,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     font-weight: bold;
     transition: all 0.2s ease;
   }
+
   .tab_item:hover {
     opacity: 0.75;
   }
@@ -1639,19 +1705,21 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   /*選択されているタブのコンテンツのみを表示*/
-  #all:checked ~ #all_content,
-  #design:checked ~ #design_content {
+  #all:checked~#all_content,
+  #design:checked~#design_content {
     display: block;
   }
 
   /*選択されているタブのスタイルを変える*/
-  #all:checked + .tab_item {
+  #all:checked+.tab_item {
     background-color: #ff9ea7;
     opacity: 1;
   }
-  #design:checked + .tab_item {
+
+  #design:checked+.tab_item {
     background-color: #bce9e4;
   }
+
   /* 
   #tt_background {
     background-color: #f8e5e7;
@@ -1662,7 +1730,8 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .timetable_contents {
     display: grid;
     grid-gap: 0em 2em;
-    grid-template-columns: repeat(3, 1fr); /* 3列のグリッド */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3列のグリッド */
     grid-template-rows: repeat(43, 20px);
     grid-template-columns: 1fr 7fr;
   }
@@ -1670,6 +1739,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .timetable_section_PC {
     display: none;
   }
+
   .timetable_section_SP {
     margin: 15px;
   }
@@ -1786,6 +1856,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     color: #bce9e4;
     transition-duration: 0.3s;
   }
+
   .comingSoon_main {
     background-color: #ff9ea7;
     height: 100%;
@@ -1818,6 +1889,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .modal-body ul {
     padding-left: 0px;
   }
+
   .modal-body li {
     padding: 20px;
   }
@@ -1903,7 +1975,8 @@ color: #818181;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 1%;
-    width: calc(94% / 1); /* 96%幅を2で割るという指定 */
+    width: calc(94% / 1);
+    /* 96%幅を2で割るという指定 */
   }
 
   .card-list hr {
@@ -1995,6 +2068,7 @@ color: #818181;
     margin-left: 10px;
     margin-bottom: 10px;
   }
+
   .voice_img1 {
     margin-top: 15px;
   }
