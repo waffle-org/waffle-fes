@@ -572,11 +572,11 @@
     height: 100%;
     width: 100%;
   }
-  .comingSoon_lifork {
+  /* .comingSoon_lifork {
     background-color: #bce9e4;
     height: 100%;
     width: 100%;
-  }
+  } */
 
   /* timetable中身 モダール */
   .modal {
@@ -1767,11 +1767,11 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     width: 100%;
   }
 
-  .comingSoon_lifork {
+  /* .comingSoon_lifork {
     background-color: #bce9e4;
     height: 100%;
     width: 100%;
-  }
+  } */
 
   /* timetable中身 モダール */
   .modal {
