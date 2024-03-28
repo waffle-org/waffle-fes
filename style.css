@@ -389,14 +389,15 @@
     list-style: none;
   }
 
+  .access_container .small {
+    font-size: 11px;
+  }
+
+
   .attention_container {
     width: 100%;
     padding: 0;
     margin-top: 60px;
-  }
-
-  .access_container .small {
-    font-size: 11px;
   }
 
   .attention_container h2,
@@ -1327,7 +1328,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     padding-bottom: 20px;
     text-align: center;
     border-radius: 10px;
-    width: 80%; /* 要素の幅を設定 */
+    width: 90%; /* 要素の幅を設定 */
     margin: 0 auto; /* 水平方向に中央に配置 */
     margin-bottom: 60px;
     font-size: 10px;
@@ -1441,12 +1442,12 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   .about_content {
-    margin: 20px 40px 20px 40px;
+    margin: 15px 40px 15px 40px;
   }
 
-  .about_content h2 {
+  .day1_contents h2,.day2_contents h2 {
     text-align: left;
-    font-size: 9px;
+    font-size: 12px;
     font-weight: bold;
     margin-bottom: 0%;
   }
@@ -1459,7 +1460,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .about_content li {
     text-align: left;
     list-style-position: inside;
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .access_container {
@@ -1468,22 +1469,37 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     margin-top: 15px;
   }
 
+  .access_container {
+    width: 80%;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
   .access_container h2,
-  .access_container p {
+  .access_container ul {
     margin: 0; /* デフォルトの余白を削除 */
     padding: 0; /* デフォルトの余白を削除 */
   }
 
   .access_container h2 {
-    font-size: 7px;
+    font-size: 8px;
     margin: 0;
   }
 
-  .access_container p {
+  .access_container ul {
+    width: 80%;
+    margin-left: 5px;
     margin-top: 5px;
-    margin-bottom: 10px;
-    font-size: 5px !important;
-    /* margin-left: 55px; */
+  }
+
+  .access_container li {
+    font-size: 7px;
+    list-style: none;
+  }
+
+  .access_container .small {
+    font-size: 5px;
   }
 
   .attention_container h2,
@@ -1493,18 +1509,18 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   .attention_container h2 {
-    font-size: 7px;
+    font-size: 8px;
     margin: 0;
     padding: 0;
   }
 
   .attention_container ul {
-    width: 80%;
+    width: 100%;
     margin-top: 5px;
   }
 
   .attention_container li {
-    font-size: 5px;
+    font-size: 7px;
     text-indent: -1.2em;
     padding-left: 1em;
   }
@@ -1809,7 +1825,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     -ms-flex-pack: justify;
     margin: 2em auto;
     max-width: 960px;
-    width: 65%;
+    width: 75%;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
@@ -1838,7 +1854,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     margin: 0.6em 0 0;
     color: black !important;
     text-align: center;
-    font-size: 12px;
+    font-size: 13px;
   }
 
   /* .card-title h2{
@@ -1851,7 +1867,7 @@ color: #818181;
     padding: 5px 12px 12px 15px;
     color: black;
     text-align: left;
-    font-size: 7px;
+    font-size: 9px;
   }
 
   /* カードレイアウトを1カラムで配置 */
@@ -1873,7 +1889,7 @@ color: #818181;
 
   .featured_sub h4 {
     width: 80%;
-    font-size: 9px;
+    font-size: 11px;
     margin: auto;
   }
 
@@ -1930,17 +1946,20 @@ color: #818181;
     border: 0.5px solid #333;
     background-color: #fff;
     color: #333;
-    font-size: 6px;
+    font-size: 8px;
     text-align: left;
-
     font-family: "Zen Maru Gothic", serif;
     font-weight: 400;
     font-style: normal;
   }
 
   .voice_msg1 {
-    margin-bottom: 10px;
+    margin-bottom: 3%;
     margin-top: 15px;
+  }
+
+  .voice_msg2,.voice_msg5,.voice_img6{
+    margin-bottom: 3%;
   }
 
   .voice_img1,
@@ -1991,7 +2010,7 @@ color: #818181;
     position: relative;
     /*+マークの位置基準とするためrelative指定*/
     cursor: pointer;
-    font-size: 9px;
+    font-size: 10px;
     font-weight: normal;
     padding: 1% 1% 1% 15px;
     margin: 10px 0px;
@@ -2046,7 +2065,7 @@ color: #818181;
 
   .box p {
     margin-bottom: 0px;
-    font-size: 8px;
+    font-size: 10px;
     text-align: left;
     padding-left: 1.4em;
     text-indent: -1.5em;
