@@ -571,11 +571,11 @@
     height: 100%;
     width: 100%;
   }
-  .comingSoon_lifork {
+  /* .comingSoon_lifork {
     background-color: #bce9e4;
     height: 100%;
     width: 100%;
-  }
+  } */
 
   /* timetable中身 モダール */
   .modal {
@@ -1094,6 +1094,22 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     border: 1.2px solid;
   }
 
+  .andmore_container hr {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 1.2px solid;
+  }
+
+  .andmore_container h2 {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #5a544b;
+  }
+  .andmore_container p {
+    font-size: 30px;
+  }
   /* footer フッター */
 
   footer {
@@ -1277,9 +1293,9 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     /* 文字の右隣 */
   }
 
-  .KV {
+  /* .KV {
     padding-top: 60px;
-  }
+  } */
 
   .pc {
     display: none !important;
@@ -1336,7 +1352,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     margin: 0 auto; /* 水平方向に中央に配置 */
     margin-bottom: 60px;
     font-size: 10px;
-    background-color: rgba(255, 255, 255, 0.55);
+    background-color: rgba(255, 255, 255, 0.6);
 
     font-family: "Zen Kaku Gothic New", sans-serif;
     font-weight: 400;
@@ -1378,6 +1394,10 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   /* news ニュース */
+  .contents {
+    margin-top: 30px;
+  }
+
   .space {
     margin-top: 20px;
     border-bottom: 1px solid #333;
@@ -1459,7 +1479,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
 
   .about_content p {
     text-align: left;
-    font-size: 6px;
+    font-size: 8px;
   }
 
   .about_content li {
@@ -1530,7 +1550,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     padding-left: 1em;
   }
 
-  .day2_contents p {
+  .day2_contents p .day1_contents p {
     font-size: 7px;
   }
 
@@ -1772,11 +1792,11 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     width: 100%;
   }
 
-  .comingSoon_lifork {
+  /* .comingSoon_lifork {
     background-color: #bce9e4;
     height: 100%;
     width: 100%;
-  }
+  } */
 
   /* timetable中身 モダール */
   .modal {
@@ -2299,6 +2319,19 @@ color: #818181;
     margin: 0 auto;
     margin-top: 5px;
     border: 0.6px solid;
+  }
+
+  .andmore_container h2 {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #5a544b;
+    margin-bottom: 0%;
+  }
+
+  .andmore_container p {
+    font-size: 10px;
+    margin-bottom: 0%;
   }
 
   /* footer フッター */
