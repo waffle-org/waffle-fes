@@ -1170,7 +1170,6 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   /* background 背景 */
 
   .background {
-    padding: 5%;
     position: relative;
   }
 
@@ -1181,7 +1180,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     background-image: url(背景チャレンジ.png);
     z-index: -1;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-repeat: no-repeat;
     background-position: center center;
     top: 40px;
