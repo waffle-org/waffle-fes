@@ -1162,7 +1162,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   body {
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: Arial, sans-serif;
     color: #333;
     background-image: url(背景チャレンジ.png);
