@@ -26,7 +26,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 80px;
     width: 100%;
     background-color: #fff;
     /* 重なり防止 */
@@ -68,9 +67,6 @@
   }
 
   /* 見出し */
-  .contents {
-    margin-top: 850px;
-  }
 
   #NEWS,
   #ABOUT,
@@ -123,7 +119,6 @@
   }
 
   .KV {
-    position: absolute;
     padding-top: 70px;
   }
 
@@ -1174,7 +1169,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     left: 0;
     width: 100%;
     background-color: #fff;
-    z-index: 5;
+    z-index: 1;
   }
 
   .waffleimage {
