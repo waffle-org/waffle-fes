@@ -977,7 +977,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     width: 980px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 200px;
+    margin-bottom: 10%;
     margin-top: 50px;
   }
 
@@ -1046,6 +1046,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .sponsor-content {
     display: inline-block;
     /* テキストと画像を両方とも中央揃えにするために必要 */
+
   }
 
   .logo_デロイト {
@@ -1137,29 +1138,24 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     border: 1.2px solid;
   }
 
-  .andmore_container hr {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 40px;
-    border: 1.2px solid;
-  }
+.supporter h3{
+  font-weight: bold;
+  font-size: 20px;
+  color: #5a544b;
+  margin-left: 60%;
+}
 
-  .andmore_container h2 {
-    margin-top: 40px;
-    font-weight: bold;
-    font-size: 30px;
-    color: #5a544b;
-  }
+.credit{
+  text-align: center;
+  margin-bottom: 5%;
+}
 
-  .andmore_container p {
-    font-size: 30px;
-  }
 
   /* footer フッター */
 
   footer {
     position: absolute;
-    height: 50px;
+    /* height: 50px; */
     width: 100%;
     background-color: #fff;
     background-attachment: scroll;
@@ -1168,12 +1164,13 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .footer_ {
     float: left;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .footer_ li {
-    display: inline-block;
+    /* display: inline-block; */
     list-style: none;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 80px;
     font-size: 15px;
   }
@@ -1181,7 +1178,9 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .sns {
     float: right;
     padding-right: 120px;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-left: 70px;
+
   }
 
   .sns a {
@@ -2263,7 +2262,7 @@ color: #818181;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 
   /* sponser スポンサー */
@@ -2425,17 +2424,18 @@ color: #818181;
     border: 0.6px solid;
   }
 
-  .andmore_container h2 {
-    margin-top: 20px;
+  .supporter h3{
     font-weight: bold;
-    font-size: 12px;
+    font-size: 8px;
     color: #5a544b;
-    margin-bottom: 0%;
+    margin-left: 60%;
   }
 
-  .andmore_container p {
-    font-size: 10px;
-    margin-bottom: 0%;
+  .credit{
+    width: 80%;
+    font-size: 8px;
+    text-align: center;
+    margin: 0 auto 5% auto;
   }
 
   /* footer フッター */
