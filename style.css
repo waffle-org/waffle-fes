@@ -2284,7 +2284,7 @@ color: #818181;
 
   footer {
     position: absolute;
-    height: 60px;
+    height: 100px;
     width: 100%;
     background-color: #fff;
     background-attachment: scroll;
@@ -2300,13 +2300,13 @@ color: #818181;
   .footer_ li {
     list-style: none;
     margin-top: 5px;
-    font-size: 6px;
+    font-size: 8px;
   }
 
   .sns {
     float: right;
-    margin-top: 10px;
     margin-right: 20px;
+    margin-bottom: 5px;
   }
 
   .sns a {
@@ -2314,7 +2314,7 @@ color: #818181;
   }
 
   .sns img {
-    width: 20px;
+    width: 35px;
   }
 
   .sns li {
