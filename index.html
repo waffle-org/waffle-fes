@@ -976,7 +976,7 @@
 
         <!-- 問い合わせボタン -->
 
-        <a href="https://forms.gle/YDPSCNr5FyvynB9R6" class="ask_button" target="_blank">お問い合わせはこちら</a>
+        <a href="https://forms.gle/C8XZXU9G7r8KQZTB8 " class="ask_button" target="_blank">お問い合わせはこちら</a>
 
 
         <h2 id="SPONSOR">SPONSORS</h2>
@@ -1081,12 +1081,37 @@
         </li>
       </ul>
     </div>
+    
 
   </footer>
 
   <!--  -------------------------------------------------------->
 
   <script>
+    document.body.classList.add("fixed-background");
+
+    var backgroundShown = false;
+
+window.addEventListener('scroll', function() {
+  if (!backgroundShown) {
+    var scrollPosition = window.scrollY; // 現在のスクロール位置を取得
+    var windowHeight = window.innerHeight; // ウィンドウの高さを取得
+    var documentHeight = document.body.clientHeight; // ドキュメントの高さを取得
+    var footerOffset = documentHeight - windowHeight - 1000; // フッターのオフセットを計算
+
+    // もしスクロール位置がウィンドウの高さよりも小さければ、背景を表示する
+    if (scrollPosition < footerOffset) {
+    document.querySelector('.background').style.display = 'block';
+    backgroundShown = true; // 背景が表示されたことを記録
+  } else {
+    // スクロール位置がフッターのオフセットを超えると、背景を非表示にする
+        if (backgroundShown) {
+            document.querySelector('.background').style.display = 'none';
+        }
+    }
+  }
+});
+
     $(function () {
       $('a[href^="#"]').on('click', function () {
         const speed = 500;
