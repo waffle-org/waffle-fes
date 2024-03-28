@@ -393,7 +393,6 @@
     font-size: 11px;
   }
 
-
   .attention_container {
     width: 100%;
     padding: 0;
@@ -1150,17 +1149,22 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     overflow: hidden;
     font-family: Arial, sans-serif;
     color: #333;
-  }
-
-  /* background 背景 */
-
-  .background {
     background-image: url(背景チャレンジ.png);
     background-size: cover;
     background-attachment: fixed;
     padding-top: 40px;
     padding-bottom: 1px;
   }
+
+  /* background 背景 */
+
+  /* .background {
+    background-image: url(背景チャレンジ.png);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 40px;
+    padding-bottom: 1px;
+  } */
 
   /* header ヘッダー */
   header {
@@ -1445,7 +1449,8 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     margin: 15px 40px 15px 40px;
   }
 
-  .day1_contents h2,.day2_contents h2 {
+  .day1_contents h2,
+  .day2_contents h2 {
     text-align: left;
     font-size: 12px;
     font-weight: bold;
@@ -1958,7 +1963,9 @@ color: #818181;
     margin-top: 15px;
   }
 
-  .voice_msg2,.voice_msg5,.voice_img6{
+  .voice_msg2,
+  .voice_msg5,
+  .voice_img6 {
     margin-bottom: 3%;
   }
 
@@ -2298,7 +2305,7 @@ color: #818181;
 
   footer {
     position: absolute;
-    height: 100px;
+    height: 120px;
     width: 100%;
     background-color: #fff;
     background-attachment: scroll;
