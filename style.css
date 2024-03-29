@@ -977,7 +977,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     width: 980px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 200px;
+    margin-bottom: 10%;
     margin-top: 50px;
   }
 
@@ -1046,6 +1046,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .sponsor-content {
     display: inline-block;
     /* テキストと画像を両方とも中央揃えにするために必要 */
+
   }
 
   .logo_デロイト {
@@ -1137,29 +1138,24 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     border: 1.2px solid;
   }
 
-  .andmore_container hr {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 40px;
-    border: 1.2px solid;
-  }
+.supporter h3{
+  font-weight: bold;
+  font-size: 20px;
+  color: #5a544b;
+  margin-left: 60%;
+}
 
-  .andmore_container h2 {
-    margin-top: 40px;
-    font-weight: bold;
-    font-size: 30px;
-    color: #5a544b;
-  }
+.credit{
+  text-align: center;
+  margin-bottom: 5%;
+}
 
-  .andmore_container p {
-    font-size: 30px;
-  }
 
   /* footer フッター */
 
   footer {
     position: absolute;
-    height: 50px;
+    /* height: 50px; */
     width: 100%;
     background-color: #fff;
     background-attachment: scroll;
@@ -1168,12 +1164,13 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .footer_ {
     float: left;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .footer_ li {
-    display: inline-block;
+    /* display: inline-block; */
     list-style: none;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 80px;
     font-size: 15px;
   }
@@ -1181,7 +1178,9 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .sns {
     float: right;
     padding-right: 120px;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-left: 70px;
+
   }
 
   .sns a {
@@ -1222,7 +1221,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     content: "";
     display: block;
     position: fixed;
-    background-image: url(sp_background2.jpg);
+    background-image: url(sp_background.jpg);
     z-index: -1;
     width: 100%;
     height: 100%;
@@ -1456,6 +1455,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   /* news ニュース */
   .contents {
     margin-top: 0px;
+    padding-top: 10%;
   }
 
   .space {
@@ -1798,30 +1798,32 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   .event_main {
+    width: 95%;
     grid-column: 2;
     background-color: rgb(255 255 255);
     display: grid;
     place-items: center;
-    border: solid 1px #9d9d9d;
+    border: solid 0.8px #9d9d9d;
   }
 
   .event_lifork {
+    width:95%;
     grid-column: 2;
     background-color: rgb(255 255 255);
     display: grid;
     place-items: center;
-    border: solid 1px #9d9d9d;
+    border: solid 0.8px #9d9d9d;
   }
 
   .event_main h2 {
     padding: 0px;
-    font-size: 7px;
+    font-size: 9px;
     margin-bottom: 0px;
   }
 
   .event_lifork h2 {
     padding: 0px;
-    font-size: 7px;
+    font-size: 9px;
     margin-bottom: 0px;
   }
 
@@ -1904,6 +1906,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     /* --bs-modal-width: 60px !important; */
     --bs-modal-padding: 2rem !important;
   }
+
 
   .modal-body ul {
     display: flex;
@@ -2263,7 +2266,7 @@ color: #818181;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 
   /* sponser スポンサー */
@@ -2425,17 +2428,18 @@ color: #818181;
     border: 0.6px solid;
   }
 
-  .andmore_container h2 {
-    margin-top: 20px;
+  .supporter h3{
     font-weight: bold;
-    font-size: 12px;
+    font-size: 8px;
     color: #5a544b;
-    margin-bottom: 0%;
+    margin-left: 60%;
   }
 
-  .andmore_container p {
-    font-size: 10px;
-    margin-bottom: 0%;
+  .credit{
+    width: 80%;
+    font-size: 8px;
+    text-align: center;
+    margin: 0 auto 5% auto;
   }
 
   /* footer フッター */
@@ -2451,13 +2455,14 @@ color: #818181;
 
   .footer_ {
     float: left;
+    margin-top: 20px;
     padding-left: 15px;
     margin-bottom: 0px;
   }
 
   .footer_ li {
     list-style: none;
-    margin-top: 5px;
+    margin-top: 1px;
     font-size: 8px;
   }
 
@@ -2476,7 +2481,6 @@ color: #818181;
   }
 
   .sns li {
-    padding-top: 10px;
     display: inline-block;
     padding-left: 5px;
   }
