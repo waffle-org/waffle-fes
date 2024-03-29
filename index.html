@@ -1075,7 +1075,7 @@
     </div>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="footer-container">
       <ul class="footer_">
         <li>取材ご希望の方は、pr@waffle-waffle.orgまでお問い合わせお願いします。</li>
@@ -1116,23 +1116,22 @@
     var backgroundShown = false;
 
 window.addEventListener('scroll', function() {
-  if (!backgroundShown) {
-    var scrollPosition = window.scrollY; // 現在のスクロール位置を取得
-    var windowHeight = window.innerHeight; // ウィンドウの高さを取得
-    var documentHeight = document.body.clientHeight; // ドキュメントの高さを取得
-    var footerOffset = documentHeight - windowHeight - 1000; // フッターのオフセットを計算
+    if (!backgroundShown) {
+        var scrollPosition = window.scrollY; // 現在のスクロール位置を取得
+        var windowHeight = window.innerHeight; // ウィンドウの高さを取得
+        var documentHeight = document.body.clientHeight; // ドキュメントの高さを取得
+        var footer = document.querySelector('.footer'); // フッター要素を取得
+        var footerOffset = footer.offsetTop; // フッターのオフセットを計算
 
-    // もしスクロール位置がウィンドウの高さよりも小さければ、背景を表示する
-    if (scrollPosition < footerOffset) {
-    document.querySelector('.background').style.display = 'block';
-    backgroundShown = true; // 背景が表示されたことを記録
-  } else {
-    // スクロール位置がフッターのオフセットを超えると、背景を非表示にする
-        if (backgroundShown) {
-            document.querySelector('.background').style.display = 'none';
+        console.log(footer);
+        console.log(footerOffset);
+
+        // もしスクロール位置がウィンドウの高さよりも小さければ、背景を表示する
+        if (scrollPosition + windowHeight - 500 < footerOffset) {
+            document.querySelector('.background').style.display = 'block';
+            backgroundShown = true; // 背景が表示されたことを記録
         }
     }
-  }
 });
 
     $(function () {
