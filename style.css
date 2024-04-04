@@ -520,10 +520,10 @@
     background-position: right center; */
   }
 
-  .tec_girls:hover {
+  /* .tec_girls:hover {
     color: #EB5F6E;
     background-image: url(icons8-外部リンク-30.png);
-  }
+  } */
 
   .time {
     grid-column: 1;
