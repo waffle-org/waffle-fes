@@ -247,7 +247,14 @@
     font-size: 25px;
     margin-top: 50px;
     padding-top: 24px;
-    background: linear-gradient(to right, #eb5f6e 0%, #ffbfca 20%, #f9bca4 30%, #fef076 40%, #a2fff4 80%);
+    background: linear-gradient(
+      to right,
+      #eb5f6e 0%,
+      #ffbfca 20%,
+      #f9bca4 30%,
+      #fef076 40%,
+      #a2fff4 80%
+    );
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 150% 20%;
@@ -501,6 +508,21 @@
 
   .timetable_line {
     border-top: solid rgb(133, 133, 133) 1px;
+  }
+
+  .tec_girls {
+    color: #000000;
+    text-decoration: none;
+    padding-right: 20px;
+    background-image: url(リンク.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+
+  .tec_girls:hover {
+    color: #0ec2e6;
+    background-image: url(リンク2.png);
   }
 
   .time {
@@ -1046,7 +1068,6 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   .sponsor-content {
     display: inline-block;
     /* テキストと画像を両方とも中央揃えにするために必要 */
-
   }
 
   .logo_デロイト {
@@ -1138,18 +1159,17 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     border: 1.2px solid;
   }
 
-.supporter h3{
-  font-weight: bold;
-  font-size: 20px;
-  color: #5a544b;
-  margin-left: 60%;
-}
+  .supporter h3 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #5a544b;
+    margin-left: 60%;
+  }
 
-.credit{
-  text-align: center;
-  margin-bottom: 5%;
-}
-
+  .credit {
+    text-align: center;
+    margin-bottom: 5%;
+  }
 
   /* footer フッター */
 
@@ -1175,12 +1195,26 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     font-size: 15px;
   }
 
+  .question_form {
+    color: #000000;
+    text-decoration: none;
+    padding-right: 20px;
+    background-image: url(リンク.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+
+  .question_form:hover {
+    color: #0ec2e6;
+    background-image: url(リンク2.png);
+  }
+
   .sns {
     float: right;
     padding-right: 120px;
     margin-top: 40px;
     margin-left: 70px;
-
   }
 
   .sns a {
@@ -1446,7 +1480,14 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     font-size: 14px;
     margin-top: 50px;
     padding-top: 20px;
-    background: linear-gradient(to right, #eb5f6e 0%, #ffbfca 20%, #f9bca4 30%, #fef076 40%, #a2fff4 80%);
+    background: linear-gradient(
+      to right,
+      #eb5f6e 0%,
+      #ffbfca 20%,
+      #f9bca4 30%,
+      #fef076 40%,
+      #a2fff4 80%
+    );
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: 150% 20%;
@@ -1807,7 +1848,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   .event_lifork {
-    width:95%;
+    width: 95%;
     grid-column: 2;
     background-color: rgb(255 255 255);
     display: grid;
@@ -1906,7 +1947,6 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     /* --bs-modal-width: 60px !important; */
     --bs-modal-padding: 2rem !important;
   }
-
 
   .modal-body ul {
     display: flex;
@@ -2428,14 +2468,14 @@ color: #818181;
     border: 0.6px solid;
   }
 
-  .supporter h3{
+  .supporter h3 {
     font-weight: bold;
     font-size: 8px;
     color: #5a544b;
     margin-left: 60%;
   }
 
-  .credit{
+  .credit {
     width: 80%;
     font-size: 8px;
     text-align: center;
@@ -2463,6 +2503,7 @@ color: #818181;
   .footer_ li {
     list-style: none;
     margin-top: 1px;
+    margin-bottom: 10px;
     font-size: 8px;
   }
 
