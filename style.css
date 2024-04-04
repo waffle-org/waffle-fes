@@ -514,15 +514,15 @@
     color: #000000;
     text-decoration: none;
     padding-right: 20px;
-    background-image: url(リンク.png);
-    background-size: 16px;
+    /* background-image: url(リンク.png); */
+    /* background-size: 16px;
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right center; */
   }
 
   .tec_girls:hover {
-    color: #0ec2e6;
-    background-image: url(リンク2.png);
+    color: #EB5F6E;
+    background-image: url(icons8-外部リンク-30.png);
   }
 
   .time {
@@ -1171,6 +1171,19 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     margin-bottom: 5%;
   }
 
+  .college_link{
+    color: #333;
+    background-image: url(リンク.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+    background-size: 16px;
+  }
+
+  .college_link:hover{
+    color: #eb5f6e;
+    background-image: url(icons8-外部リンク-30.png);
+  }
   /* footer フッター */
 
   footer {
@@ -1206,8 +1219,8 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   .question_form:hover {
-    color: #0ec2e6;
-    background-image: url(リンク2.png);
+    color: #eb5f6e;
+    background-image: url(icons8-外部リンク-30.png);
   }
 
   .sns {
