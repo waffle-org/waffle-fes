@@ -386,22 +386,22 @@
   }
 
   .access_container h2 {
-    font-size: 18px;
+    font-size: 30px;
     margin: 0;
   }
 
   .access_container ul {
-    width: 80%;
-    margin-left: 60px;
+    width: 70%;
+    margin-left: 85px;
   }
 
   .access_container li {
-    font-size: 15px;
+    font-size: 19px;
     list-style: none;
   }
 
   .access_container .small {
-    font-size: 11px;
+    font-size: 15px;
   }
 
   .attention_container {
@@ -423,19 +423,19 @@
   }
 
   .attention_container h2 {
-    font-size: 18px;
+    font-size: 25px;
     margin: 0;
     padding: 0;
-    width: 10%;
+    width: 15%;
   }
 
   .attention_container ul {
-    width: 80%;
+    width: 75%;
     margin-left: 30px;
   }
 
   .attention_container li {
-    font-size: 15px;
+    font-size: 19px;
     text-indent: -1.2em;
     padding-left: 1em;
   }
