@@ -1590,10 +1590,15 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
     margin: 15px 40px 15px 40px;
   }
 
-  .day1_contents h2,
-  .day2_contents h2 {
+  .day1_contents h2 {
     text-align: left;
     font-size: 12px;
+    margin-bottom: 0%;
+  }
+
+  .day2_contents h2 {
+    text-align: left;
+    font-size: 14px;
     font-weight: bold;
     margin-bottom: 0%;
   }
