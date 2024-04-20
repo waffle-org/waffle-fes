@@ -1627,7 +1627,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   .access_container h2 {
-    font-size: 8px;
+    font-size: 10px;
     margin: 0;
   }
 
