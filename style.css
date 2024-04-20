@@ -328,8 +328,12 @@
   .about_content h2 {
     margin-top: 50px;
     font-size: 30px;
-    font-weight: bold;
     text-align: left;
+  }
+
+  .day2_contents h2 {
+    font-weight: bold;
+    font-size: 35px;
   }
 
   .about_content hr {
