@@ -1215,7 +1215,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
 
   .question_form {
     color: #000000;
-    text-decoration: none;
+    /* text-decoration: none; */
     padding-right: 20px;
     background-image: url(リンク.png);
     background-size: 16px;
