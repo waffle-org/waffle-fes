@@ -636,12 +636,13 @@
     width: 100%;
   } */
 
-  .collegeStudents {
+  /* 座談会モーダル */
+  /* .collegeStudents {
     justify-content: space-between;
   }
   .collegeStudents li {
     flex-basis: 100%;
-  }
+  } */
 
   /* timetable中身 モダール */
   .modal {
