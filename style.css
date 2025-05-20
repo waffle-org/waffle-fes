@@ -6,7 +6,7 @@
   }
 
   body {
-    overflow: hidden;
+    overflow: auto;
     /* font-family: Arial, sans-serif; */
     color: #333;
   }
@@ -1259,7 +1259,7 @@ Flexboxを指定"space-between"で各アイテムを均等に配置し、
   }
 
   body {
-    overflow: hidden;
+    overflow: auto;
     font-family: Arial, sans-serif;
     color: #333;
   }
